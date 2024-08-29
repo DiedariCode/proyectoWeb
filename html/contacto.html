@@ -1,11 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto - JIMDUR Repuestos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .contenedor {
+            width: 98%;
+            height: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .encabezado h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .formulario-contacto {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            height: 600px;
+        }
+
+        .formulario-contacto input,
+        .formulario-contacto textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .boton-enviar {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #d9534f;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .mapa {
+            padding-top: 23px;
+            width: 100%;
+            height: 600px;
+            border-radius: 10px;
+        }
+
+        .info-empresa {
+            background: rgba(207, 56, 56, 1);
+            width: 100%;
+            ;
+            height: 500px;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .redes-sociales {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .redes-sociales img {
+            width: 30px;
+            margin: 0 10px;
+        }
+
+        .info-empresa {
+            background: rgba(207, 56, 56, 1);
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .info-empresa .tarjeta {
+            width: 24%;
+            /* Ajusta el ancho para caber 4 tarjetas en una fila */
+            padding: 15px;
+            margin: 1%;
+            /* Espacio entre las tarjetas */
+            background: #d9534f;
+            /* Fondo de las tarjetas, ajusta si es necesario */
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .info-empresa .tarjeta h2,
+        .info-empresa .tarjeta h3 {
+            font-size: 1.5em;
+            /* Ajusta el tamaño del texto */
+            margin-bottom: 10px;
+        }
+
+        .info-empresa .tarjeta p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>PAGINA DE CONTACTO</h1>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img class="logo_jimdur" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="Logo Jimdur">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../html/productos.html">Productos</a></li>
+                    <li><a href="../html/nosotros.html">Nosotros</a></li>
+                    <li><a href="../html/contacto.html" class="active">Contacto</a></li>
+                </ul>
+                <form class="search-form" action="#">
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit" class="search-button">
+                        <img class="imagenboton" src="../img/iconos/buscar.png" alt="Buscar">
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <table class="contenedor">
+            <tr>
+                <td width="50%">
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.637498895471!2d-80.65618082424656!3d-5.161883952145528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1b88948eae13%3A0x1d2875411b61bb19!2sGrupo%20Jimdur%20%26%20Motorepuestos%20Jimenez!5e0!3m2!1ses!2spe!4v1724898537136!5m2!1ses!2spe"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td width="50%">
+                    <table class="formulario-contacto">
+                        <tr>
+                            <td>
+                                <h2>Contáctenos</h2>
+                                <form>
+                                    <input type="text" placeholder="Nombre" required>
+                                    <input type="email" placeholder="Correo electrónico" required>
+                                    <input type="tel" placeholder="Teléfono" required>
+                                    <input type="text" placeholder="DNI o RUC">
+                                    <input type="text" placeholder="Placa vehicular o VIN">
+                                    <input type="text" placeholder="Asunto" required>
+                                    <textarea placeholder="Mensaje" rows="5" required></textarea>
+                                    <button type="submit" class="boton-enviar">Enviar mensaje</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <table class="contenedor info-empresa">
+            <tr>
+                <td class="tarjeta">
+                    <h2>JIMDUR REPUESTOS</h2>
+                    <p><span style="font-weight: bold;">JIMDUR</span> Repuestos es líder en la venta de repuestos
+                        automotrices de alta calidad. Nuestra misión es proporcionar a nuestros clientes los mejores
+                        productos y servicios para mantener sus vehículos en óptimas condiciones.</p>
+                </td>
+                <td class="tarjeta">
+                    <h3>Información de Contacto</h3>
+                    <p>Dirección: Av. Principal 123, Ciudad</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                    <p>Email: info@jimdur.com</p>
+                </td>
+                <td class="tarjeta">
+                    <h3>Horario de Atención</h3>
+                    <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                    <p>Sábados: 9:00 AM - 1:00 PM</p>
+                </td>
+                <td class="tarjeta">
+                    <h3>Preguntas Frecuentes</h3>
+                    <h4>¿Realizan envíos a domicilio?</h4>
+                    <p>Sí, realizamos envíos a todo el país.</p>
+                    <h4>¿Ofrecen garantía en sus productos?</h4>
+                    <p>Todos nuestros productos cuentan con garantía de fábrica.</p>
+                </td>
+            </tr>
+        </table>
+
+        <table class="contenedor">
+            <tr>
+                <td>
+                    <h2>nose que poner aca</h2>
+                </td>
+            </tr>
+        </table>
+
+    </main>
+    <footer>
+        <!--FALTA CSS XD-->
+        <div class="footer-content">
+            <div class="footer-section footer-logo">
+                <img width="50px" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="JIMDUR Repuestos">
+                <p class="footer-description">Nos dedicamos a ofrecerte una selección de repuestos y accesorios de la
+                    más alta calidad para que disfrutes de un rendimiento superior en cada trayecto. Confiamos en
+                    nuestras marcas y en nuestra experiencia para brindarte el mejor servicio y la satisfacción que
+                    mereces. Tu moto está en buenas manos con nosotros.</p>
+            </div>
+            <div class="footer-section footer-links">
+                <h3>ENLACES</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Términos & Condiciones</a></li>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-contact">
+                <h3>CONTACTOS</h3>
+                <ul>
+                    <li><a href="tel:987654321">987 654 321</a></li>
+                    <li><a href="tel:123456789">123 456 789</a></li>
+                    <li><a href="mailto:jimdur@gmail.com">jimdur@gmail.com</a></li>
+                </ul>
+                <div class="footer-social">
+                    <h3>SÍGUENOS</h3>
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">TikTok</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Jimdur 2024</p>
+        </div>
+        <style>
+            footer {
+                background-color: #000000;
+                color: #ffffff;
+                padding: 20px 5%;
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    </footer>
 </body>
+
 </html>
