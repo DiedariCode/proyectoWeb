@@ -22,16 +22,12 @@
             overflow: hidden;
         }
 
-        .encabezado h1 {
-            margin: 0;
-            text-align: center;
-        }
-
         .formulario-contacto {
             background: #fff;
-            padding: 20px;
-            margin-top: 20px;
-            height: 600px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 0px;
+            height: 200px;
         }
 
         .formulario-contacto input,
@@ -43,26 +39,25 @@
 
         .boton-enviar {
             display: block;
-            width: 100%;
+            width: 30%;
             padding: 10px;
-            background: #d9534f;
+            background: red;
             color: #fff;
             border: none;
             cursor: pointer;
         }
 
         .mapa {
-            padding-top: 23px;
+            padding-top: 0;
             width: 100%;
-            height: 600px;
+            height: 500px;
             border-radius: 10px;
         }
 
         .info-empresa {
-            background: rgba(207, 56, 56, 1);
+            background-color: #000000e7;
             width: 100%;
-            ;
-            height: 500px;
+            height: 400px;
             color: white;
             padding: 20px;
             margin-top: 20px;
@@ -78,21 +73,12 @@
             margin: 0 10px;
         }
 
-        .info-empresa {
-            background: rgba(207, 56, 56, 1);
-            color: white;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
         .info-empresa .tarjeta {
             width: 24%;
-            /* Ajusta el ancho para caber 4 tarjetas en una fila */
+            /* Con esto caben 4 tarjetas en una fila */
             padding: 15px;
-            margin: 1%;
-            /* Espacio entre las tarjetas */
-            background: #d9534f;
-            /* Fondo de las tarjetas, ajusta si es necesario */
+            margin: 2px;
+            background: #252424;
             border-radius: 8px;
             box-sizing: border-box;
         }
@@ -107,6 +93,32 @@
         .info-empresa .tarjeta p {
             font-size: 1em;
             line-height: 1.5;
+        }
+
+        /* CONTENEDOR LOGOS MARCAS :D*/
+        .proveedores {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            height: 500px;
+        }
+
+        .proveedores h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .proveedores p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .logos-proveedores img {
+            width: 300px;
+            height: 200px;
+            margin: 0 10px;
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -176,8 +188,8 @@
                 </td>
                 <td class="tarjeta">
                     <h3>Información de Contacto</h3>
-                    <p>Dirección: Av. Principal 123, Ciudad</p>
-                    <p>Teléfono: (123) 456-7890</p>
+                    <p>Dirección: Grupo Jimdur & Motorepuestos Jimenez, Av las Amapolas, Piura 20009</p>
+                    <p>Teléfono: (+51) 968108775</p>
                     <p>Email: info@jimdur.com</p>
                 </td>
                 <td class="tarjeta">
@@ -195,62 +207,141 @@
             </tr>
         </table>
 
-        <table class="contenedor">
+        <table class="contenedor-logos">
             <tr>
                 <td>
-                    <h2>nose que poner aca</h2>
+                    <div class="proveedores">
+                        <h2>Nuestros Proveedores</h2>
+                        <p>Contamos con una red de proveedores líderes en la industria de repuestos automotrices para
+                            asegurar la mejor calidad en nuestros productos.</p>
+                        <div class="logos-proveedores">
+                            <img src="../img/marcas/yamaha.png" alt="Yamaha">
+                            <img src="../img/marcas/Honda.png" alt="Honda Racing">
+                            <img src="../img/marcas/Kawasaki.png" alt="Kawasaki">
+                            <img src="../img/marcas/BAJAJ.png" alt="Bajaj">
+                            <img src="../img/marcas/Hero.png" alt="Hero">
+                        </div>
+                    </div>
                 </td>
             </tr>
         </table>
 
     </main>
     <footer>
-        <!--FALTA CSS XD-->
-        <div class="footer-content">
-            <div class="footer-section footer-logo">
+        <div class="contenido-footer">
+            <div class="seccion-footer logo-footer">
                 <img width="50px" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="JIMDUR Repuestos">
-                <p class="footer-description">Nos dedicamos a ofrecerte una selección de repuestos y accesorios de la
+                <p class="descripcion-footer">Nos dedicamos a ofrecerte una selección de repuestos y accesorios de la
                     más alta calidad para que disfrutes de un rendimiento superior en cada trayecto. Confiamos en
                     nuestras marcas y en nuestra experiencia para brindarte el mejor servicio y la satisfacción que
                     mereces. Tu moto está en buenas manos con nosotros.</p>
+                <p>&copy; Jimdur 2024</p>
             </div>
-            <div class="footer-section footer-links">
+            <div class="linea-divisora"></div>
+            <div class="seccion-footer enlaces-footer">
                 <h3>ENLACES</h3>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="#">Términos & Condiciones</a></li>
                     <li><a href="#">Políticas de Privacidad</a></li>
                 </ul>
             </div>
-            <div class="footer-section footer-contact">
+            <div class="linea-divisora"></div>
+            <div class="seccion-footer contactos-footer">
                 <h3>CONTACTOS</h3>
                 <ul>
-                    <li><a href="tel:987654321">987 654 321</a></li>
-                    <li><a href="tel:123456789">123 456 789</a></li>
-                    <li><a href="mailto:jimdur@gmail.com">jimdur@gmail.com</a></li>
+                    <li><img class="iconos-footer" src="../img/iconos/telefono.png" alt=""><a href="tel:123456789">123 456 789</a></li>
+                    <li><img class="iconos-footer" src="../img/iconos/telefono.png" alt=""><a href="tel:987654321">987 654 321</a></li>
+                    <li><img class="iconos-footer" src="../img/iconos/correo.png" alt=""><a href="mailto:jimdur@gmail.com">jimdur@gmail.com</a></li>
                 </ul>
-                <div class="footer-social">
-                    <h3>SÍGUENOS</h3>
+                <h3>SÍGUENOS</h3>
+                <div class="logos-redes">
                     <a href="#" target="_blank">Facebook</a>
                     <a href="#" target="_blank">Instagram</a>
                     <a href="#" target="_blank">TikTok</a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; Jimdur 2024</p>
-        </div>
         <style>
             footer {
-                background-color: #000000;
-                color: #ffffff;
+                background-color: #000000e7;
+                color: #fff;
                 padding: 20px 5%;
-                font-family: Arial, sans-serif;
+                font-family: sans-serif, Arial, Helvetica, sans-serif;
+            }
+
+            .contenido-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .seccion-footer {
+                flex: 1;
+                padding: 0 20px;
+            }
+
+            .logo-footer img {
+                margin-bottom: 10px;
+            }
+
+            .descripcion-footer {
+                margin-bottom: 10px;
+                text-align: justify;
+            }
+
+            .linea-divisora {
+                height: 260px;
+                width: 2px;
+                background-color: #fff;
+                margin-left: 10%;
+            }
+
+            .enlaces-footer h3,
+            .contactos-footer h3 {
+                color: #ff0000;
+                text-transform: uppercase;
+                padding-left: 70px;
+                padding-top: 0;
+                margin-top: 0;
+            }
+
+            .enlaces-footer ul,
+            .contactos-footer ul {
+                list-style-type: none;
+                padding: 70px;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .enlaces-footer ul li,
+            .contactos-footer ul li {
+                margin-bottom: 5px;
+            }
+
+            .enlaces-footer a,
+            .contactos-footer a {
+                color: #fff;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .enlaces-footer a:hover,
+            .contactos-footer a:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .logos-redes{
+                padding-left: 70px;
+            }
+
+            .iconos-footer{
+                width: 25px;
             }
         </style>
     </footer>
 </body>
-
 </html>
