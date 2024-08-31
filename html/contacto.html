@@ -38,7 +38,6 @@
         }
 
         .boton-enviar {
-            display: block;
             width: 30%;
             padding: 10px;
             background: red;
@@ -75,7 +74,6 @@
 
         .info-empresa .tarjeta {
             width: 24%;
-            /* Con esto caben 4 tarjetas en una fila */
             padding: 15px;
             margin: 2px;
             background: #252424;
@@ -86,40 +84,16 @@
         .info-empresa .tarjeta h2,
         .info-empresa .tarjeta h3 {
             font-size: 1.5em;
-            /* Ajusta el tamaño del texto */
             margin-bottom: 10px;
+            text-align: center;
         }
 
         .info-empresa .tarjeta p {
             font-size: 1em;
             line-height: 1.5;
-        }
-
-        /* CONTENEDOR LOGOS MARCAS :D*/
-        .proveedores {
-            background-color: #ffffff;
-            padding: 20px;
             text-align: center;
-            margin-top: 20px;
-            height: 500px;
         }
 
-        .proveedores h2 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-
-        .proveedores p {
-            font-size: 1em;
-            margin-bottom: 20px;
-        }
-
-        .logos-proveedores img {
-            width: 300px;
-            height: 200px;
-            margin: 0 10px;
-            vertical-align: middle;
-        }
     </style>
 </head>
 
@@ -178,170 +152,252 @@
             </tr>
         </table>
 
-        <table class="contenedor info-empresa">
+        <table class="contenedor info-empresa" width="100%" cellspacing="15" cellpadding="20">
             <tr>
-                <td class="tarjeta">
-                    <h2>JIMDUR REPUESTOS</h2>
-                    <p><span style="font-weight: bold;">JIMDUR</span> Repuestos es líder en la venta de repuestos
-                        automotrices de alta calidad. Nuestra misión es proporcionar a nuestros clientes los mejores
-                        productos y servicios para mantener sus vehículos en óptimas condiciones.</p>
+                <td class="tarjeta info-jimdur">
+                    <h2>¿QUIENES SOMOS?</h2>
+                    <p><span style="font-weight: bold;">JIMDUR</span> Repuestos es una empresa en crecimiento ubicada en Piura, dedicada a la venta de repuestos automotrices de alta calidad. Nos especializamos en ofrecer una amplia gama de piezas y accesorios para mantener vehículos en excelente estado de funcionamiento. Nuestra misión es proporcionar a nuestros clientes productos confiables y un servicio excepcional, asegurando que cada vehículo reciba la atención que merece.</p>
                 </td>
-                <td class="tarjeta">
+                <td class="tarjeta info-contactos">
                     <h3>Información de Contacto</h3>
-                    <p>Dirección: Grupo Jimdur & Motorepuestos Jimenez, Av las Amapolas, Piura 20009</p>
-                    <p>Teléfono: (+51) 968108775</p>
-                    <p>Email: info@jimdur.com</p>
+                    <p>📍 Dirección: Grupo Jimdur & Motorepuestos Jimenez, Av las Amapolas, Piura 20009</p>
+                    <p>📞 Teléfono: (+51) 968108775</p>
+                    <p>✉️ Email: info@jimdur.com</p>
                 </td>
-                <td class="tarjeta">
+                <td class="tarjeta horario-tarjeta">
                     <h3>Horario de Atención</h3>
-                    <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
-                    <p>Sábados: 9:00 AM - 1:00 PM</p>
+                    <p>🕒 Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                    <p>🕒 Sábados: 9:00 AM - 1:00 PM</p>
                 </td>
-                <td class="tarjeta">
+                <td class="tarjeta preguntas-tarjeta">
                     <h3>Preguntas Frecuentes</h3>
-                    <h4>¿Realizan envíos a domicilio?</h4>
-                    <p>Sí, realizamos envíos a todo el país.</p>
-                    <h4>¿Ofrecen garantía en sus productos?</h4>
-                    <p>Todos nuestros productos cuentan con garantía de fábrica.</p>
+                    <details>
+                        <summary>¿Realizan envíos a domicilio?</summary>
+                        <p>Sí, realizamos envíos a todo el país.</p>
+                    </details>
+                    <details>
+                        <summary>¿Ofrecen garantía en sus productos?</summary>
+                        <p>Todos nuestros productos cuentan con garantía de fábrica.</p>
+                    </details>
+                    <details>
+                        <summary>¿Cuál es el tiempo estimado de entrega?</summary>
+                        <p>El tiempo estimado de entrega varía según la ubicación, pero generalmente es de 3 a 5 días
+                            hábiles.</p>
+                    </details>
+                    <details>
+                        <summary>¿Cómo puedo realizar una devolución o cambio de producto?</summary>
+                        <p>Para realizar una devolución o cambio, por favor contáctenos dentro de los 15 días
+                            posteriores a la recepción del producto. Debe estar en su estado original y en su embalaje
+                            original.</p>
+                    </details>
+                    <details>
+                        <summary>¿Aceptan métodos de pago en línea?</summary>
+                        <p>Sí, aceptamos pagos en línea a través de tarjetas de crédito, débito y PayPal.</p>
+                    </details>
                 </td>
             </tr>
         </table>
 
-        <table class="contenedor-logos">
+        <table class="proveedores" width="100%" cellspacing="20" cellpadding="20">
             <tr>
-                <td>
-                    <div class="proveedores">
-                        <h2>Nuestros Proveedores</h2>
-                        <p>Contamos con una red de proveedores líderes en la industria de repuestos automotrices para
-                            asegurar la mejor calidad en nuestros productos.</p>
-                        <div class="logos-proveedores">
-                            <img src="../img/marcas/yamaha.png" alt="Yamaha">
-                            <img src="../img/marcas/Honda.png" alt="Honda Racing">
-                            <img src="../img/marcas/Kawasaki.png" alt="Kawasaki">
-                            <img src="../img/marcas/BAJAJ.png" alt="Bajaj">
-                            <img src="../img/marcas/Hero.png" alt="Hero">
-                        </div>
-                    </div>
+                <td colspan="3" style="text-align:center;">
+                    <h2>Nuestros Proveedores</h2>
+                    <p>Trabajamos con proveedores líderes en la industria para asegurarte repuestos y accesorios de la
+                        más alta</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="tarjeta-marca">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha">
+                </td>
+                <td class="tarjeta-marca">
+                    <img src="../img/marcas/Honda.png" alt="Honda Racing">
+                </td>
+                <td class="tarjeta-marca">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki">
+                </td>
+            </tr>
+            <tr>
+                <td class="tarjeta-marca">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj">
+                </td>
+                <td class="tarjeta-marca">
+                    <img src="../img/marcas/Hero.png" alt="Hero">
+                </td>
+                <td class="tarjeta-marca">
+                    <img src="../img/marcas/ktm.png" alt="Ktm">
                 </td>
             </tr>
         </table>
-
-    </main>
-    <footer>
-        <div class="contenido-footer">
-            <div class="seccion-footer logo-footer">
-                <img width="50px" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="JIMDUR Repuestos">
-                <p class="descripcion-footer">Nos dedicamos a ofrecerte una selección de repuestos y accesorios de la
-                    más alta calidad para que disfrutes de un rendimiento superior en cada trayecto. Confiamos en
-                    nuestras marcas y en nuestra experiencia para brindarte el mejor servicio y la satisfacción que
-                    mereces. Tu moto está en buenas manos con nosotros.</p>
-                <p>&copy; Jimdur 2024</p>
-            </div>
-            <div class="linea-divisora"></div>
-            <div class="seccion-footer enlaces-footer">
-                <h3>ENLACES</h3>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="#">Términos & Condiciones</a></li>
-                    <li><a href="#">Políticas de Privacidad</a></li>
-                </ul>
-            </div>
-            <div class="linea-divisora"></div>
-            <div class="seccion-footer contactos-footer">
-                <h3>CONTACTOS</h3>
-                <ul>
-                    <li><img class="iconos-footer" src="../img/iconos/telefono.png" alt=""><a href="tel:123456789">123 456 789</a></li>
-                    <li><img class="iconos-footer" src="../img/iconos/telefono.png" alt=""><a href="tel:987654321">987 654 321</a></li>
-                    <li><img class="iconos-footer" src="../img/iconos/correo.png" alt=""><a href="mailto:jimdur@gmail.com">jimdur@gmail.com</a></li>
-                </ul>
-                <h3>SÍGUENOS</h3>
-                <div class="logos-redes">
-                    <a href="#" target="_blank">Facebook</a>
-                    <a href="#" target="_blank">Instagram</a>
-                    <a href="#" target="_blank">TikTok</a>
-                </div>
-            </div>
-        </div>
         <style>
-            footer {
-                background-color: #000000e7;
-                color: #fff;
-                padding: 20px 5%;
-                font-family: sans-serif, Arial, Helvetica, sans-serif;
+            .contenedor-logos {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+
             }
 
-            .contenido-footer {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            .seccion-footer {
-                flex: 1;
-                padding: 0 20px;
-            }
-
-            .logo-footer img {
-                margin-bottom: 10px;
-            }
-
-            .descripcion-footer {
-                margin-bottom: 10px;
-                text-align: justify;
-            }
-
-            .linea-divisora {
-                height: 260px;
-                width: 2px;
-                background-color: #fff;
-                margin-left: 10%;
-            }
-
-            .enlaces-footer h3,
-            .contactos-footer h3 {
-                color: #ff0000;
-                text-transform: uppercase;
-                padding-left: 70px;
-                padding-top: 0;
+            .proveedores {
+                background-color: #ffffff;
                 margin-top: 0;
+                padding: 0;
+                height: 500px;
+                border-radius: 20px;
             }
 
-            .enlaces-footer ul,
-            .contactos-footer ul {
-                list-style-type: none;
-                padding: 70px;
-                padding-top: 0;
-                padding-bottom: 0;
+            .proveedores h2 {
+                font-size: 2em;
+                margin-top: 0;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                font-weight: bold;
             }
 
-            .enlaces-footer ul li,
-            .contactos-footer ul li {
-                margin-bottom: 5px;
+            .proveedores p {
+                font-size: 1em;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
             }
 
-            .enlaces-footer a,
-            .contactos-footer a {
-                color: #fff;
-                text-decoration: none;
-                cursor: pointer;
+            .tarjeta-marca {
+                width: 33%;
+                height: 150px;
+                background-color: #f0f0f0;
+                border-radius: 10px;
+                text-align: center;
             }
 
-            .enlaces-footer a:hover,
-            .contactos-footer a:hover {
-                color: #fff;
-                text-decoration: none;
+            .tarjeta-marca img {
+                max-width: 80%;
+                max-height: 80%;
             }
 
-            .logos-redes{
-                padding-left: 70px;
-            }
-
-            .iconos-footer{
-                width: 25px;
+            .logos-proveedores img {
+                width: 300px;
+                height: 200px;
+                margin: 0 10px;
             }
         </style>
-    </footer>
+        <footer>
+            <div class="contenido-footer">
+                <div class="seccion-footer logo-footer">
+                    <img width="50px" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="JIMDUR Repuestos">
+                    <p class="descripcion-footer">Nos dedicamos a ofrecerte una selección de repuestos y accesorios de
+                        la
+                        más alta calidad para que disfrutes de un rendimiento superior en cada trayecto. Confiamos en
+                        nuestras marcas y en nuestra experiencia para brindarte el mejor servicio y la satisfacción que
+                        mereces. Tu moto está en buenas manos con nosotros.</p>
+                    <p>&copy; Jimdur 2024</p>
+                </div>
+                <div class="linea-divisora"></div>
+                <div class="seccion-footer enlaces-footer">
+                    <h3>ENLACES</h3>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="#">Términos & Condiciones</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="linea-divisora"></div>
+                <div class="seccion-footer contactos-footer">
+                    <h3>CONTACTOS</h3>
+                    <ul>
+                        <li><img class="iconos-footer" src="../img/iconos/telefono.png" alt=""><a
+                                href="tel:123456789">123 456 789</a></li>
+                        <li><img class="iconos-footer" src="../img/iconos/telefono.png" alt=""><a
+                                href="tel:987654321">987 654 321</a></li>
+                        <li><img class="iconos-footer" src="../img/iconos/correo.png" alt=""><a
+                                href="mailto:jimdur@gmail.com">jimdur@gmail.com</a></li>
+                    </ul>
+                    <h3>SÍGUENOS</h3>
+                    <div class="logos-redes">
+                        <a href="#" target="_blank">Facebook</a>
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <style>
+                footer {
+                    background-color: #000000e7;
+                    color: #fff;
+                    padding: 20px 5%;
+                    font-family: sans-serif, Arial, Helvetica, sans-serif;
+                }
+
+                .contenido-footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .seccion-footer {
+                    flex: 1;
+                    padding: 0 20px;
+                }
+
+                .logo-footer img {
+                    margin-bottom: 10px;
+                }
+
+                .descripcion-footer {
+                    margin-bottom: 10px;
+                    text-align: justify;
+                }
+
+                .linea-divisora {
+                    height: 260px;
+                    width: 2px;
+                    background-color: #fff;
+                    margin-left: 10%;
+                }
+
+                .enlaces-footer h3,
+                .contactos-footer h3 {
+                    color: #ff0000;
+                    text-transform: uppercase;
+                    padding-left: 70px;
+                    padding-top: 0;
+                    margin-top: 0;
+                }
+
+                .enlaces-footer ul,
+                .contactos-footer ul {
+                    list-style-type: none;
+                    padding: 70px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+
+                .enlaces-footer ul li,
+                .contactos-footer ul li {
+                    margin-bottom: 5px;
+                }
+
+                .enlaces-footer a,
+                .contactos-footer a {
+                    color: #fff;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+                .enlaces-footer a:hover,
+                .contactos-footer a:hover {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                .logos-redes {
+                    padding-left: 70px;
+                }
+
+                .iconos-footer {
+                    width: 25px;
+                }
+            </style>
+        </footer>
 </body>
+
 </html>
