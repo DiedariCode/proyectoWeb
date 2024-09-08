@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Nosotros - JIMDUR Repuestos</title>
+    <style>
+        .imagen-nosotros {
+            background-image: url('../img/instlacion.jpg');
+            background-size: cover;
+            color: white;
+        }
+
+        .celda-fondo {
+            text-align: center;
+            vertical-align: middle;
+            padding: 0;
+            height: 83.4vh;
+        }
+
+        .contenedor {
+            width: 98%;
+            height: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .info-empresa {
+            background-color: #000000e7;
+            width: 100%;
+            height: 400px;
+            color: rgb(232, 13, 13);
+            padding: 20px;
+            margin-top: 1px;
+        }
+
+        .info-mision {
+            background: coral;
+            background-size: 0%;
+            text-align: center;
+            border-radius: 0 50px 0 50px;
+            width: 500px;
+            height: 50px;
+        }
+    </style>
 </head>
+
 <body>
-    <H1>PAGINA DE Nosotros</H1>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img class="logo_jimdur" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../html/productos.html">Productos</a></li>
+                    <li><a href="../html/nosotros.html" class="active">Nosotros</a></li>
+                    <li><a href="../html/contacto.html">Contacto</a></li>
+                </ul>
+                <form class="search-form" action="#">
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit" class="search-button">
+                        <img class="imagenboton" src="../img/iconos/buscar.png" alt="Buscar">
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <table class="imagen-nosotros" border="0" width="100%" height="500vh">
+            <tr>
+                <td>
+
+                </td>
+            </tr>
+        </table>
+        <table class="info-empresa">
+            <tr>
+                <td>
+                    <img src="../img/respuestos.jpg" alt="repuestos" border="0" width="60%" height="300vh" align="left">
+                </td>
+                <td class="info-mision" cellspacing="15" cellpadding="50">
+                    <h1>
+                        NUESTRA MISION
+                    </h1>
+                    <P>
+                        Nuestra misión es ofrecerles a nuestros clientes la más amplia selección de repuestos
+                        automotrices
+                        originales a los mejores precios posibles y con el mejor servicio en términos de capacidad,
+                        profesionalismo y asistencia.
+                    </p>
+                </td>
+
+            </tr>
+        </table>
+        <table class="info-empresa">
+            <tr>
+                <td>
+                    <img src="../img/envio.jpg" alt="repuestos" border="0" width="60%" height="300vh" align="left">
+                </td>
+                <td class="info-mision" cellspacing="10px" cellpadding="50%">
+                <h1>
+                    NUESTRA VISIÓN
+                </h1>
+                <P>
+                    Ser una empresa lider en la comercializacion de respuestos para vehiculos, tener altos
+                    indices
+                    de calidad y servicios,
+                    estar a la vanguardia de la economia y el conocimiento tecnico para satisfacer las
+                    necesidades y
+                    expectativas de nuestros
+                    clientes y asi contribuir al desarrollo economico de nuestro pais y por ende el bienestar de
+                    nuestros colaboradores.
+                </p>
+                </td>
+            </tr>
+        </table>
+    </main>
 </body>
+
 </html>
