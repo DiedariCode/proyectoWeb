@@ -13,7 +13,6 @@ body, html{
     background-color: white;
     padding: 10px 30px;
     border-bottom: 2px solid #ccc;
-    line-height: 50px; 
     box-shadow: 0 0 40px #0000 ;
     padding-top: 0;
     padding-bottom: 0;
@@ -21,8 +20,8 @@ body, html{
 
 .nav-links {
     list-style: none;
-    align-items: center;
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -73,10 +72,6 @@ body, html{
     background-color: red;
     color: white;
     cursor: pointer;
-}
-
-.search-button:hover {
-    background-color: darkred;
 }
 
 .imagenboton{
