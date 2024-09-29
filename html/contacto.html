@@ -1,403 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Contacto - JIMDUR Repuestos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        .contenedor {
-            width: 98%;
-            height: 100%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        .formulario-contacto {
-            background: #fff;
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-top: 0px;
-            height: 200px;
-        }
-
-        .formulario-contacto input,
-        .formulario-contacto textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-        }
-
-        .boton-enviar {
-            width: 30%;
-            padding: 10px;
-            background: red;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        .mapa {
-            padding-top: 0;
-            width: 100%;
-            height: 500px;
-            border-radius: 10px;
-        }
-
-        .info-empresa {
-            background-color: #000000e7;
-            width: 100%;
-            height: 400px;
-            color: white;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .redes-sociales {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .redes-sociales img {
-            width: 30px;
-            margin: 0 10px;
-        }
-
-        .info-empresa .tarjeta {
-            width: 24%;
-            padding: 15px;
-            margin: 2px;
-            background: #252424;
-            border-radius: 8px;
-            box-sizing: border-box;
-        }
-
-        .info-empresa .tarjeta h2,
-        .info-empresa .tarjeta h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        .info-empresa .tarjeta p {
-            font-size: 1em;
-            line-height: 1.5;
-            text-align: center;
-        }
-
-    </style>
+    <title>Dividir Plantilla</title>
+    <link rel="stylesheet" href="../css/contacto.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="navbar">
+            <div class="barra-navegacion">
                 <div class="logo">
                     <a href="../index.html">
-                        <img class="logo_jimdur" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="Logo Jimdur">
+                        <img class="logo_jimdur" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="">
                     </a>
                 </div>
-                <ul class="nav-links">
+                <ul class="enlaces-navegacion">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="../html/productos.html">Productos</a></li>
                     <li><a href="../html/nosotros.html">Nosotros</a></li>
-                    <li><a href="../html/contacto.html" class="active">Contacto</a></li>
+                    <li><a href="../html/contacto.html" class="activo">Contacto</a></li>
                 </ul>
-                <form class="search-form" action="#">
+                <form class="formulario-busqueda" action="#">
                     <input type="text" placeholder="Buscar...">
-                    <button type="submit" class="search-button">
-                        <img class="imagenboton" src="../img/iconos/buscar.png" alt="Buscar">
+                    <button type="submit" class="boton-busqueda">
+                        <img class="imagen-boton" src="../img/iconos/buscar.png" alt="Buscar">
                     </button>
                 </form>
+                <!-- Botón menú hamburguesa -->
+                <div class="hamburguesa" onclick="alternarMenu()">
+                    &#9776;
+                </div>
             </div>
         </nav>
     </header>
-    <main>
-        <table class="contenedor">
-            <tr>
-                <td width="50%">
-                    <iframe class="mapa"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.637498895471!2d-80.65618082424656!3d-5.161883952145528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1b88948eae13%3A0x1d2875411b61bb19!2sGrupo%20Jimdur%20%26%20Motorepuestos%20Jimenez!5e0!3m2!1ses!2spe!4v1724898537136!5m2!1ses!2spe"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </td>
-                <td width="50%">
-                    <table class="formulario-contacto">
-                        <tr>
-                            <td>
-                                <h2>Contáctenos</h2>
-                                <form>
-                                    <input type="text" placeholder="Nombre" required>
-                                    <input type="email" placeholder="Correo electrónico" required>
-                                    <input type="tel" placeholder="Teléfono" required>
-                                    <input type="text" placeholder="DNI o RUC">
-                                    <input type="text" placeholder="Placa vehicular o VIN">
-                                    <input type="text" placeholder="Asunto" required>
-                                    <textarea placeholder="Mensaje" rows="5" required></textarea>
-                                    <button type="submit" class="boton-enviar">Enviar mensaje</button>
-                                </form>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
 
-        <table class="contenedor info-empresa" width="100%" cellspacing="15" cellpadding="20">
-            <tr>
-                <td class="tarjeta info-jimdur">
-                    <h2>¿QUIENES SOMOS?</h2>
-                    <p><span style="font-weight: bold;">JIMDUR</span> Repuestos es una empresa en crecimiento ubicada en Piura, dedicada a la venta de repuestos automotrices de alta calidad. Nos especializamos en ofrecer una amplia gama de piezas y accesorios para mantener vehículos en excelente estado de funcionamiento. Nuestra misión es proporcionar a nuestros clientes productos confiables y un servicio excepcional, asegurando que cada vehículo reciba la atención que merece.</p>
-                </td>
-                <td class="tarjeta info-contactos">
-                    <h3>Información de Contacto</h3>
-                    <p>📍 Dirección: Grupo Jimdur & Motorepuestos Jimenez, Av las Amapolas, Piura 20009</p>
-                    <p>📞 Teléfono: (+51) 968108775</p>
-                    <p>✉️ Email: info@jimdur.com</p>
-                </td>
-                <td class="tarjeta horario-tarjeta">
-                    <h3>Horario de Atención</h3>
-                    <p>🕒 Lunes a Viernes: 9:00 AM - 6:00 PM</p>
-                    <p>🕒 Sábados: 9:00 AM - 1:00 PM</p>
-                </td>
-                <td class="tarjeta preguntas-tarjeta">
-                    <h3>Preguntas Frecuentes</h3>
-                    <details>
-                        <summary>¿Realizan envíos a domicilio?</summary>
-                        <p>Sí, realizamos envíos a todo el país.</p>
-                    </details>
-                    <details>
-                        <summary>¿Ofrecen garantía en sus productos?</summary>
-                        <p>Todos nuestros productos cuentan con garantía de fábrica.</p>
-                    </details>
-                    <details>
-                        <summary>¿Cuál es el tiempo estimado de entrega?</summary>
-                        <p>El tiempo estimado de entrega varía según la ubicación, pero generalmente es de 3 a 5 días
-                            hábiles.</p>
-                    </details>
-                    <details>
-                        <summary>¿Cómo puedo realizar una devolución o cambio de producto?</summary>
-                        <p>Para realizar una devolución o cambio, por favor contáctenos dentro de los 15 días
-                            posteriores a la recepción del producto. Debe estar en su estado original y en su embalaje
-                            original.</p>
-                    </details>
-                    <details>
-                        <summary>¿Aceptan métodos de pago en línea?</summary>
-                        <p>Sí, aceptamos pagos en línea a través de tarjetas de crédito, débito y PayPal.</p>
-                    </details>
-                </td>
-            </tr>
-        </table>
-
-        <table class="proveedores" width="100%" cellspacing="20" cellpadding="20">
-            <tr>
-                <td colspan="3" style="text-align:center;">
-                    <h2>Nuestros Proveedores</h2>
-                    <p>Trabajamos con proveedores líderes en la industria para asegurarte repuestos y accesorios de la
-                        más alta</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="tarjeta-marca">
-                    <img src="../img/marcas/yamaha.png" alt="Yamaha">
-                </td>
-                <td class="tarjeta-marca">
-                    <img src="../img/marcas/Honda.png" alt="Honda Racing">
-                </td>
-                <td class="tarjeta-marca">
-                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki">
-                </td>
-            </tr>
-            <tr>
-                <td class="tarjeta-marca">
-                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj">
-                </td>
-                <td class="tarjeta-marca">
-                    <img src="../img/marcas/Hero.png" alt="Hero">
-                </td>
-                <td class="tarjeta-marca">
-                    <img src="../img/marcas/ktm.png" alt="Ktm">
-                </td>
-            </tr>
-        </table>
-        <style>
-            .contenedor-logos {
-                width: 100%;
-                margin: 0;
-                padding: 0;
-
-            }
-
-            .proveedores {
-                background-color: #ffffff;
-                margin-top: 0;
-                padding: 0;
-                height: 500px;
-                border-radius: 20px;
-            }
-
-            .proveedores h2 {
-                font-size: 2em;
-                margin-top: 0;
-                margin-bottom: 10px;
-                text-transform: uppercase;
-                font-weight: bold;
-            }
-
-            .proveedores p {
-                font-size: 1em;
-                margin-bottom: 0px;
-                padding-bottom: 0px;
-            }
-
-            .tarjeta-marca {
-                width: 33%;
-                height: 150px;
-                background-color: #f0f0f0;
-                border-radius: 10px;
-                text-align: center;
-            }
-
-            .tarjeta-marca img {
-                max-width: 80%;
-                max-height: 80%;
-            }
-
-            .logos-proveedores img {
-                width: 300px;
-                height: 200px;
-                margin: 0 10px;
-            }
-        </style>
-        <footer>
-            <div class="contenido-footer">
-                <div class="seccion-footer logo-footer">
-                    <img width="50px" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="JIMDUR Repuestos">
-                    <p class="descripcion-footer">Nos dedicamos a ofrecerte una selección de repuestos y accesorios de
-                        la
-                        más alta calidad para que disfrutes de un rendimiento superior en cada trayecto. Confiamos en
-                        nuestras marcas y en nuestra experiencia para brindarte el mejor servicio y la satisfacción que
-                        mereces. Tu moto está en buenas manos con nosotros.</p>
-                    <p>&copy; Jimdur 2024</p>
-                </div>
-                <div class="linea-divisora"></div>
-                <div class="seccion-footer enlaces-footer">
-                    <h3>ENLACES</h3>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="#">Términos & Condiciones</a></li>
-                        <li><a href="#">Políticas de Privacidad</a></li>
-                    </ul>
-                </div>
-                <div class="linea-divisora"></div>
-                <div class="seccion-footer contactos-footer">
-                    <h3>CONTACTOS</h3>
-                    <ul>
-                        <li><img class="iconos-footer" src="../img/iconos/telefono.png" alt=""><a
-                                href="tel:123456789">123 456 789</a></li>
-                        <li><img class="iconos-footer" src="../img/iconos/telefono.png" alt=""><a
-                                href="tel:987654321">987 654 321</a></li>
-                        <li><img class="iconos-footer" src="../img/iconos/correo.png" alt=""><a
-                                href="mailto:jimdur@gmail.com">jimdur@gmail.com</a></li>
-                    </ul>
-                    <h3>SÍGUENOS</h3>
-                    <div class="logos-redes">
-                        <a href="#" target="_blank">Facebook</a>
-                        <a href="#" target="_blank">Instagram</a>
-                        <a href="#" target="_blank">TikTok</a>
-                    </div>
-                </div>
+    <main class="contenido">
+        <div class="contenedor-contactanos">
+            <h2 class="titulo-contactanos">CONTACTANOS</h2>
+            <p class="subtitulo-contactanos">Tu consulta es importante para nosotros</p>
+        </div>
+        <div class="contenedor-iconos-contacto">
+            <div class="icono-contacto">
+                <img src="../img/iconos/telefono.svg" alt="Teléfono">
+                <p>(+51) 968108775</p>
             </div>
-            <style>
-                footer {
-                    background-color: #000000e7;
-                    color: #fff;
-                    padding: 20px 5%;
-                    font-family: sans-serif, Arial, Helvetica, sans-serif;
-                }
+            <div class="lineadivisora"></div>
+            <div class="icono-contacto">
+                <img src="../img/iconos/calidad.svg" alt="Ubicación">
+                <p>Av. José Aguilar Santisteban, Mza. H Lote. 6, Piura - Perú</p>
+            </div>
+            <div class="lineadivisora"></div>
+            <div class="icono-contacto">
+                <img src="../img/iconos/correo.svg" alt="Email">
+                <p>info@jimdurr.com</p>
+            </div>
+        </div>
+        <div class="contenedor-formulario">
+            <div class="bloquedivisor"></div>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.6374988954863!2d-80.65618082542369!3d-5.161883952143082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1b88948eae13%3A0x1d2875411b61bb19!2sGrupo%20Jimdur%20%26%20Motorepuestos%20Jimenez!5e0!3m2!1ses!2spe!4v1727417799630!5m2!1ses!2spe"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="bloquedivisor"></div>
+            .contan
+            <div class="formulario">
+                <h2 class="titulo-formulario">Contáctanos</h2>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <input type="text" placeholder="Teléfono" required>
+                <input type="text" placeholder="DNI o RUC">
+                <input type="text" placeholder="Placa vehicular o VIN">
+                <input type="text" placeholder="Asunto" required>
+                <textarea name="mensaje" rows="8" id="" placeholder="Mensaje">
+                </textarea>  
+                <button type="submit" class="boton-enviar">Enviar mensaje</button>
+            </div>
+        </div>
+    </main>
+    
 
-                .contenido-footer {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                }
+    <footer class="pie-pagina">
+        <p>Este es el pie de página.</p>
+    </footer>
 
-                .seccion-footer {
-                    flex: 1;
-                    padding: 0 20px;
-                }
-
-                .logo-footer img {
-                    margin-bottom: 10px;
-                }
-
-                .descripcion-footer {
-                    margin-bottom: 10px;
-                    text-align: justify;
-                }
-
-                .linea-divisora {
-                    height: 260px;
-                    width: 2px;
-                    background-color: #fff;
-                    margin-left: 10%;
-                }
-
-                .enlaces-footer h3,
-                .contactos-footer h3 {
-                    color: #ff0000;
-                    text-transform: uppercase;
-                    padding-left: 70px;
-                    padding-top: 0;
-                    margin-top: 0;
-                }
-
-                .enlaces-footer ul,
-                .contactos-footer ul {
-                    list-style-type: none;
-                    padding: 70px;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                }
-
-                .enlaces-footer ul li,
-                .contactos-footer ul li {
-                    margin-bottom: 5px;
-                }
-
-                .enlaces-footer a,
-                .contactos-footer a {
-                    color: #fff;
-                    text-decoration: none;
-                    cursor: pointer;
-                }
-
-                .enlaces-footer a:hover,
-                .contactos-footer a:hover {
-                    color: #fff;
-                    text-decoration: none;
-                }
-
-                .logos-redes {
-                    padding-left: 70px;
-                }
-
-                .iconos-footer {
-                    width: 25px;
-                }
-            </style>
-        </footer>
+    <script>
+        function alternarMenu() {
+            const enlacesNavegacion = document.querySelector('.enlaces-navegacion');
+            enlacesNavegacion.classList.toggle('nav-activo');
+        }
+    </script>
 </body>
 
 </html>
