@@ -38,47 +38,56 @@
     </header>
 
     <main class="contenido">
-        <div class="contenedor-contactanos">
-            <h2 class="titulo-contactanos">CONTACTANOS</h2>
-            <p class="subtitulo-contactanos">Tu consulta es importante para nosotros</p>
-        </div>
-        <div class="contenedor-iconos-contacto">
-            <div class="icono-contacto">
-                <img src="../img/iconos/telefono.svg" alt="Teléfono">
-                <p>(+51) 968108775</p>
-            </div>
-            <div class="lineadivisora"></div>
-            <div class="icono-contacto">
-                <img src="../img/iconos/calidad.svg" alt="Ubicación">
-                <p>Av. José Aguilar Santisteban, Mza. H Lote. 6, Piura - Perú</p>
-            </div>
-            <div class="lineadivisora"></div>
-            <div class="icono-contacto">
-                <img src="../img/iconos/correo.svg" alt="Email">
-                <p>info@jimdurr.com</p>
-            </div>
-        </div>
-        <div class="contenedor-formulario">
-            <div class="bloquedivisor"></div>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.6374988954863!2d-80.65618082542369!3d-5.161883952143082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1b88948eae13%3A0x1d2875411b61bb19!2sGrupo%20Jimdur%20%26%20Motorepuestos%20Jimenez!5e0!3m2!1ses!2spe!4v1727417799630!5m2!1ses!2spe"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <div class="bloquedivisor"></div>
-            .contan
-            <div class="formulario">
-                <h2 class="titulo-formulario">Contáctanos</h2>
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo Electrónico" required>
-                <input type="text" placeholder="Teléfono" required>
-                <input type="text" placeholder="DNI o RUC">
-                <input type="text" placeholder="Placa vehicular o VIN">
-                <input type="text" placeholder="Asunto" required>
-                <textarea name="mensaje" rows="8" id="" placeholder="Mensaje">
-                </textarea>  
-                <button type="submit" class="boton-enviar">Enviar mensaje</button>
-            </div>
+        <div class="contenedor-principal">
+            <section class="seccion-imagen">
+                <div class="contenedor-imagen">
+                    <h2 class="titulo-contactanos">CONTACTANOS</h2>
+                    <p class="subtitulo-contactanos">Tu consulta es importante para nosotros</p>
+                </div>
+                <div class="contenedor-iconos-contacto">
+                    <div class="icono-contacto">
+                        <img src="../img/iconos/telefono.svg" alt="Teléfono">
+                        <p>(+51) 968108775</p>
+                    </div>
+                    <div class="lineadivisora"></div>
+                    <div class="icono-contacto">
+                        <img src="../img/iconos/Ubicación.svg" alt="Ubicación">
+                        <p>Av. José Aguilar Santisteban, Mza. H Lote. 6, Piura - Perú</p>
+                    </div>
+                    <div class="lineadivisora"></div>
+                    <div class="icono-contacto">
+                        <img src="../img/iconos/correo.svg" alt="Email">
+                        <p>info@jimdurr.com</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccion-mapa">
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.6374988954863!2d-80.65618082542369!3d-5.161883952143082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1b88948eae13%3A0x1d2875411b61bb19!2sGrupo%20Jimdur%20%26%20Motorepuestos%20Jimenez!5e0!3m2!1ses!2spe!4v1727417799630!5m2!1ses!2spe"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <section class="seccion-formulario">
+                <form class="formulario">
+                    <h2 class="titulo-formulario">Envíanos un mensaje</h2>
+                    <div class="grupo-input">
+                        <input type="text" id="nombre" placeholder="Nombre" required>
+                        <input type="email" id="email" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="grupo-input">
+                        <input type="tel" id="telefono" placeholder="Teléfono" required>
+                        <input type="text" id="identificacion" placeholder="DNI o RUC">
+                    </div>
+                    <input type="text" id="placa" placeholder="Placa vehicular o VIN">
+                    <input type="text" id="asunto" placeholder="Asunto" required>
+                    <textarea id="mensaje" rows="6" placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="boton-enviar">Enviar mensaje</button>
+                </form>
+            </section>
         </div>
     </main>
-    
+
 
     <footer class="pie-pagina">
         <p>Este es el pie de página.</p>

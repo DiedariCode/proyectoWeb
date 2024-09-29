@@ -44,7 +44,7 @@ html {
 }
 
 .enlaces-navegacion a.activo {
-    background-color: red;
+    background-color:#cf2e2e;
     color: white;
     height: 70px;
     width: 100px;
@@ -67,9 +67,9 @@ html {
 
 .boton-busqueda {
     padding: 5px 10px;
-    border: 1px solid red;
+    border: 1px solid #cf2e2e;
     border-radius: 0 5px 5px 0;
-    background-color: red;
+    background-color: #cf2e2e;
     color: white;
     cursor: pointer;
 }
@@ -95,9 +95,14 @@ html {
 
 /* Estilos para contenido principal */
 
-/* Contenedor de la sección "Contactanos" */
-.contenedor-contactanos {
-    background: url('../img/asesoria.jpg') no-repeat center center;
+/* Contenedor de la sección "Principal- La de la imagen" */
+.contenido {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.contenedor-imagen {
+    background: url('../img/contactobg.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
     padding: 20px;
@@ -124,8 +129,8 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
-    padding: 20px;
+    background-color: #fff;
+    padding: 0;
     height: 23vh;
 }
 
@@ -135,7 +140,7 @@ html {
 }
 
 .icono-contacto img {
-    width: 50px;
+    width: 100px;
     margin-bottom: 10px;
 }
 
@@ -144,68 +149,80 @@ html {
     margin: 0;
 }
 
-.lineadivisora{
+.lineadivisora {
     padding: 0;
     margin: 0;
     width: 2px;
     height: 18vh;
-    background-color: rgb(155, 155, 155);
-}
-
-.bloquedivisor{
-    height: 20px;
-    width: 100%px;
-    background-color: #a00;
-    padding: 2px;
-    margin: 0;
+    background-color: #cf2e2e;
+    box-shadow: 0 0 100px rgb(183, 73, 73);
 }
 
 /* Contenedor FORMULARIO */
-.contenedor-formulario {
-    align-items: center;
+
+.contenedor-principal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+/* Le quito todos los atributos del contenedor principal*/
+.seccion-imagen {
+    flex: 0 0 auto;
+    width: 100%;
+    gap: 0;
+    box-shadow: 0 0 6px rgb(14, 14, 14);
+}
+
+.seccion-mapa,
+.seccion-formulario {
+    flex: 1 1 300px;
 }
 
 .mapa {
     width: 100%;
-    height: 400px;
-    padding: 0;
-    padding-bottom: 0;
+    height: 570px;
+    border: none;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .formulario {
-    background-color: crimson;
-    width: 50%;
-    height: 550px;
-    padding: 0px 20px;
-    color: aliceblue;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grupo-input {
+    display: flex;
+    gap: 10px;
 }
 
 .formulario input,
 .formulario textarea {
-    width: 98%;
-    padding: 8px;
-    margin-bottom: 10px;
-    background-color: crimson;
-    color: white;
-    border: 2px solid white;
-    outline: none; /* Quita el contorno predeterminado */
-}
-
-/* Estilo para el placeholder dentro del formulario */
-.formulario input::placeholder,
-.formulario textarea::placeholder {
-    color: white;
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 .boton-enviar {
-    width: 30%;
-    padding: 10px;
-    background: red;
-    color: #fff;
+    background-color: #a00;
+    color: white;
     border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+.boton-enviar:hover {
+    background-color: #800;
+}
+
 
 /* Ocultar menú en dispositivos móviles y mostrar menú hamburguesa */
 @media (max-width: 768px) {
