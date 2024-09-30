@@ -300,83 +300,91 @@ html {
 
 /* FOOTER CSS */
 
-.pie-pagina {
-    background-color: #000000e7;
-    color: #fff;
-    padding: 20px 5%;
-    font-family: sans-serif, Arial, Helvetica, sans-serif;
+footer {
+    background-color: #1d1d1d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    height: 25vh;
 }
 
-.contenido-footer {
+.iconos-redes {
+    margin: 30px 0;
+}
+
+.iconos-redes a {
+    background-color: white;
+    border-radius: 50% 50%;
+    margin: 0 3px;
+    padding: 15px;
+    color: #1d1d1d;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.iconos-redes a:hover {
+    color: #ccc;
+}
+
+.lineadivisora-footer {
+    display: flex;
+    margin: 8vh auto;
+    margin-bottom: 5vh;
+    height: 1px;
+    width: 80%;
+    background-color: white;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.contenedor-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 70px;
     display: flex;
     align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-size: 10px;
 }
 
-.seccion-footer {
-    flex: 1 1 300px;
-    padding: 0 20px;
+.contenedor-whatsapp .text {
+    margin-right: 10px;
+    text-align: left;
+    color: #444;
 }
 
-.logo-footer img {
-    width: 140px;
-    margin-top: 10px;
+.contenedor-whatsapp .text span {
+    display: block;
 }
 
-.descripcion-footer {
-    margin-bottom: 10px;
-    text-align: justify;
-    line-height: 1.5;
+.contenedor-whatsapp .text .status {
+    font-weight: bold;
+    color: #1d1d1d;
+    font-size: 10px;
+    margin: 3px;
+
 }
 
-.linea-divisora {
-    height: 260px;
-    width: 2px;
-    background-color: #fff;
-    margin-left: 10%;
+.boton-wsp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50% 50%;
+    padding: 10px;
+    font-size: 30px;
 }
 
-.enlaces-footer h3,
-.contactos-footer h3 {
-    color: #c60033;
-    text-transform: uppercase;
-    padding-left: 70px;
-    padding-top: 0;
-    margin-top: 0;
-}
-
-.enlaces-footer ul,
-.contactos-footer ul {
-    list-style-type: none;
-    padding: 70px;
-    padding-top: 0;
-    padding-bottom: 0;
-    line-height: 2;
-}
-
-.enlaces-footer ul li,
-.contactos-footer ul li {
-    margin-bottom: 5px;
-}
-
-.enlaces-footer a,
-.contactos-footer a {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.enlaces-footer a:hover,
-.contactos-footer a:hover {
-    color: #fff;
-    text-decoration: none;
-}
-
-.logos-redes {
-    padding-left: 70px;
-}
-
-.iconos-footer {
-    width: 25px;
+.boton-wsp:hover {
+    background-color: #20b858;
 }
 
 @media (max-width: 480px) {
@@ -433,6 +441,9 @@ html {
         display: block;
     }
 
+    /* Estilos del Contenedor principal PARA CELULARES */
+
+
     /* Estilos del FORM PARA CELULARES */
 
     .contenedor-formulario {
@@ -475,10 +486,13 @@ html {
         color: white;
     }
 
+    /* Estilo para prooveedores dentro del formulario */
+
     .tarjeta-proveedor {
-        flex: 1 1 calc(50% - 20px);
-        /* 2 tarjetas por fila en pantallas más pequeñas */
-        max-width: calc(50% - 20px);
+        flex: 1 1 200px;
+        max-width: 50%;
+        padding: 20px;
+        margin: 0;
     }
 
     .tarjeta-proveedor img {
