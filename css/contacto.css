@@ -44,7 +44,7 @@ html {
 }
 
 .enlaces-navegacion a.activo {
-    background-color:#cf2e2e;
+    background-color: #cf2e2e;
     color: white;
     height: 70px;
     width: 100px;
@@ -101,6 +101,20 @@ html {
     padding: 0;
 }
 
+.contenedor-principal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.seccion-imagen {
+    /* Le quito todos los atributos del contenedor principal*/
+    flex: 0 0 auto;
+    width: 100%;
+    gap: 0;
+    box-shadow: 0 0 6px rgb(14, 14, 14);
+}
+
 .contenedor-imagen {
     background: url('../img/contactobg.jpg') no-repeat center center;
     background-size: cover;
@@ -154,27 +168,14 @@ html {
     margin: 0;
     width: 2px;
     height: 18vh;
-    background-color: #cf2e2e;
+    background-color: #626262;
     box-shadow: 0 0 100px rgb(183, 73, 73);
 }
 
 /* Contenedor FORMULARIO */
-
-.contenedor-principal {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-/* Le quito todos los atributos del contenedor principal*/
-.seccion-imagen {
-    flex: 0 0 auto;
-    width: 100%;
-    gap: 0;
-    box-shadow: 0 0 6px rgb(14, 14, 14);
-}
-
 .seccion-mapa,
-.seccion-formulario {
+.seccion-formulario,
+.seccion-proovedores {
     flex: 1 1 300px;
 }
 
@@ -223,6 +224,164 @@ html {
     background-color: #800;
 }
 
+/* SECTION FORMULARIO */
+.bloque-divisor {
+    width: 50%;
+    height: 80px;
+    margin: 20px 0px;
+    background-color: #c60033;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+.contenedor-secundario {
+    padding: 100px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.seccion-proveedores {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contenedor-proveedores h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.contenedor-proveedores p {
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.Nuestros {
+    color: black;
+}
+
+.Proveedores {
+    color: #ff0000;
+}
+
+.flex-proveedores {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en varias filas */
+    justify-content: center;
+    /* Centra las tarjetas horizontalmente */
+    gap: 30px;
+    /* Espacio entre las tarjetas */
+}
+
+.tarjeta-proveedor {
+    flex: 1 1 33.3%;
+    /* Es para ver cuanto ocupa cada tarjeta, osea 100%/3 = 33.3*/
+    max-width: 30%;
+    /* Máximo ancho de cada tarjeta */
+    border: 1px solid #ddd;
+    padding: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s linear;
+    box-sizing: border-box;
+}
+
+.tarjeta-proveedor img {
+    max-width: 90%;
+    height: auto;
+}
+
+.tarjeta-proveedor:hover {
+    transform: scale(1.05);
+    /* Efecto hover */
+}
+
+/* FOOTER CSS */
+
+.pie-pagina {
+    background-color: #000000e7;
+    color: #fff;
+    padding: 20px 5%;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.contenido-footer {
+    display: flex;
+    align-items: center;
+}
+
+.seccion-footer {
+    flex: 1 1 300px;
+    padding: 0 20px;
+}
+
+.logo-footer img {
+    width: 140px;
+    margin-top: 10px;
+}
+
+.descripcion-footer {
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.linea-divisora {
+    height: 260px;
+    width: 2px;
+    background-color: #fff;
+    margin-left: 10%;
+}
+
+.enlaces-footer h3,
+.contactos-footer h3 {
+    color: #c60033;
+    text-transform: uppercase;
+    padding-left: 70px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.enlaces-footer ul,
+.contactos-footer ul {
+    list-style-type: none;
+    padding: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 2;
+}
+
+.enlaces-footer ul li,
+.contactos-footer ul li {
+    margin-bottom: 5px;
+}
+
+.enlaces-footer a,
+.contactos-footer a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.enlaces-footer a:hover,
+.contactos-footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logos-redes {
+    padding-left: 70px;
+}
+
+.iconos-footer {
+    width: 25px;
+}
+
+@media (max-width: 480px) {
+    .tarjeta-proveedor {
+        flex: 1 1 100%;
+        /* 1 tarjeta por fila en pantallas muy pequeñas */
+        max-width: 100%;
+    }
+}
 
 /* Ocultar menú en dispositivos móviles y mostrar menú hamburguesa */
 @media (max-width: 768px) {
@@ -310,7 +469,17 @@ html {
     .formulario input::placeholder,
     .formulario textarea::placeholder {
         color: white;
-        /* Color blanco para el placeholder */
+    }
+
+    .tarjeta-proveedor {
+        flex: 1 1 calc(50% - 20px);
+        /* 2 tarjetas por fila en pantallas más pequeñas */
+        max-width: calc(50% - 20px);
+    }
+
+    .tarjeta-proveedor img {
+        width: 60%;
+        height: auto;
     }
 }
 
