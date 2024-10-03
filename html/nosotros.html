@@ -8,9 +8,9 @@
     <title>Nosotros - JIMDUR Repuestos</title>
     <style>
         .imagen-nosotros {
-            background-image: url('../img/instlacion.jpg');
+            background-image: url('../img/motocicleta.jpg');
             background-size: cover;
-            height: 90vh;
+            height: 110vh;
             color: white;
         }
 
@@ -22,10 +22,20 @@
         }
 
         .contenedor {
-            width: 98%;
-            height: 100%;
+            width: 100%;
+            height: auto;
             margin: auto;
             overflow: hidden;
+            flex-wrap: wrap;
+        }
+
+        .imagen {
+            background-image: url('../img/retrato-elegante.jpg');
+            width: 100%;
+            height: 400px;
+            margin: 20px 150px 20px 0;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         .info-empresa {
@@ -42,9 +52,135 @@
             background-size: 0%;
             text-align: center;
             border-radius: 0 50px 0 50px;
-            width: 500px;
+            max-width: 500px;
             height: 50px;
         }
+
+        .titulo-caratula {
+            font-family: sans-serif;
+            color: white;
+            font-size: 40px;
+            font-weight: 300px;
+            padding-top: 300px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .titulo--parrafo {
+            padding-top: 40px;
+            font-size: 30px;
+        }
+
+        .caja {
+            font-family: sans-serif;
+            font-size: 40px;
+            font-weight: 200px;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        strong {
+            color: red;
+        }
+
+        .caja--contenido {
+            padding-top: 20px;
+            font-size: 30px;
+        }
+
+        .caja_contenedora {
+            display: flex;
+            text-align: center;
+
+        }
+
+        .caja_contenedora--new{
+            background: black;
+            color: white;
+            margin-top: 85px;
+            overflow: hidden;
+        }
+
+        .caja_contenido2 {
+            font-family: sans-serif;
+            text-align: justify;
+            font-size: 20px;
+            width: 65%;
+            margin: 88px 0 45px 150px;
+        }
+
+        .caja_contenido2--new{
+            text-align: center;
+            font-size: 20px;
+            margin-top: 0;
+            margin: 30px 100px;
+        }
+
+        .caja_autor {
+            text-align: right;
+            padding-left: 150px;
+            width: 65%;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+
+        .caja_autor--new, .estilo{
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 0;
+            font-size: 35px;
+        }
+
+        .caja_imagen_mision{
+            background-image: url(../img/mision.jpg);
+            width: 300%;
+            height: 620px;
+            padding: 0;
+            border: 0;
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        .caja_imagen_vision{
+            background-image: url(../img/vision.jpg);
+        }
+
+        .proveedores {
+            background-color: #ffffff;
+            margin-top: 0;
+            padding: 0;
+            height: 500px;
+            border-radius: 20px;
+        }
+
+        .proveedores h2 {
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .proveedores p {
+            font-size: 1em;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .tarjeta-marca {
+            width: 33%;
+            height: 150px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .tarjeta-marca img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+
     </style>
 </head>
 
@@ -73,55 +209,268 @@
         </nav>
     </header>
     <main>
-        <table class="imagen-nosotros" border="0" width="100%" height="500vh">
+        <div class="imagen-nosotros">
+            <h1 class="titulo-caratula">SOBRE NOSOTROS</h1>
+            <p class="titulo-caratula titulo--parrafo">Pasión por las motos, compromiso con calidad</p>
+        </div>
+        <div class="contenedor">
+            <p class="caja"> NUESTRA <strong>HISTORIA</strong></p>
+            <p class="caja caja--contenido">"En jimdur E.I.R.L. cada repuesto cuenta una historia y cada cliente es
+                parte de la nuestra."</p>
+            <div class="caja_contenedora">
+                <div>
+                    <p class="caja_contenido2">Fundada en la ciudad de Piura, Jimdur E.I.R.L. nace con el compromiso de
+                        ofrecer productos calidad para los amantes de las motocicletas. Desde nuestros inicios,
+                        hemos centrado nuestros esfuerzos en satisfacer las necesidades de nuestros clientes, brindando
+                        una amplia gama de repuestos, piezas y accesorios para todas las marcas y modelos del mercado.
+                        A lo largo de los años, nos hemos consolidado como una empresa líder en el sector, destacándonos
+                        por nuestra pasión por el servicio al cliente.</p>
+                    <p class="caja_autor"><strong style="color: black;">Luis Jimenez</strong> <br>Gerente General</p>
+                </div>
+                <div class="imagen"></div>
+            </div>
+            <div class="caja_contenedora caja_contenedora--new">
+                <div>
+                    <p class="caja_autor caja_autor--new" style="padding-left: 100px;">NUESTRA <strong style="font-weight: 40;">MISIÓN</strong></p>
+                    <p class="caja_contenido2 caja_contenido2--new" >Guiados por la pasión y el compromiso, trabajamos cada día para ser la primera opción de nuestros clientes</p>
+                    <p class="caja_contenido2" style="margin: 40px 0 0 100px;">"Nuestra misión es proporcionar a nuestros clientes productos de las mejores marcas, 
+                        reconocidas por su calidad y durabilidad, asegurando que encuentren exactamente lo que necesitan para sus motocicletas.
+                        Nos esforzamos por brindar un servicio excepcional, personalizado y cercano, que haga que cada visita a nuestra tienda
+                        sea una experiencia satisfactoria, basada en la confianza y la excelencia."</p>
+                </div>
+                <div class="caja_imagen_mision"></div>
+            </div>
+            <div class="caja_contenedora caja_contenedora--new" style="margin-top: 0;">
+                <div class="caja_imagen_mision caja_imagen_vision" style="width: 262%;"></div>
+                <div>
+                    <p class="estilo caja_autor--new" style="padding-left: 20px;">NUESTRA <strong style="font-weight: 40;">VISIÓN</strong></p>
+                    <p class="caja_contenido2 caja_contenido2--new" style="margin-left: 125px;">Guiados por la pasión y el compromiso, trabajamos cada día para ser la primera opción de nuestros clientes</p>
+                    <p class="caja_contenido2" style="margin: 40px 130px;">"Nuestra misión es proporcionar a nuestros clientes productos de las mejores marcas, 
+                        reconocidas por su calidad y durabilidad, asegurando que encuentren exactamente lo que necesitan para sus motocicletas.
+                        Nos esforzamos por brindar un servicio excepcional, personalizado y cercano, que haga que cada visita a nuestra tienda
+                        sea una experiencia satisfactoria, basada en la confianza y la excelencia."</p>
+                </div>
+            </div>
+        </div>
+        <table class="proveedores" width="100%" cellspacing="20" cellpadding="20">
             <tr>
-                <td>
-
+                <td colspan="3" style="text-align:center;">
+                    <h2>Nuestros Proveedores</h2>
+                    <p>Trabajamos con proveedores líderes en la industria para asegurarte repuestos y accesorios de la
+                        más alta</p>
                 </td>
             </tr>
-        </table>
-        <table class="info-empresa">
             <tr>
-                <td>
-                    <img src="../img/respuestos.jpg" alt="repuestos" border="0" width="60%" height="300vh" align="left">
+                <td class="tarjeta-marca">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha">
                 </td>
-                <td class="info-mision" cellspacing="15" cellpadding="50">
-                    <h1>
-                        NUESTRA MISION
-                    </h1>
-                    <P>
-                        Nuestra misión es ofrecerles a nuestros clientes la más amplia selección de repuestos
-                        automotrices
-                        originales a los mejores precios posibles y con el mejor servicio en términos de capacidad,
-                        profesionalismo y asistencia.
-                    </p>
+                <td class="tarjeta-marca">
+                    <img src="../img/marcas/Honda.png" alt="Honda Racing">
                 </td>
-
+                <td class="tarjeta-marca">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki">
+                </td>
             </tr>
-        </table>
-        <table class="info-empresa">
             <tr>
-                <td>
-                    <img src="../img/envio.jpg" alt="repuestos" border="0" width="60%" height="300vh" align="left">
+                <td class="tarjeta-marca">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj">
                 </td>
-                <td class="info-mision" cellspacing="10px" cellpadding="50%">
-                <h1>
-                    NUESTRA VISIÓN
-                </h1>
-                <P>
-                    Ser una empresa lider en la comercializacion de respuestos para vehiculos, tener altos
-                    indices
-                    de calidad y servicios,
-                    estar a la vanguardia de la economia y el conocimiento tecnico para satisfacer las
-                    necesidades y
-                    expectativas de nuestros
-                    clientes y asi contribuir al desarrollo economico de nuestro pais y por ende el bienestar de
-                    nuestros colaboradores.
-                </p>
+                <td class="tarjeta-marca">
+                    <img src="../img/marcas/Hero.png" alt="Hero">
+                </td>
+                <td class="tarjeta-marca">
+                    <img src="../img/marcas/ktm.png" alt="Ktm">
                 </td>
             </tr>
         </table>
     </main>
-</body>
+    <footer>
+        <div class="contenido-footer">
+            <div class="seccion-footer logo-footer">
+                <img width="50px" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="JIMDUR Repuestos">
+                <p class="descripcion-footer">Nos dedicamos a ofrecerte una selección de repuestos y accesorios de
+                    la
+                    más alta calidad para que disfrutes de un rendimiento superior en cada trayecto. Confiamos en
+                    nuestras marcas y en nuestra experiencia para brindarte el mejor servicio y la satisfacción que
+                    mereces. Tu moto está en buenas manos con nosotros.</p>
+                <p>&copy; Jimdur 2024</p>
+            </div>
+            <div class="linea-divisora"></div>
+            <div class="seccion-footer enlaces-footer">
+                <h3>ENLACES</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="#">Términos & Condiciones</a></li>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="linea-divisora"></div>
+            <div class="seccion-footer contactos-footer">
+                <h3>CONTACTOS</h3>
+                <ul>
+                    <li><img class="iconos-footer" src="../img/iconos/telefono.png" alt=""><a
+                            href="tel:123456789">123 456 789</a></li>
+                    <li><img class="iconos-footer" src="../img/iconos/telefono.png" alt=""><a
+                            href="tel:987654321">987 654 321</a></li>
+                    <li><img class="iconos-footer" src="../img/iconos/correo.png" alt=""><a
+                            href="mailto:jimdur@gmail.com">jimdur@gmail.com</a></li>
+                </ul>
+                <h3>SÍGUENOS</h3>
+                <div class="logos-redes">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">TikTok</a>
+                </div>
+            </div>
+        </div>
+        <style>
 
+            footer {
+                background-color: #000000e7;
+                color: #fff;
+                padding: 20px 5%;
+                font-family: sans-serif, Arial, Helvetica, sans-serif;
+            }
+
+            .contenido-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .seccion-footer {
+                flex: 1;
+                padding: 0 20px;
+            }
+
+            .logo-footer img {
+                margin-bottom: 10px;
+            }
+
+            .descripcion-footer {
+                margin-bottom: 10px;
+                text-align: justify;
+            }
+
+            .linea-divisora {
+                height: 260px;
+                width: 2px;
+                background-color: #fff;
+                margin-left: 10%;
+            }
+
+            .enlaces-footer h3,
+            .contactos-footer h3 {
+                color: #ff0000;
+                text-transform: uppercase;
+                padding-left: 70px;
+                padding-top: 0;
+                margin-top: 0;
+            }
+
+            .enlaces-footer ul,
+            .contactos-footer ul {
+                list-style-type: none;
+                padding: 70px;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .enlaces-footer ul li,
+            .contactos-footer ul li {
+                margin-bottom: 5px;
+            }
+
+            .enlaces-footer a,
+            .contactos-footer a {
+                color: #fff;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .enlaces-footer a:hover,
+            .contactos-footer a:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .logos-redes {
+                padding-left: 70px;
+            }
+
+            .iconos-footer {
+                width: 25px;
+            }
+            /*media queries*/
+            @media (max-width: 768px) {
+            .imagen-nosotros{
+                width: 50rem;
+            }
+            .titulo-caratula {
+                text-wrap: wrap;
+                font-size: 30px; 
+            }
+
+            .titulo--parrafo {
+                font-size: 20px; 
+            }
+            .contenido-footer {
+                flex-direction: column; 
+                align-items: center;
+            }
+
+            .linea-divisora {
+                display: none; 
+            }
+
+            .seccion-footer {
+                padding: 20px 0; 
+            }
+
+            .logos-redes {
+                padding-left: 0;
+            }
+
+            .caja {
+                font-size: 1rem; 
+            }
+
+            .caja--contenido {
+                font-size: 1rem; 
+            }
+
+            .proveedores h2 {
+                font-size: 1.5em; 
+            }
+
+            .caja_contenedora {
+                flex-direction: column; 
+                align-items: center; 
+            }
+
+            .caja_contenido2 {
+                width: 28rem; 
+                margin: 0px 0; 
+            }
+
+            .caja_autor {
+                padding-left: 0; 
+                width: 165%; 
+                text-align: center; 
+            }
+
+            .imagen {
+                width: 50%;
+                margin: 10px 0;
+            }
+
+            .caja_contenedora--new {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+        </style>
+    </footer>
+</body>
 </html>
