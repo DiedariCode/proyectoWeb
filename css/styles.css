@@ -98,45 +98,83 @@ html {
 
 /* FOOTER CSS */
 
-footer {
-    background-color: #1d1d1d;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    height: 25vh;
+.pie-pagina {
+    background-color: #000000e7;
+    color: #fff;
+    padding: 20px 5%;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
 }
 
-.iconos-redes {
-    margin: 30px 0;
-}
-
-.iconos-redes a {
-    background-color: white;
-    border-radius: 50% 50%;
-    margin: 0 3px;
-    padding: 15px;
-    color: #1d1d1d;
-    text-decoration: none;
-    font-size: 20px;
-
-}
-
-.iconos-redes a:hover {
-    color: #ccc;
-}
-
-.lineadivisora-footer {
+.contenido-footer {
     display: flex;
-    margin: 8vh auto;
-    margin-bottom: 5vh;
-    height: 1px;
-    width: 80%;
-    background-color: white;
+    align-items: center;
 }
 
-.copyright {
-    margin-top: 15px;
-    font-size: 14px;
+.seccion-footer {
+    flex: 1 1 300px;
+    padding: 0 20px;
+}
+
+.logo-footer img {
+    width: 140px;
+    margin-top: 10px;
+}
+
+.descripcion-footer {
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.linea-divisora {
+    height: 260px;
+    width: 2px;
+    background-color: #fff;
+    margin-left: 10%;
+}
+
+.enlaces-footer h3,
+.contactos-footer h3 {
+    color: #c60033;
+    text-transform: uppercase;
+    padding-left: 70px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.enlaces-footer ul,
+.contactos-footer ul {
+    list-style-type: none;
+    padding: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 2;
+}
+
+.enlaces-footer ul li,
+.contactos-footer ul li {
+    margin-bottom: 5px;
+}
+
+.enlaces-footer a,
+.contactos-footer a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.enlaces-footer a:hover,
+.contactos-footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logos-redes {
+    padding-left: 70px;
+}
+
+.iconos-footer {
+    width: 25px;
 }
 
 .contenedor-whatsapp {
