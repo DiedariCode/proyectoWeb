@@ -1,244 +1,74 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - JIMDUR Repuestos</title>
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        /* Contenedor general xd */
-        .contenedor {
-            background: url('img/motobg.jpg') no-repeat center center;
-            background-size: cover;
-            color: white;
-        }
-
-        /* Celda para el contenido principal */
-        .celda-fondo {
-            text-align: center;
-            vertical-align: middle;
-            padding: 0;
-            height: 83.4vh;
-        }
-
-        .titulo-blanco {
-            font-size: 7vh;
-            color: white;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-        }
-
-        .texto-blanco {
-            font-size: 3vh;
-            color: white;
-            font-family: Arial, sans-serif;
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-
-        .boton-rojo {
-            background-color: red;
-            color: white;
-            padding: 20px 50px;
-            text-decoration: none;
-            font-size: 22px;
-            font-family: Arial, sans-serif;
-            border-radius: 50px;
-            font-weight: bold;
-        }
-
-        .contenedor-botonrojo {
-            margin-top: 80px;
-            margin-bottom: 100px;
-        }
-
-        /* Celda para los botones de navegación */
-        .celda-botones {
-            background-color: red;
-            height: 7vh;
-        }
-
-        /* Botones de navegación */
-        .boton-nav {
-            font-size: 18px;
-            color: white;
-            text-decoration: none;
-            padding: 15px;
-            font-family: Arial, sans-serif;
-        }
-
-        /* VENTAJAS CSS */
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="navbar">
+            <div class="barra-navegacion">
                 <div class="logo">
-                    <a href="index.html">
-                        <img class="logo_jimdur" src="img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="">
+                    <a href="../index.html">
+                        <img class="logo_jimdur" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="">
                     </a>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="html/productos.html">Productos</a></li>
-                    <li><a href="html/nosotros.html">Nosotros</a></li>
-                    <li><a href="html/contacto.html">Contacto</a></li>
+                <ul class="enlaces-navegacion">
+                    <li><a href="../index.html" class="activo">Inicio</a></li>
+                    <li><a href="../html/productos.html" >Productos</a></li>
+                    <li><a href="../html/nosotros.html">Nosotros</a></li>
+                    <li><a href="../html/contacto.html">Contacto</a></li>
                 </ul>
-                <form class="search-form" action="#">
+                <form class="formulario-busqueda" action="#">
                     <input type="text" placeholder="Buscar...">
-                    <button type="submit" class="search-button">
-                        <img class="imagenboton" src="img/iconos/buscar.png" alt="">
+                    <button type="submit" class="boton-busqueda">
+                        <img class="imagen-boton" src="../img/iconos/buscar.png" alt="Buscar">
                     </button>
                 </form>
+                <!-- Botón menú hamburguesa -->
+                <div class="hamburguesa" onclick="alternarMenu()">
+                    &#9776;
+                </div>
             </div>
         </nav>
     </header>
     <main>
-        <table class="contenedor" border="0" width="100%" height="100vh">
-            <tr>
-                <td class="celda-fondo">
-                    <!-- Contenido encima de la imagen -->
-                    <strong>
-                        <p class="titulo-blanco" align="center">REPUESTOS ORIGINALES Y DE CALIDAD</p>
-                    </strong>
-                    <p class="texto-blanco" align="center">
-                        Ofrecemos una amplia gama de repuestos originales diseñados para maximizar el rendimiento
-                        y la vida útil de tu moto para que disfrutes de la carretera con total confianza.
-                    </p>
-                    <div class="contenedor-botonrojo">
-                        <a href="html/productos.html" class="boton-rojo">VER PRODUCTOS</a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="celda-botones">
-                    <!-- Botones de navegación -->
-                    <table class="tabla-botones" border="0" width="100%" height="10%">
-                        <tr>
-                            <td align="center"><a href="#" class="boton-nav">VENTAJAS</a></td>
-                            <td align="center"><a href="#" class="boton-nav">SERVICIOS</a></td>
-                            <td align="center"><a href="#" class="boton-nav">RESEÑAS</a></td>
-                            <td align="center"><a href="#" class="boton-nav">PROVEEDORES</a></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <table class="tabla-principal">
-            <tr class="fila-titulo">
-                <td class="celda-titulo" colspan="4">NUESTRAS VENTAJAS</td>
-            </tr>
-            <tr>
-                <td class="celda-subtitulo" colspan="4">
-                    Encuentra todo lo que necesitas para tu moto, con la confianza
-                    de estar eligiendo lo mejor
-                </td>
-            </tr>
-            <tr class="fila-ventajas">
-                <td class="celda-ventaja">
-                    <table class="icono">
-                        <tr>
-                            <td><img src="" alt=""></td>
-                        </tr>
-                    </table>
-                    <p class="titulo-ventaja">CALIDAD</p>
-                    <p class="descripcion-ventaja">Repuestos originales que garantizan un rendimiento y durabilidad
-                        excepcionales.</p>
-                </td>
-                <td class="celda-ventaja">
-                    <table class="icono">
-                        <tr>
-                            <td><img src="" alt=""></td>
-                        </tr>
-                    </table>
-                    <p class="titulo-ventaja">EXPERIENCIA</p>
-                    <p class="descripcion-ventaja">Más de 5 años dedicados al motociclismo, con un equipo experto que
-                        conoce cada detalle.</p>
-                </td>
-                <td class="celda-ventaja">
-                    <table class="icono">
-                        <tr>
-                            <td><img src="" alt=""></td>
-                        </tr>
-                    </table>
-                    <p class="titulo-ventaja">SATISFACCIÓN</p>
-                    <p class="descripcion-ventaja">Nuestro compromiso es superar tus expectativas en cada compra.</p>
-                </td>
-                <td class="celda-ventaja">
-                    <table class="icono">
-                        <tr>
-                            <td><img src="" alt=""></td>
-                        </tr>
-                    </table>
-                    <p class="titulo-ventaja">SOPORTE</p>
-                    <p class="descripcion-ventaja">Asesoría personalizada y atención postventa para asegurarte la mejor
-                        experiencia.</p>
-                </td>
-            </tr>
-        </table>
-        <style>
-            .tabla-principal {
-                width: 100%;
-                max-width: 1000px;
-                margin: 0 auto;
-                border-collapse: collapse;
-            }
-
-            .fila-titulo {
-                color: #000000;
-            }
-
-            .celda-titulo {
-                text-align: center;
-                padding: 20px 0;
-                padding-top: 8vh;
-                font-size: 36px;
-                font-weight: bold;
-                
-            }
-
-            .celda-subtitulo {
-                text-align: center;
-                padding: 10px 20px;
-                font-size: 28px;
-            }
-
-            .fila-ventajas {
-                background-color: #ffffff;
-            }
-
-            .celda-ventaja {
-                width: 25%;
-                text-align: center;
-                padding: 20px;
-                vertical-align: top;
-            }
-
-            .icono {
-                width: 200px;
-                height: 200px;
-                background-color: #ff0000;
-                border-radius: 50%;
-                margin: 30px;
-                margin-top: 0;
-            }
-
-            .titulo-ventaja {
-                font-weight: bold;
-                margin: 10px 0;
-                font-size: 20px
-            }
-
-            .descripcion-ventaja {
-                font-size: 20px;
-            }
-        </style>
+        <h1>PAGINA DE INICIO :D</h1>
     </main>
-    <footer>
-    </footer>
 </body>
+<footer>
+    <div class="iconos-redes">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="lineadivisora-footer"></div>
+    <div class="copyright">
+        Copyright © JimdurRepuestos SAC 2024 | Desarrollado por grupoTallerWeb
+    </div>
+</footer>
+
+<div class="contenedor-whatsapp">
+    <div class="text">
+        <span>¿Necesitas ayuda?</span>
+        <span class="status">Estamos en línea</span>
+    </div>
+    <a href="https://wa.me/968108776" target="_blank" class="boton-wsp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+<script>
+    function alternarMenu() {
+        const enlacesNavegacion = document.querySelector('.enlaces-navegacion');
+        enlacesNavegacion.classList.toggle('nav-activo');
+    }
+</script>
 
 </html>

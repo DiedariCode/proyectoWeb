@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/producto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Document</title>
 </head>
+
 <body>
-    <H1>PAGINA DE PRODUCTOS</H1>
+    <header>
+        <nav>
+            <div class="barra-navegacion">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img class="logo_jimdur" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="">
+                    </a>
+                </div>
+                <ul class="enlaces-navegacion">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../html/productos.html" class="activo">Productos</a></li>
+                    <li><a href="../html/nosotros.html">Nosotros</a></li>
+                    <li><a href="../html/contacto.html">Contacto</a></li>
+                </ul>
+                <form class="formulario-busqueda" action="#">
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit" class="boton-busqueda">
+                        <img class="imagen-boton" src="../img/iconos/buscar.png" alt="Buscar">
+                    </button>
+                </form>
+                <!-- Botón menú hamburguesa -->
+                <div class="hamburguesa" onclick="alternarMenu()">
+                    &#9776;
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>PAGINA DE PRODUCTOS :V</h1>
+    </main>
 </body>
+<footer>
+    <div class="iconos-redes">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="lineadivisora-footer"></div>
+    <div class="copyright">
+        Copyright © JimdurRepuestos SAC 2024 | Desarrollado por grupoTallerWeb
+    </div>
+</footer>
+
+<div class="contenedor-whatsapp">
+    <div class="text">
+        <span>¿Necesitas ayuda?</span>
+        <span class="status">Estamos en línea</span>
+    </div>
+    <a href="https://wa.me/968108776" target="_blank" class="boton-wsp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+<script>
+    function alternarMenu() {
+        const enlacesNavegacion = document.querySelector('.enlaces-navegacion');
+        enlacesNavegacion.classList.toggle('nav-activo');
+    }
+</script>
+
 </html>
