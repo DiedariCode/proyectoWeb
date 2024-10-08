@@ -222,3 +222,50 @@ html {
 .boton-wsp:hover {
     background-color: #20b858;
 }
+
+/* Ocultar menú en dispositivos móviles y mostrar menú hamburguesa */
+@media (max-width: 768px) {
+    .barra-navegacion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enlaces-navegacion {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        border-top: 2px solid #ccc;
+    }
+
+    .enlaces-navegacion.nav-activo {
+        display: flex;
+    }
+
+    .enlaces-navegacion li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .formulario-busqueda {
+        margin-top: 10px;
+        display: flex;
+        width: 90%;
+    }
+
+    .formulario-busqueda input {
+        width: 100%;
+        border-radius: 25px 0 0 25px;
+    }
+
+    .boton-busqueda {
+        border-radius: 0 25px 25px 0;
+    }
+
+    .hamburguesa {
+        display: block;
+    }
+}
