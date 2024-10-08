@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Web - README</title>
 </head>
 <body>
     <h1>Proyecto Web</h1>
@@ -20,6 +19,8 @@
             git switch main
             git merge nombre-de-tu-rama
             git push
+            // Eliminar rama despues de fusionar
+            git brach -d nombre-de-tu-rama
         </code>
     </pre>
     <h2>Avance 2 - Semana 10:</h2>
