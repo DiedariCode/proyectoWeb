@@ -269,3 +269,559 @@ html {
         display: block;
     }
 }
+
+
+/* -------------------------------------------------- */
+
+/* CSS PARA LA SECCIÓN MOTOCICLETA */
+.seccion-moto {
+    overflow: auto;
+    background: url(img/motobg.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.seccion-moto__contenedor {
+    color: white;
+    text-align: center;
+}
+
+.--titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.--descripcion {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+}
+
+.--boton {
+    background: #cf2e2e;
+    border: none;
+    padding: 0.7rem 2.5rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.--boton:hover {
+    background: #a52323;
+}
+
+@media screen and (max-width: 700px) {
+    .seccion-moto {
+        padding: 30px;
+        height: 85vh;
+    }
+
+    .--titulo {
+        font-size: 2.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .--descripcion {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+
+    .salto-linea {
+        display: none;
+    }
+
+    .--boton {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        .seccion-moto {
+            padding: 30px;
+            height: 80vh;
+        }
+    }
+}
+
+/* SUB ENCABEZADO */
+.sub-encabezado {
+    background: #cf2e2e;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.sub-encabezado a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 12px 0px;
+    background-color: transparent;
+    transition: background 0.3s ease;
+}
+
+.sub-encabezado a:hover {
+    background: #a52323;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .sub-encabezado {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px;
+        gap: 0px;
+    }
+    .sub-encabezado a {
+        padding: 16px 0;
+    }
+    .sub-encabezado a:hover {
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sub-encabezado {
+        grid-template-columns: 1fr;
+        padding: 0px;
+        gap: 0px;
+    }
+    .sub-encabezado a {
+        background-color: transparent;
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1.1rem;
+    }
+    .sub-encabezado a:hover {
+        border-radius: 0px;
+    }
+}
+
+
+/* SECCIÓN NUESTRAS VENTAJAS CON CSS GRID */
+.ventajas {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: sans-serif;
+}
+
+.ventajas__titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.ventajas__titulo span {
+    color: #cf2e2e;
+}
+
+.ventajas__descripcion {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.ventajas__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.ventaja {
+    text-align: center;
+}
+
+.ventaja__icono {
+    width: 200px;
+    height: 200px;
+    background-color: #cf2e2e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.ventaja__icono img {
+    width: 55%;
+}
+
+.ventaja__titulo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.ventaja__texto {
+    font-size: 0.95rem;
+    color: black;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+    .ventajas__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ventajas__titulo {
+        font-size: 1.8rem;
+        padding: 0px 10px;
+    }
+
+    .ventajas__descripcion {
+        font-size: 1.2rem;
+        padding: 0px 10px;
+    }
+
+    .ventaja__icono {
+        width: 180px;
+        height: 180px;
+    }
+
+    .ventaja__titulo {
+        font-size: 1.35rem;
+    }
+
+    .ventaja__texto {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        .ventaja__icono {
+            width: 170px;
+            height: 170px;
+        }
+    
+        .ventaja__titulo {
+            font-size: 1.2rem;
+        }
+    
+        .ventaja__texto {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+/* SECCIÓN NUESTROS SERVICIOS CON CSS GRID */
+.servicios {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: sans-serif;
+}
+
+.servicios__titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.servicios__titulo span {
+    color: #cf2e2e;
+}
+
+.servicios__descripcion {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+
+/* Grid para los servicios */
+.servicios__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.servicio {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 8px -8px #bfbfbf;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-servicios {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.titulo-serv {
+    color: #cf2e2e;
+    font-size: 1.125rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.descrip-serv {
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .servicios__titulo {
+        font-size: 1.8rem;
+        padding: 0px 10px;
+    }
+
+    .servicios__descripcion {
+        font-size: 1.2rem;
+        padding: 0px 10px;
+    }
+
+    .servicios__grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .servicio {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .titulo-serv {
+        font-size: 1.1rem;
+    }
+
+    .descrip-serv {
+        font-size: 0.9rem;
+    }
+}
+
+/* SECCIÓN RESEÑAS DE CLIENTES CON CSS GRID */
+.reseñas {
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    padding: 40px 20px;
+}
+
+.reseñas__titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.reseñas__titulo span {
+    color: #cf2e2e;
+}
+
+.reseñas__descripcion {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.reseñas__grid {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.reseñas__item {
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.img-reseñas {
+    margin-bottom: 0.8rem;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.--carlos {
+    background-image: url(img/perfil01.jpg);
+    background-size: 330px;
+    background-position: -89px top;
+}
+
+.--laura {
+    background-image: url(img/perfil02.jpg);
+    background-size: 265px;
+    background-position: -40px top;
+}
+
+.--javier {
+    background-image: url(img/perfil03.jpg);
+    background-size: 290px;
+    background-position: -60px top;
+}
+
+.nombres {
+    font-size: 1.08rem;
+    margin: 0;
+}
+
+.estrellas {
+    margin: 0 auto;
+    margin-bottom: 0.625rem;
+    background-color: transparent;
+    width: 60%;
+    height: 3.125rem;
+    background-image: url(img/estrellas.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.opiniones {
+    height: 32%;
+    width: 80%;
+    background-color: #cf2e2e;
+    color: white;
+    line-height: 1.3rem;
+    letter-spacing: 0.02rem;
+    font-size: 0.938rem;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 565px) {
+    .reseñas__titulo {
+        font-size: 1.8rem;
+        padding: 0px 10px;
+    }
+
+    .reseñas__descripcion {
+        font-size: 1.2rem;
+        padding: 0px 10px;
+    }
+}
+
+/* CSS PARA 'NUESTROS PROVEEDORES' */
+.proveedores {
+    background-color: #cf2e2e;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    padding: 40px 20px;
+}
+
+.proveedores__titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.proveedores__titulo span {
+    color: black;
+}
+
+.proveedores__descripcion {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    line-height: 1.5rem;
+}
+
+.proveedores__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 0.75fr);
+    gap: 40px;
+    width: 80%;
+    margin: 30px auto;
+    margin-top: 15px;
+}
+
+.proveedores__marca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proveedores__marca:hover {
+    transform: scale(1.04); /* Aumenta el tamaño un 5% */
+    box-shadow: 0 0 8px white; /* Añade una sombra suave */
+}
+
+.img-marcas {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 900px) {
+    .salto-linea {
+        display: none;
+    }
+    
+    .proveedores__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 150px);
+        gap: 25px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .proveedores__titulo {
+        font-size: 1.8rem;
+        padding: 0px 10px;
+    }
+
+    .proveedores__descripcion {
+        font-size: 1.2rem;
+        padding: 0px 10px;
+    }
+
+    .proveedores__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 150px);
+        gap: 25px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .img-marcas {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
+}

@@ -20,7 +20,7 @@
                 </div>
                 <ul class="enlaces-navegacion">
                     <li><a href="index.html" class="activo">Inicio</a></li>
-                    <li><a href="html/productos.html" >Productos</a></li>
+                    <li><a href="html/productos.html">Productos</a></li>
                     <li><a href="html/nosotros.html">Nosotros</a></li>
                     <li><a href="html/contacto.html">Contacto</a></li>
                 </ul>
@@ -37,10 +37,188 @@
             </div>
         </nav>
     </header>
+
     <main>
-        <h1>PAGINA DE INICIO :D</h1>
+
+        <!-- SECCIÓN MOTOCICLETA -->
+        <div class="seccion-moto">
+            <div class="seccion-moto__contenedor">
+                <h2 class="seccion-moto__contenedor --titulo">REPUESTOS ORIGINALES Y DE CALIDAD</h2>
+                <p class="seccion-moto__contenedor --descripcion">
+                    Ofrecemos una amplia gama de repuestos originales diseñados para maximizar el rendimiento <br
+                        class="salto-linea"> y la vida útil de tu moto para que disfrutes de la carretera con total
+                    confianza
+                </p>
+                <button onclick="location.href='html/productos.html'" class="seccion-moto__contenedor --boton">VER
+                    PRODUCTOS</button>
+            </div>
+        </div>
+
+        <!-- SUB ENCABEZADO-->
+        <nav class="sub-encabezado">
+            <a href="#ventajas">VENTAJAS</a>
+            <a href="#servicios">SERVICIOS</a>
+            <a href="#reseñas">RESEÑAS</a>
+            <a href="#proveedores">PROVEEDORES</a>
+        </nav>
+
+        <!-- SECCIÓN NUESTRAS VENTAJAS CON CSS GRID -->
+        <section class="ventajas" id="ventajas">
+            <h2 class="ventajas__titulo">NUESTRAS <span>VENTAJAS</span></h2>
+            <p class="ventajas__descripcion">
+                Encuentra todo lo que necesitas para tu moto, con la confianza de estar eligiendo lo mejor.
+            </p>
+            <div class="ventajas__grid">
+                <div class="ventaja">
+                    <div class="ventaja__icono">
+                        <img src="img/iconos/calidad.png" alt="Calidad">
+                    </div>
+                    <h3 class="ventaja__titulo">CALIDAD</h3>
+                    <p class="ventaja__texto">
+                        Repuestos originales que <br> garantizan un rendimiento <br>
+                        y durabilidad <br> excepcionales.
+                    </p>
+                </div>
+                <div class="ventaja">
+                    <div class="ventaja__icono --circulo-rojo">
+                        <img src="img/iconos/experiencia.png" alt="Experiencia">
+                    </div>
+                    <h3 class="ventaja__titulo">EXPERIENCIA</h3>
+                    <p class="ventaja__texto">
+                        Más de 5 años dedicados <br> al motociclismo, con un <br>
+                        equipo experto que <br> conoce cada detalle.
+                    </p>
+                </div>
+                <div class="ventaja">
+                    <div class="ventaja__icono --circulo-rojo">
+                        <img src="img/iconos/satisfaccion.png" alt="Satisfacción">
+                    </div>
+                    <h3 class="ventaja__titulo">SATISFACCIÓN</h3>
+                    <p class="ventaja__texto">
+                        Nuestro compromiso es <br> superar tus expectativas <br>
+                        en cada compra.
+                    </p>
+                </div>
+                <div class="ventaja">
+                    <div class="ventaja__icono --circulo-rojo">
+                        <img src="img/iconos/soporte.png" alt="Soporte">
+                    </div>
+                    <h3 class="ventaja__titulo">SOPORTE</h3>
+                    <p class="ventaja__texto">
+                        Asesoría personalizada y <br> atención postventa para <br>
+                        asegurarte la mejor <br> experiencia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 'NUESTROS SERVICIOS' CON CSS GRID -->
+        <section class="servicios" id="servicios">
+            <h2 class="servicios__titulo">NUESTROS <span>SERVICIOS</span></h2>
+            <p class="servicios__descripcion">
+                Ofrecemos una amplia gama de servicios diseñados para cubrir todas las necesidades de tu moto.
+            </p>
+
+            <div class="servicios__grid">
+                <div class="servicio">
+                    <img src="img/respuestos.jpg" class="img-servicios" alt="Venta de Repuestos y Accesorios">
+                    <h4 class="titulo-serv">Venta de Repuestos y <br> Accesorios </h4>
+                    <p class="descrip-serv">
+                        Surtido amplio de piezas y <br> accesorios originales y de <br>
+                        calidad para diferentes <br> modelos de motos.
+                    </p>
+                </div>
+
+                <div class="servicio">
+                    <img src="img/asesoria.jpg" class="img-servicios" alt="Asesoría Técnica Especializada">
+                    <h4 class="titulo-serv">Asesoría Técnica <br> Especializada</h4>
+                    <p class="descrip-serv">
+                        Asesoramiento profesional <br> para elegir los repuestos y <br>
+                        accesorios más adecuados <br> según las necesidades de <br> tu moto.
+                    </p>
+                </div>
+
+                <div class="servicio">
+                    <img src="img/instlacion.jpg" class="img-servicios" alt="Instalación de Repuestos">
+                    <h4 class="titulo-serv">Instalación de <br> Repuestos</h4>
+                    <p class="descrip-serv">
+                        Instalación profesional de <br> piezas y accesorios para <br>
+                        asegurar un rendimiento <br> óptimo.
+                    </p>
+                </div>
+
+                <div class="servicio">
+                    <img src="img/envio.jpg" class="img-servicios" alt="Servicio de Envío">
+                    <h4 class="titulo-serv">Servicio de Envío</h4>
+                    <p class="descrip-serv">
+                        Entrega a domicilio de <br> repuestos y accesorios, <br>
+                        con opciones de envío <br> rápido y seguro.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 'RESEÑAS DE CLIENTES' -->
+        <section class="reseñas" id="reseñas">
+            <h2 class="reseñas__titulo"> <span>RESEÑAS</span> DE CLIENTES </h2>
+            <p class="reseñas__descripcion">Lo que más nos motiva es la satisfacción de nuestros clientes</p>
+            <div class="reseñas__grid">
+                <div class="reseñas__item">
+                    <div class="img-reseñas --carlos"></div>
+                    <p class="nombres">Carlos Ramírez</p>
+                    <div class="estrellas"></div>
+                    <div class="opiniones">
+                        "Compré varios repuestos para <br> mi moto y quedé impresionado <br>
+                        con la calidad. Además, el equipo <br> fue muy atento y me ayudó a <br>
+                        elegir las piezas adecuadas. <br> Definitivamente volveré a <br>
+                        comprar aquí."
+                    </div>
+                </div>
+                <div class="reseñas__item">
+                    <div class="img-reseñas --laura"></div>
+                    <p class="nombres">Laura Gonzáles</p>
+                    <div class="estrellas"></div>
+                    <div class="opiniones">
+                        "La atención al cliente es <br> excepcional. Me asesoraron en <br>
+                        todo momento y me enviaron los <br> repuestos rápidamente. Mi moto <br>
+                        quedó como nueva, muy <br> recomendable."
+                    </div>
+                </div>
+                <div class="reseñas__item">
+                    <div class="img-reseñas --javier"></div>
+                    <p class="nombres">Javier López</p>
+                    <div class="estrellas"></div>
+                    <div class="opiniones">
+                        "Lo mejor es la variedad y la <br> disponibilidad de piezas. <br>
+                        originales. Encontré todo lo que <br> necesitaba en un solo lugar, y a <br>
+                        precios justos. El servicio de <br> instalación también fue <br>
+                        excelente."
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 'NUESTROS PROVEEDORES' -->
+        <section class="proveedores" id="proveedores">
+            <h2 class="proveedores__titulo">NUESTROS <span>PROVEEDORES</span></h2>
+            <p class="proveedores__descripcion">
+                Trabajamos con proveedores líderes en la industria para asegurarte repuestos y accesorios de la <br
+                    class="salto-linea"> más alta calidad
+            </p>
+            <div class="proveedores__grid">
+                <div class="proveedores__marca"><img src="img/marcas/yamaha.png" class="img-marcas"></div>
+                <div class="proveedores__marca"><img src="img/marcas/Honda.png" class="img-marcas"></div>
+                <div class="proveedores__marca"><img src="img/marcas/ktm.png" class="img-marcas"></div>
+                <div class="proveedores__marca"><img src="img/marcas/Kawasaki.png" class="img-marcas"></div>
+                <div class="proveedores__marca"><img src="img/marcas/BAJAJ.png" class="img-marcas"></div>
+                <div class="proveedores__marca"><img src="img/marcas/Hero.png" class="img-marcas"></div>
+            </div>
+        </section>
+
     </main>
+
 </body>
+
 <footer class="pie-pagina">
     <div class="contenido-footer">
         <section class="seccion-footer">
@@ -88,7 +266,7 @@
                         </a>
                     </li>
                 </ul>
-                
+
                 <h3>SÍGUENOS</h3>
                 <div class="logos-redes">
                     <a href="#" target="_blank">Facebook</a>
