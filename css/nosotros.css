@@ -1,4 +1,3 @@
-/* ESTILO NADVAR*/
 /* Estilos globales */
 body,
 html {
@@ -16,6 +15,7 @@ html {
     border-bottom: 2px solid #ccc;
     box-shadow: 0 0 40px #0000;
     position: relative;
+    min-width: 220px;
     /* Añadido */
     z-index: 1;
     /* Añadido */
@@ -48,7 +48,7 @@ html {
     background-color: #cf2e2e;
     color: white;
     height: 70px;
-    width: 100px;
+    width: 120px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -85,6 +85,7 @@ html {
     height: 55px;
 }
 
+/* Estilos para el botón del menú hamburguesa */
 .hamburguesa {
     display: none;
     font-size: 30px;
@@ -92,7 +93,114 @@ html {
     z-index: 2;
 }
 
-/* Estilos APARTADO NOSOTROS - CODIGO CASTRO*/
+/* --------------------------------------------------------- */
+/* FOOTER: COPIA IGUALMENTE DE LOS OTROS APARTADOS */
+
+footer {
+    background-color: #1d1d1d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    height: 25vh;
+}
+
+.iconos-redes {
+    margin: 30px 10px;
+}
+
+.iconos-redes a {
+    background-color: white;
+    border-radius: 50% 50%;
+    margin: 0 3px;
+    padding: 15px;
+    color: #1d1d1d;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.iconos-redes a:hover {
+    color: #ccc;
+}
+
+.lineadivisora-footer {
+    display: flex;
+    margin: 8vh auto;
+    margin-bottom: 5vh;
+    height: 1px;
+    width: 80%;
+    background-color: white;
+}
+
+.copyright {
+    margin-top: 15px;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+/* Ocultar menú en dispositivos móviles y mostrar menú hamburguesa */
+@media (max-width: 760px) {
+    .barra-navegacion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enlaces-navegacion {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        border-top: 2px solid #ccc;
+    }
+
+    .enlaces-navegacion.nav-activo {
+        display: flex;
+    }
+
+    .enlaces-navegacion li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .formulario-busqueda {
+        margin-top: 10px;
+        display: flex;
+        width: 90%;
+    }
+
+    .formulario-busqueda input {
+        width: 100%;
+        border-radius: 25px 0 0 25px;
+    }
+
+    .boton-busqueda {
+        border-radius: 0 25px 25px 0;
+    }
+
+    .hamburguesa {
+        display: block;
+    }
+}
+
+@media (max-width:1000px){
+    .enlaces-navegacion a{
+        font-size: 16px;
+        padding: 5px 0px;
+
+    }
+    .formulario-busqueda{
+        justify-content: center;
+    }
+    .formulario-busqueda input{
+        width: 100%;
+    }
+}
+
+/* --------------------------------------------------------- */
+/* CODIGO DE CASTRO: RECOMENDACION: TRABAJAR METODOLOGIA BEM */
 
 .imagen-nosotros {
     background-image: url('../img/motocicleta.jpg');
@@ -215,113 +323,102 @@ strong {
     background-image: url(../img/vision.jpg);
 }
 
-/* CSS PROOVEDORES - CODIGO DE CONTACTO.CSS*/
+/* --------------------------------------------------------- */
+/* SECTION: PROOVEDORES (CODIGO DE DANIEL | COPY DE PROOVEDORES CONTACTO.CSS )*/
 
-.contenedor-secundario {
+.proveedores{
     padding: 100px;
     padding-top: 10px;
     padding-bottom: 30px;
 }
 
-.seccion-proveedores {
+.proveedores__section{
     text-align: center;
     margin-bottom: 40px;
 }
 
-.contenedor-proveedores h2 {
+.proveedores__contenedor h2{
     text-transform: uppercase;
     font-size: 40px;
+    color: #ff0000;
 }
 
-.contenedor-proveedores p {
+.proveedores__titulo-negrita{
+    color: black;
+}
+
+.proveedores__contenedor p{
     font-size: 20px;
     padding-bottom: 40px;
 }
 
-.Nuestros {
-    color: black;
-}
-
-.Proveedores {
-    color: #ff0000;
-}
-
-.flex-proveedores {
+.proveedores__logos {
     display: flex;
     flex-wrap: wrap;
-    /* Permite que los elementos se ajusten en varias filas */
     justify-content: center;
-    /* Centra las tarjetas horizontalmente */
-    gap: 30px;
-    /* Espacio entre las tarjetas */
+    gap: 20px;
 }
 
-.tarjeta-proveedor {
-    flex: 1 1 33.3%;
-    /* Es para ver cuanto ocupa cada tarjeta, osea 100%/3 = 33.3*/
-    max-width: 30%;
-    /* Máximo ancho de cada tarjeta */
+.proveedores__tarjeta {
+    flex: 1 1 30%;
+    max-width: 50%;
     border: 1px solid #ddd;
-    padding: 80px;
+    padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s linear;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box;
-}
-
-.tarjeta-proveedor img {
-    max-width: 90%;
-    height: auto;
-}
-
-.tarjeta-proveedor:hover {
-    transform: scale(1.05);
-    /* Efecto hover */
-}
-
-/*CSS FOOTER CODIGO SACADO DE CONTACTO.CSS*/
-
-footer {
-    background-color: #1d1d1d;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    height: 25vh;
-}
-
-.iconos-redes {
-    margin: 30px 0;
-}
-
-.iconos-redes a {
-    background-color: white;
-    border-radius: 50% 50%;
-    margin: 0 3px;
-    padding: 15px;
-    color: #1d1d1d;
-    text-decoration: none;
-    font-size: 20px;
-
-}
-
-.iconos-redes a:hover {
-    color: #ccc;
-}
-
-.lineadivisora-footer {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
     display: flex;
-    margin: 8vh auto;
-    margin-bottom: 5vh;
-    height: 1px;
-    width: 80%;
-    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Set a fixed height for all cards */
 }
 
-.copyright {
-    margin-top: 15px;
-    font-size: 14px;
+.proveedores__tarjeta img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain; /* Ensure the image fits within the card */
 }
 
-.contenedor-whatsapp {
+.proveedores__tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 700px){
+    .proveedores{
+        padding: 10px;
+    }
+
+    .proveedores__contenedor h2{
+        font-size: 30px;
+    }
+
+    .proveedores__contenedor p{
+        font-size: 16px;
+    }
+
+    .proveedores__tarjeta{
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 20px;
+        height: 200px;
+    }
+
+    .proveedores__tarjeta img{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* --------------------------------------------------------- */
+/* SECTION: WHATSAPP*/
+
+.whatsapp{
     position: fixed;
     bottom: 20px;
     right: 70px;
@@ -334,25 +431,24 @@ footer {
     font-size: 10px;
 }
 
-.contenedor-whatsapp .text {
+.whatsapp__texto{
     margin-right: 10px;
     text-align: left;
     color: #444;
 }
 
-.contenedor-whatsapp .text span {
+.whatsapp__ayuda{
     display: block;
 }
 
-.contenedor-whatsapp .text .status {
+.whatsapp__status{
     font-weight: bold;
     color: #1d1d1d;
     font-size: 10px;
     margin: 3px;
+} 
 
-}
-
-.boton-wsp {
+.whatsapp__boton{
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -362,11 +458,6 @@ footer {
     padding: 10px;
     font-size: 30px;
 }
-
-.boton-wsp:hover {
-    background-color: #20b858;
-}
-
 
 /*media queries*/
 @media (max-width: 768px) {
