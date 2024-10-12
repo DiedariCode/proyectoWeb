@@ -25,10 +25,10 @@
     </pre>
     <h2>Avance 2 - Semana 10:</h2>
     <ul>
-        <li>Página de inicio: COMPLETA</li>
-        <li>Página de Productos: COMPLETA</li>
-        <li>Página de contacto: FALTA MEJORAR MODO DISPOSITIVOS</li>
-        <li>Página de Nosotros: COMPLETA</li>
+        <li>Página de inicio: Vacía, pero contiene el footer del Figma. El resto de páginas tiene un footer minimalista, bien se queda ese o el del Figma :D.</li>
+        <li>Página de Productos: Vacía.</li>
+        <li>Página de contacto: Falta mejorar el modo para dispositivos.</li>
+        <li>Página de Nosotros: Falta implementar el modo para dispositivos.</li>
     </ul>
 </body>
 </html>
