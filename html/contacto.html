@@ -40,78 +40,82 @@
     </header>
 
     <main class="contenido">
-        <div class="contenedor-principal">
-            <section class="seccion-imagen">
-                <div class="contenedor-imagen">
-                    <h2 class="titulo-contactanos">CONTACTANOS</h2>
-                    <p class="subtitulo-contactanos">Tu consulta es importante para nosotros</p>
+        <div class="principal">
+            <section class="contacto">
+                <div class="contacto__imagen">
+                    <h2 class="contacto__titulo">CONTACTANOS</h2>
+                    <p class="contacto__subtitulo">Tu consulta es importante para nosotros</p>
                 </div>
-                <div class="contenedor-iconos-contacto">
-                    <div class="icono-contacto">
+                <div class="contacto__iconos">
+                    <div class="contacto__icono contacto--telefono">
                         <img src="../img/iconos/telefono.svg" alt="Teléfono">
                         <p>(+51) 968108775</p>
                     </div>
-                    <div class="lineadivisora"></div>
-                    <div class="icono-contacto">
+                    <div class="contacto__linea"></div>
+                    <div class="contacto__icono contacto--ubicacion">
                         <img src="../img/iconos/Ubicación.svg" alt="Ubicación">
                         <p>Av. José Aguilar Santisteban, Mza. H Lote. 6, Piura - Perú</p>
                     </div>
-                    <div class="lineadivisora"></div>
-                    <div class="icono-contacto">
+                    <div class="contacto__linea"></div>
+                    <div class="contacto__icono contacto--correo">
                         <img src="../img/iconos/correo.svg" alt="Email">
                         <p>info@jimdurr.com</p>
                     </div>
                 </div>
             </section>
-            <section class="seccion-mapa">
-                <iframe class="mapa"
+        </div>
+
+        <div class="datos">
+            <section class="mapa">
+                <iframe class="mapa__iframe"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.6374988954863!2d-80.65618082542369!3d-5.161883952143082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1b88948eae13%3A0x1d2875411b61bb19!2sGrupo%20Jimdur%20%26%20Motorepuestos%20Jimenez!5e0!3m2!1ses!2spe!4v1727417799630!5m2!1ses!2spe"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
 
-            <section class="seccion-formulario">
-                <form class="formulario">
-                    <h2 class="titulo-formulario">Envíanos un mensaje</h2>
-                    <div class="grupo-input">
-                        <input type="text" id="nombre" placeholder="Nombre" required>
-                        <input type="email" id="email" placeholder="Correo Electrónico" required>
+            <section class="formulario">
+                <form class="formulario__form">
+                    <h2 class="formulario__titulo" style="text-align: center; padding-bottom: auto;">SOLICITE SU COTIZACIÓN</h2>
+                    <div class="formulario__grupo">
+                        <input type="text" id="nombre" class="formulario__input" placeholder="Nombre" required>
+                        <input type="email" id="email" class="formulario__input" placeholder="Correo Electrónico" required>
                     </div>
-                    <div class="grupo-input">
-                        <input type="tel" id="telefono" placeholder="Teléfono" required>
-                        <input type="text" id="identificacion" placeholder="DNI o RUC">
+                    <div class="formulario__grupo">
+                        <input type="tel" id="telefono" class="formulario__input" placeholder="Teléfono" required>
+                        <input type="text" id="identificacion" class="formulario__input" placeholder="DNI o RUC">
                     </div>
-                    <input type="text" id="placa" placeholder="Placa vehicular o VIN">
-                    <input type="text" id="asunto" placeholder="Asunto" required>
-                    <textarea id="mensaje" rows="6" placeholder="Mensaje" required></textarea>
-                    <button type="submit" class="boton-enviar">Enviar mensaje</button>
+                    <input type="text" id="placa" class="formulario__input" placeholder="Placa vehicular o VIN">
+                    <input type="text" id="asunto" class="formulario__input" placeholder="Asunto" required>
+                    <textarea id="mensaje" class="formulario__textarea" rows="6" placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="formulario__btn">Enviar mensaje</button>
                 </form>
             </section>
         </div>
+
         <div class="bloque-divisor"></div>
-        <div class="contenedor-secundario">
-            <section class="seccion-proveedores">
-                <div class="contenedor-proveedores">
-                    <h2> <span class="Nuestros">Nuestros</span><span class="Proveedores"> proveedores</span></h2>
-                    <p>Trabajamos con proveedores líderes en la industria para asegurarte repuestos y accesorios de la
-                        más alta calidad.</p>
+
+        <div class="proveedores">
+            <section class="proveedores__section">
+                <div class="proveedores__contenedor">
+                    <h2 class="proveedores__titulo"> <span class="proveedores__titulo-negrita">Nuestros</span> proveedores</h2>
+                    <p class="proveedores__texto">Trabajamos con proveedores líderes en la industria para asegurarte repuestos y accesorios de la más alta calidad.</p>
                 </div>
-                <div class="flex-proveedores">
-                    <div class="tarjeta-proveedor">
+                <div class="proveedores__logos">
+                    <div class="proveedores__tarjeta">
                         <img loading="lazy" src="../img/marcas/BAJAJ.png" alt="BAJAJ">
                     </div>
-                    <div class="tarjeta-proveedor">
+                    <div class="proveedores__tarjeta">
                         <img loading="lazy" src="../img/marcas/Hero.png" alt="Hero">
                     </div>
-                    <div class="tarjeta-proveedor">
+                    <div class="proveedores__tarjeta">
                         <img loading="lazy" src="../img/marcas/Honda.png" alt="Honda">
                     </div>
-                    <div class="tarjeta-proveedor">
+                    <div class="proveedores__tarjeta">
                         <img loading="lazy" src="../img/marcas/Kawasaki.png" alt="Kawasaki">
                     </div>
-                    <div class="tarjeta-proveedor">
+                    <div class="proveedores__tarjeta">
                         <img loading="lazy" src="../img/marcas/ktm.png" alt="KTM">
                     </div>
-                    <div class="tarjeta-proveedor">
+                    <div class="proveedores__tarjeta">
                         <img loading="lazy" src="../img/marcas/yamaha.png" alt="Yamaha">
                     </div>
                 </div>
@@ -129,16 +133,16 @@
         </div>
         <div class="lineadivisora-footer"></div>
         <div class="copyright">
-            Copyright © JimdurRepuestos SAC 2024 | Desarrollado por DiedariCode
+            Copyright © JimdurRepuestos SAC 2024 | Desarrollado por grupoTallerWeb
         </div>
     </footer>
 
-    <div class="contenedor-whatsapp">
-        <div class="text">
-            <span>¿Necesitas ayuda?</span>
-            <span class="status">Estamos en línea</span>
+    <div class="whatsapp">
+        <div class="whatsapp__texto">
+            <span class="whatsapp__ayuda">¿Necesitas ayuda?</span>
+            <span class="whatsapp__status">Estamos en línea</span>
         </div>
-        <a href="https://wa.me/968108776" target="_blank" class="boton-wsp">
+        <a href="https://wa.me/968108776" target="_blank" class="whatsapp__boton">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
