@@ -276,7 +276,7 @@ html {
 /* CSS PARA LA SECCIÓN MOTOCICLETA */
 .seccion-moto {
     overflow: auto;
-    background: url(img/motobg.jpg) no-repeat center center;
+    background: url(../img/motobg.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -669,19 +669,19 @@ html {
 }
 
 .--carlos {
-    background-image: url(img/perfil01.jpg);
+    background-image: url(../img/perfil01.jpg);
     background-size: 330px;
     background-position: -89px top;
 }
 
 .--laura {
-    background-image: url(img/perfil02.jpg);
+    background-image: url(../img/perfil02.jpg);
     background-size: 265px;
     background-position: -40px top;
 }
 
 .--javier {
-    background-image: url(img/perfil03.jpg);
+    background-image: url(../img/perfil03.jpg);
     background-size: 290px;
     background-position: -60px top;
 }
