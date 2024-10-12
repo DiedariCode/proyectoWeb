@@ -1,4 +1,3 @@
-/* ESTILO NADVAR*/
 /* Estilos globales */
 body,
 html {
@@ -16,11 +15,35 @@ html {
     border-bottom: 2px solid #ccc;
     box-shadow: 0 0 40px #0000;
     position: relative;
+    min-width: 220px;
     /* Añadido */
     z-index: 1;
     /* Añadido */
 }
-
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 498px;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(/img/banner_productos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.banner h2{
+    font-size: 60px;
+    margin: 10px;
+}
+.banner p{
+    font-size: 20px;
+    margin: 10px;
+}
 .enlaces-navegacion {
     list-style: none;
     display: flex;
@@ -48,7 +71,7 @@ html {
     background-color: #cf2e2e;
     color: white;
     height: 70px;
-    width: 100px;
+    width: 120px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -84,20 +107,143 @@ html {
     width: 120px;
     height: 55px;
 }
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f4f4;
+}
+.productos h2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+}
+.productos p{
+    margin-top: 0;
+}
+.productos h2 .negro{
+    color: black;
+}
+.productos h2 .rojo{
+    color: red;
+}
+.producto-lista{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: background 0.4s;
+    transition: transform 0.4s;
+}
+.producto:hover{
+    transform: scale(1.03);
+    background: #cf2e2e;
+    color: white;
+}
+.producto img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.imagen-conteiner{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+}
+.precio{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+} 
 
+/* Estilos para el botón del menú hamburguesa */
 .hamburguesa {
     display: none;
     font-size: 30px;
     cursor: pointer;
     z-index: 2;
+    /* Asegúrate de que esté por encima de otros elementos */
 }
 
-/* CSS CONTENIDO PRINCIPAL */
 
+/* Estilos para contenido principal */
 
+/* Contenedor de la sección "Principal- La de la imagen" */
+.contenido {
+    margin: 0 auto;
+    padding: 0;
+}
 
-/* FOOTER CSS */
+.seccion-proveedores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Nuestros {
+    color: black;
+}
 
+.Proveedores {
+    color: #ff0000;
+}
+.contenedor-proveedores{
+    margin: 10px;
+}
+.contenedor-proveedores h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.contenedor-proveedores p {
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+.flex-proveedores {
+    margin: 0 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.tarjeta-proveedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Máximo ancho de cada tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s linear;
+    box-sizing: border-box;
+}
+
+.tarjeta-proveedor img {
+    max-width: 100%;
+    height: 120px;
+    margin: 10% 0;
+}
+
+.tarjeta-proveedor:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Efecto hover */
+}
 footer {
     background-color: #1d1d1d;
     color: white;
@@ -105,9 +251,8 @@ footer {
     padding: 20px 0;
     height: 25vh;
 }
-
 .iconos-redes {
-    margin: 30px 0;
+    margin: 30px 10px;
 }
 
 .iconos-redes a {
@@ -136,9 +281,9 @@ footer {
 
 .copyright {
     margin-top: 15px;
+    margin: 0 10px;
     font-size: 14px;
 }
-
 .contenedor-whatsapp {
     position: fixed;
     bottom: 20px;
@@ -185,8 +330,37 @@ footer {
     background-color: #20b858;
 }
 
+
+@media (max-width:1000px){
+    .enlaces-navegacion a{
+        font-size: 16px;
+        padding: 5px 0px;
+
+    }
+    .formulario-busqueda{
+        justify-content: center;
+    }
+    .formulario-busqueda input{
+        width: 100%;
+    }
+    .productos h2{
+        font-size: 30px;
+    }
+    .producto-lista{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .flex-proveedores {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 /* Ocultar menú en dispositivos móviles y mostrar menú hamburguesa */
-@media (max-width: 768px) {
+@media (max-width: 760px) {
+    .banner h2{
+        font-size: 50px;
+    }
+    .boton-busqueda {
+        border-radius: 0 25px 25px 0;
+    }
     .barra-navegacion {
         flex-direction: column;
         align-items: center;
@@ -206,7 +380,6 @@ footer {
     .enlaces-navegacion.nav-activo {
         display: flex;
     }
-
     .enlaces-navegacion li {
         text-align: center;
         margin: 10px 0;
@@ -222,12 +395,17 @@ footer {
         width: 100%;
         border-radius: 25px 0 0 25px;
     }
-
-    .boton-busqueda {
-        border-radius: 0 25px 25px 0;
-    }
-
     .hamburguesa {
         display: block;
+    }
+    .producto-lista{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .productos h2{
+        font-size: 25px;
+    }
+    .flex-proveedores {
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
     }
 }
