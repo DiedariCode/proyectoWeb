@@ -697,7 +697,7 @@ html {
     background-color: transparent;
     width: 60%;
     height: 3.125rem;
-    background-image: url(img/estrellas.png);
+    background-image: url(../img/estrellas.png);
     background-size: cover;
     background-position: center;
 }
