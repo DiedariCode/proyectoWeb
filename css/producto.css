@@ -244,46 +244,7 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Efecto hover */
 }
-footer {
-    background-color: #1d1d1d;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    height: 25vh;
-}
-.iconos-redes {
-    margin: 30px 10px;
-}
 
-.iconos-redes a {
-    background-color: white;
-    border-radius: 50% 50%;
-    margin: 0 3px;
-    padding: 15px;
-    color: #1d1d1d;
-    text-decoration: none;
-    font-size: 20px;
-
-}
-
-.iconos-redes a:hover {
-    color: #ccc;
-}
-
-.lineadivisora-footer {
-    display: flex;
-    margin: 8vh auto;
-    margin-bottom: 5vh;
-    height: 1px;
-    width: 80%;
-    background-color: white;
-}
-
-.copyright {
-    margin-top: 15px;
-    margin: 0 10px;
-    font-size: 14px;
-}
 .contenedor-whatsapp {
     position: fixed;
     bottom: 20px;
@@ -407,5 +368,173 @@ footer {
     .flex-proveedores {
         grid-template-columns: repeat(1,1fr);
         gap: 30px;
+    }
+}
+
+/* --------------------------------------------------------- */
+/* FOOTER */
+.pie-pagina {
+    background-color: #000000e7;
+    color: #fff;
+    padding: 20px 5%;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.pie-pagina__contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pie-pagina__seccion {
+    flex: 1 1 300px;
+    padding: 0 20px;
+}
+
+.pie-pagina__logo img {
+    width: 140px;
+    margin-top: 10px;
+    padding-left: 0px;
+}
+
+.pie-pagina__descripcion {
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.pie-pagina__linea-divisora {
+    height: 260px;
+    width: 2px;
+    background-color: #fff;
+    margin-left: 10%;
+}
+
+.pie-pagina__enlaces h3,
+.pie-pagina__contactos h3,
+.pie-pagina__redes-sociales {
+    color: #ff0040;
+    text-transform: uppercase;
+    padding-left: 70px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.pie-pagina__enlaces ul,
+.pie-pagina__contactos ul {
+    list-style-type: none;
+    padding: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 2;
+}
+
+.pie-pagina__enlaces ul li,
+.pie-pagina__contactos ul li {
+    margin-bottom: 5px;
+}
+
+.pie-pagina__enlaces a,
+.pie-pagina__contactos a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pie-pagina__enlaces a:hover,
+.pie-pagina__contactos a:hover {
+    color: #ea4444;
+    text-decoration: none;
+}
+
+.pie-pagina__titulo-logo{
+    display: none;
+}
+
+.pie-pagina__redes-sociales a{
+    background-color: white;
+    border-radius: 50% 50%;
+    margin: 0 3px;
+    padding: 10px;
+    color: #1d1d1d;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 700px) {
+    .pie-pagina__contenido {
+        align-items: flex-start;
+    }
+
+    .pie-pagina__linea-divisora {
+        display: none;
+    }
+
+    .pie-pagina__seccion {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .pie-pagina__titulo-logo {
+        display: block;
+        font-size: 15px;
+    }
+
+    .pie-pagina__logo img {
+        display: none;
+        padding-left: 0;
+        width: 100px;
+    }
+
+    .pie-pagina__descripcion {
+        text-align: left;
+        font-size: 13px;
+        color: #d3d3d3;
+    }
+
+    .pie-pagina__enlaces h3,
+    .pie-pagina__contactos h3,
+    .pie-pagina__redes-sociales {
+        padding-left: 0;
+        font-size: 15px;
+        color: white;
+    }
+
+    .pie-pagina__enlaces ul,
+    .pie-pagina__contactos ul {
+        padding: 0;
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .pie-pagina__enlaces a,
+    .pie-pagina__contactos a {
+        color: #d3d3d3;
+        padding: 0;
+        margin: 0;
+    }
+
+    .pie-pagina__enlaces a:hover,
+    .pie-pagina__contactos a:hover {
+        color: #ea4444;
+        text-decoration: underline; 
+    }
+
+    .pie-pagina__lista-item a {
+        color: #d3d3d3;
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+    }
+    
+    .pie-pagina__redes-sociales a{
+        background-color: white;
+        border-radius: 50% 50%;
+        margin: 0 3px;
+        padding: 10px;
+        color: #1d1d1d;
+        text-decoration: none;
+        font-size: 15px;
     }
 }
