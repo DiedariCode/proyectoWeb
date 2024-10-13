@@ -30,18 +30,18 @@ html {
     align-items: center;
     text-align: center;
     color: white;
-    height: 498px;
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(/img/banner_productos.jpg);
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/banner_productos.jpg);
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
 }
 .banner h2{
-    font-size: 60px;
+    font-size: 2.5rem;
     margin: 10px;
 }
 .banner p{
-    font-size: 20px;
+    font-size: 1.125rem;
     margin: 10px;
 }
 .enlaces-navegacion {
@@ -316,9 +316,6 @@ html {
 }
 /* Ocultar menú en dispositivos móviles y mostrar menú hamburguesa */
 @media (max-width: 760px) {
-    .banner h2{
-        font-size: 50px;
-    }
     .boton-busqueda {
         border-radius: 0 25px 25px 0;
     }
