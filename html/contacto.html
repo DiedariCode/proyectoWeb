@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/contacto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="">
+    <script src="../js/main.js"></script>
 </head>
 
 <body>
@@ -100,31 +101,34 @@
         <div class="proveedores">
             <section class="proveedores__section">
                 <div class="proveedores__contenedor">
-                    <h2 class="proveedores__titulo"> <span class="proveedores__titulo-negrita">Nuestros</span>
-                        proveedores</h2>
+                    <h2 class="proveedores__titulo">
+                        <span class="proveedores__titulo--negrita">Nuestros</span> proveedores
+                    </h2>
                     <p class="proveedores__texto">Trabajamos con proveedores líderes en la industria para asegurarte
                         repuestos y accesorios de la más alta calidad.</p>
                 </div>
                 <div class="proveedores__logos">
-                    <div class="proveedores__tarjeta">
-                        <img loading="lazy" src="../img/marcas/BAJAJ.png" alt="BAJAJ">
+                    <div class="proveedores__tarjeta"><img src="../img/marcas/BAJAJ.png" alt="BAJAJ">
                     </div>
-                    <div class="proveedores__tarjeta">
-                        <img loading="lazy" src="../img/marcas/Hero.png" alt="Hero">
+                    <div class="proveedores__tarjeta"><img src="../img/marcas/Hero.png" alt="Hero"></div>
+                    <div class="proveedores__tarjeta"><img src="../img/marcas/Honda.png" alt="Honda">
                     </div>
-                    <div class="proveedores__tarjeta">
-                        <img loading="lazy" src="../img/marcas/Honda.png" alt="Honda">
+                    <div class="proveedores__tarjeta"><img src="../img/marcas/Kawasaki.png" alt="Kawasaki"></div>
+                    <div class="proveedores__tarjeta"><img src="../img/marcas/ktm.png" alt="KTM"></div>
+                    <div class="proveedores__tarjeta"><img src="../img/marcas/yamaha.png" alt="Yamaha">
                     </div>
-                    <div class="proveedores__tarjeta">
-                        <img loading="lazy" src="../img/marcas/Kawasaki.png" alt="Kawasaki">
+                    <div class="proveedores__tarjeta"><img src="../img/marcas/BAJAJ.png" alt="BAJAJ">
                     </div>
-                    <div class="proveedores__tarjeta">
-                        <img loading="lazy" src="../img/marcas/ktm.png" alt="KTM">
+                    <div class="proveedores__tarjeta"><img src="../img/marcas/Hero.png" alt="Hero"></div>
+                    <div class="proveedores__tarjeta"><img src="../img/marcas/Honda.png" alt="Honda">
                     </div>
-                    <div class="proveedores__tarjeta">
-                        <img loading="lazy" src="../img/marcas/yamaha.png" alt="Yamaha">
+                    <div class="proveedores__tarjeta"><img src="../img/marcas/Kawasaki.png" alt="Kawasaki"></div>
+                    <div class="proveedores__tarjeta"><img src="../img/marcas/ktm.png" alt="KTM"></div>
+                    <div class="proveedores__tarjeta"><img src="../img/marcas/yamaha.png" alt="Yamaha">
                     </div>
                 </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
             </section>
         </div>
     </main>
@@ -205,12 +209,6 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
-    <script>
-        function alternarMenu() {
-            const enlacesNavegacion = document.querySelector('.enlaces-navegacion');
-            enlacesNavegacion.classList.toggle('nav-activo');
-        }
-    </script>
 </body>
 
 </html>

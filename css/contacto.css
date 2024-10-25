@@ -214,93 +214,103 @@
 /* --------------------------------------------------------- */
 /* SECTION: PROOVEDORES */
 
-.proveedores{
-    padding: 100px;
-    padding-top: 10px;
-    padding-bottom: 30px;
+.proveedores {
+    position: relative;
+    max-width: 90%; /* Ajusta el ancho máximo del carrusel */
+    margin: auto;
+    overflow: hidden;
 }
 
-.proveedores__section{
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.proveedores__contenedor h2{
+.proveedores__titulo {
     text-transform: uppercase;
-    font-size: 40px;
-    color: #ff0000;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #c60033;
 }
 
-.proveedores__titulo-negrita{
+.proveedores__titulo--negrita{
     color: black;
 }
 
-.proveedores__contenedor p{
-    font-size: 20px;
-    padding-bottom: 40px;
+.proveedores__texto{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.proveedores__section {
+    text-align: center;
 }
 
 .proveedores__logos {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    transition: transform 0.5s ease;
+    width: calc((200 + 20) * totalSlides); /* Ajusta el ancho total */
 }
 
 .proveedores__tarjeta {
-    flex: 1 1 30%;
-    max-width: 50%;
-    border: 1px solid #ddd;
-    padding: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-sizing: border-box;
-    background-color: #fff;
-    border-radius: 10px;
+    min-width: 350px; /* Ajusta el ancho de cada tarjeta */
+    height: 250px; /* Ajusta la altura de cada tarjeta */
     margin: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #ccc; /* Borde de la tarjeta */
+    border-radius: 8px; /* Esquinas redondeadas */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px; /* Set a fixed height for all cards */
-}
-
-.proveedores__tarjeta img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
-    object-fit: contain; /* Ensure the image fits within the card */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    background-color: white; /* Color de fondo de la tarjeta */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones */
 }
 
 .proveedores__tarjeta:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Levanta la tarjeta */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
 }
 
-@media screen and (max-width: 700px){
-    .proveedores{
-        padding: 10px;
+.proveedores__tarjeta img {
+    max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 80%; /* Ajusta la altura máxima de la imagen */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 1000;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 700px) {
+    .proveedores__tarjeta {
+        min-width: 200px;
+        height: 150px;
     }
 
-    .proveedores__contenedor h2{
-        font-size: 30px;
+    .proveedores__tarjeta img {
+        max-width: 70%;
+        max-height: 70%;
     }
-
-    .proveedores__contenedor p{
-        font-size: 16px;
-    }
-
-    .proveedores__tarjeta{
-        flex: 1 1 100%;
-        max-width: 100%;
-        padding: 20px;
-        height: 200px;
-    }
-
-    .proveedores__tarjeta img{
-        width: 100%;
-        padding: 20px;
-    }
+    
 }
 
 
