@@ -1,58 +1,67 @@
-
 /* --------------------------------------------------------- */
-.banner{
+.banner {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
     height: 100vh;
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../img/motocicleta.jpg');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/motocicleta.jpg');
     background-position: center;
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
+
 .contenedor {
     max-width: 1400px;
     margin: auto;
 }
-.banner h2{
+
+.banner h2 {
     font-size: 2.5rem;
     margin: 10px;
 }
-.banner p{
+
+.banner p {
     font-size: 1.125rem;
     margin: 10px;
 }
-.nuestra-historia{
+
+.nuestra-historia {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.nuestra-historia .contenedor{
+
+.nuestra-historia .contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.nuestra-historia h2{
+
+.nuestra-historia h2 {
     font-size: 40px;
-    margin: 40px 20px ;
+    margin: 40px 20px;
     margin-bottom: 0px;
 }
-.nuestra-historia h2 .negro{
+
+.nuestra-historia h2 .negro {
     color: black;
 }
-.nuestra-historia h2 .rojo{
+
+.nuestra-historia h2 .rojo {
     color: red;
 }
-.nuestra-historia p{
+
+.nuestra-historia p {
     font-size: 20px;
     font-weight: bold;
     margin: 20px;
 }
-.contenido-historia{
+
+.contenido-historia {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,68 +69,83 @@
     margin-bottom: 50px;
     width: 80%;
 }
-.contenido-historia p{
+
+.contenido-historia p {
     font-weight: normal;
 }
-.contenido-historia .texto{
+
+.contenido-historia .texto {
     width: 100%;
     text-align: justify;
 }
-.contenido-historia .texto p:nth-child(2){
+
+.contenido-historia .texto p:nth-child(2) {
     text-align: right;
     font-weight: bold;
     margin-bottom: 0px;
 }
-.contenido-historia .texto p:nth-child(3){
+
+.contenido-historia .texto p:nth-child(3) {
     text-align: right;
     margin-top: 0px;
 }
-.contenido-historia .imagen{
+
+.contenido-historia .imagen {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.imagen img{
+
+.imagen img {
     width: 80%;
 }
-.mision{
+
+.mision {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     color: white;
 }
-.mision .contenedor{
+
+.mision .contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.mision .contenedor .contenido{
+
+.mision .contenedor .contenido {
     text-align: center;
     width: 86%;
     margin: 0px 50px;
 }
-.mision .contenedor .contenido h2{
+
+.mision .contenedor .contenido h2 {
     font-size: 40px;
     margin: 20px;
 }
-.mision .contenedor .contenido h2 .rojo{
+
+.mision .contenedor .contenido h2 .rojo {
     color: red;
 }
-.mision .contenedor .contenido p:nth-child(2){
+
+.mision .contenedor .contenido p:nth-child(2) {
     font-weight: bold;
     margin: 20px;
 }
-.mision .contenedor .contenido p{
+
+.mision .contenedor .contenido p {
     font-size: 20px;
     margin: 20px;
 }
-.mision .contenedor .contenido p:nth-child(4){
+
+.mision .contenedor .contenido p:nth-child(4) {
     text-align: justify;
     font-style: italic;
 }
-.mision .contenedor .imagen{
+
+.mision .contenedor .imagen {
     margin: 0;
     width: 100%;
     height: 81vh;
@@ -133,45 +157,54 @@
     background-image: url('../img/mision.jpg');
     background-position: center;
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
-.vision{
+
+.vision {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #bd2626;
     color: white;
 }
-.vision .contenedor{
+
+.vision .contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.vision .contenedor .contenido{
+
+.vision .contenedor .contenido {
     text-align: center;
     width: 86%;
     margin: 0px 50px;
 }
-.vision .contenedor .contenido h2{
+
+.vision .contenedor .contenido h2 {
     font-size: 40px;
     margin: 20px;
 }
-.vision .contenedor .contenido h2 .negro{
+
+.vision .contenedor .contenido h2 .negro {
     color: rgb(0, 0, 0);
 }
-.vision .contenedor .contenido p:nth-child(2){
+
+.vision .contenedor .contenido p:nth-child(2) {
     font-weight: bold;
     margin: 20px;
 }
-.vision .contenedor .contenido p{
+
+.vision .contenedor .contenido p {
     font-size: 20px;
     margin: 20px;
 }
-.vision .contenedor .contenido p:nth-child(4){
+
+.vision .contenedor .contenido p:nth-child(4) {
     text-align: justify;
     font-style: italic;
 }
-.vision .contenedor .imagen{
+
+.vision .contenedor .imagen {
     margin: 0;
     width: 100%;
     height: 81vh;
@@ -183,33 +216,34 @@
     background-image: url('../img/vision.jpg');
     background-position: center;
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
+
 /* --------------------------------------------------------- */
 /* SECTION: PROOVEDORES (CODIGO DE DANIEL | COPY DE PROOVEDORES CONTACTO.CSS )*/
 
-.proveedores{
+.proveedores {
     padding: 100px;
     padding-top: 10px;
     padding-bottom: 30px;
 }
 
-.proveedores__section{
+.proveedores__section {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.proveedores__contenedor h2{
+.proveedores__contenedor h2 {
     text-transform: uppercase;
     font-size: 40px;
     color: #ff0000;
 }
 
-.proveedores__titulo-negrita{
+.proveedores__titulo-negrita {
     color: black;
 }
 
-.proveedores__contenedor p{
+.proveedores__contenedor p {
     font-size: 20px;
     padding-bottom: 40px;
 }
@@ -235,7 +269,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px; /* Set a fixed height for all cards */
+    height: 200px;
+    /* Set a fixed height for all cards */
 }
 
 .proveedores__tarjeta img {
@@ -243,60 +278,109 @@
     max-height: 100%;
     height: auto;
     width: auto;
-    object-fit: contain; /* Ensure the image fits within the card */
+    object-fit: contain;
+    /* Ensure the image fits within the card */
 }
 
 .proveedores__tarjeta:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 1000px){
-    .caja_contenedora{
+
+@media screen and (max-width: 1000px) {
+    .caja_contenedora {
         flex-direction: column;
     }
-    .caja_contenedora .imagen{
+
+    .caja_contenedora .imagen {
         width: 50%;
     }
 }
-@media screen and (max-width: 770px){
-    .proveedores{
+
+@media screen and (max-width: 770px) {
+    .proveedores {
         padding: 10px;
     }
 
-    .proveedores__contenedor h2{
+    .proveedores__contenedor h2 {
         font-size: 30px;
     }
 
-    .proveedores__contenedor p{
+    .proveedores__contenedor p {
         font-size: 16px;
     }
 
-    .proveedores__tarjeta{
+    .proveedores__tarjeta {
         flex: 1 1 100%;
         max-width: 100%;
         padding: 20px;
         height: 200px;
     }
 
-    .proveedores__tarjeta img{
+    .proveedores__tarjeta img {
         width: 100%;
         padding: 20px;
     }
-    .contenido-historia{
+
+    .contenido-historia {
         flex-direction: column;
     }
-    .mision .contenedor{
+
+    .mision .contenedor {
         flex-direction: column;
     }
-    .vision .contenedor{
+
+    .vision .contenedor {
         flex-direction: column;
     }
 }
 
+/* CSS PARA PROOVEDORES BOOTSTRAP*/
+/* STYLE PARA LOS PROOVEDORES */
+.proveedor-card {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    margin-top: 10%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proveedor-card img {
+    position: absolute;
+    max-width: 80%;
+    /* Asegura que la imagen se mantenga dentro de la tarjeta */
+    max-height: 80%;
+    /* Asegura que la imagen se mantenga dentro de la tarjeta */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.proveedor-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.proveedor-card:hover img {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.text-reset {
+    text-decoration: none;
+}
+
+
 /* --------------------------------------------------------- */
 /* SECTION: WHATSAPP*/
 
-.whatsapp{
+.whatsapp {
     position: fixed;
     bottom: 20px;
     right: 70px;
@@ -309,24 +393,24 @@
     font-size: 10px;
 }
 
-.whatsapp__texto{
+.whatsapp__texto {
     margin-right: 10px;
     text-align: left;
     color: #444;
 }
 
-.whatsapp__ayuda{
+.whatsapp__ayuda {
     display: block;
 }
 
-.whatsapp__status{
+.whatsapp__status {
     font-weight: bold;
     color: #1d1d1d;
     font-size: 10px;
     margin: 3px;
-} 
+}
 
-.whatsapp__boton{
+.whatsapp__boton {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -339,6 +423,7 @@
 
 /*media queries*/
 @media (max-width: 768px) {
+
     /*NADVAR PARA DISPOSITIVOS MOVILES*/
     .barra-navegacion {
         flex-direction: column;
@@ -454,4 +539,3 @@
         margin-top: 20px;
     }
 }
-

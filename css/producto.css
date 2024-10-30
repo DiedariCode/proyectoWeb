@@ -194,3 +194,45 @@ html {
         gap: 30px;
     }
 }
+
+/* CSS PROOVEDORES */
+
+/* STYLE PARA LOS PROOVEDORES */
+.proveedor-card {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    margin-top: 10%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proveedor-card img {
+    position: absolute;
+    max-width: 80%;
+    /* Asegura que la imagen se mantenga dentro de la tarjeta */
+    max-height: 80%;
+    /* Asegura que la imagen se mantenga dentro de la tarjeta */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.proveedor-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.proveedor-card:hover img {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.text-reset {
+    text-decoration: none;
+}
