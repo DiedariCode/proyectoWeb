@@ -1,337 +1,62 @@
-/* --------------------------------------------------------- */
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* CSS PARA NOSOTROS */
+/* Estilo general para la sección */
+.contenedor__nosotros {
+    background: url(../img/Nosotros.jpg) no-repeat center center/cover;
+    /* Fondo claro */
+    padding: 40px 20px;
+    /* Espaciado vertical y horizontal */
     text-align: center;
-    color: white;
-    height: 100vh;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/motocicleta.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.contenedor {
-    max-width: 1400px;
-    margin: auto;
-}
-
-.banner h2 {
-    font-size: 2.5rem;
-    margin: 10px;
-}
-
-.banner p {
-    font-size: 1.125rem;
-    margin: 10px;
-}
-
-.nuestra-historia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.nuestra-historia .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.nuestra-historia h2 {
-    font-size: 40px;
-    margin: 40px 20px;
-    margin-bottom: 0px;
-}
-
-.nuestra-historia h2 .negro {
-    color: black;
-}
-
-.nuestra-historia h2 .rojo {
-    color: red;
-}
-
-.nuestra-historia p {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px;
-}
-
-.contenido-historia {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 20px;
-    margin-bottom: 50px;
-    width: 80%;
-}
-
-.contenido-historia p {
-    font-weight: normal;
-}
-
-.contenido-historia .texto {
+    /* Centrar el texto */
+    /* Margen alrededor de la sección */
     width: 100%;
-    text-align: justify;
+    height: 80vh;
 }
 
-.contenido-historia .texto p:nth-child(2) {
-    text-align: right;
+.contenedor__nosotros--titulo {
+    font-size: 38px;
+    color: rgb(255, 255, 255);
     font-weight: bold;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    padding-top: 140px;
 }
 
-.contenido-historia .texto p:nth-child(3) {
-    text-align: right;
-    margin-top: 0px;
-}
-
-.contenido-historia .imagen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.imagen img {
-    width: 80%;
-}
-
-.mision {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+.contenedor__nosotros--subtitulo {
+    font-size: 18px;
     color: white;
 }
 
-.mision .contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.mision .contenedor .contenido {
-    text-align: center;
-    width: 86%;
-    margin: 0px 50px;
-}
+/* Media queries para hacer la sección responsiva */
+@media (max-width: 768px) {
+    .contenedor__nosotros {
+        padding: 30px 15px;
 
-.mision .contenedor .contenido h2 {
-    font-size: 40px;
-    margin: 20px;
-}
-
-.mision .contenedor .contenido h2 .rojo {
-    color: red;
-}
-
-.mision .contenedor .contenido p:nth-child(2) {
-    font-weight: bold;
-    margin: 20px;
-}
-
-.mision .contenedor .contenido p {
-    font-size: 20px;
-    margin: 20px;
-}
-
-.mision .contenedor .contenido p:nth-child(4) {
-    text-align: justify;
-    font-style: italic;
-}
-
-.mision .contenedor .imagen {
-    margin: 0;
-    width: 100%;
-    height: 81vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    background-image: url('../img/mision.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.vision {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #bd2626;
-    color: white;
-}
-
-.vision .contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.vision .contenedor .contenido {
-    text-align: center;
-    width: 86%;
-    margin: 0px 50px;
-}
-
-.vision .contenedor .contenido h2 {
-    font-size: 40px;
-    margin: 20px;
-}
-
-.vision .contenedor .contenido h2 .negro {
-    color: rgb(0, 0, 0);
-}
-
-.vision .contenedor .contenido p:nth-child(2) {
-    font-weight: bold;
-    margin: 20px;
-}
-
-.vision .contenedor .contenido p {
-    font-size: 20px;
-    margin: 20px;
-}
-
-.vision .contenedor .contenido p:nth-child(4) {
-    text-align: justify;
-    font-style: italic;
-}
-
-.vision .contenedor .imagen {
-    margin: 0;
-    width: 100%;
-    height: 81vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    background-image: url('../img/vision.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* --------------------------------------------------------- */
-/* SECTION: PROOVEDORES (CODIGO DE DANIEL | COPY DE PROOVEDORES CONTACTO.CSS )*/
-
-.proveedores {
-    padding: 100px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-}
-
-.proveedores__section {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.proveedores__contenedor h2 {
-    text-transform: uppercase;
-    font-size: 40px;
-    color: #ff0000;
-}
-
-.proveedores__titulo-negrita {
-    color: black;
-}
-
-.proveedores__contenedor p {
-    font-size: 20px;
-    padding-bottom: 40px;
-}
-
-.proveedores__logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.proveedores__tarjeta {
-    flex: 1 1 30%;
-    max-width: 50%;
-    border: 1px solid #ddd;
-    padding: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-sizing: border-box;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    /* Set a fixed height for all cards */
-}
-
-.proveedores__tarjeta img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
-    object-fit: contain;
-    /* Ensure the image fits within the card */
-}
-
-.proveedores__tarjeta:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 1000px) {
-    .caja_contenedora {
-        flex-direction: column;
     }
 
-    .caja_contenedora .imagen {
-        width: 50%;
+    .contenedor__nosotros--titulo {
+        font-size: 40px;
+
+    }
+
+    .contenedor__nosotros--subtitulo {
+        font-size: 15px;
     }
 }
 
-@media screen and (max-width: 770px) {
-    .proveedores {
-        padding: 10px;
+@media (max-width: 480px) {
+    .contenedor__nosotros {
+        padding: 20px 10px;
+        /* Espaciado aún más reducido para móviles */
     }
 
-    .proveedores__contenedor h2 {
-        font-size: 30px;
+    .contenedor__nosotros--titulo {
+        font-size: 40px;
+        /* Tamaño de fuente del título más pequeño */
     }
 
-    .proveedores__contenedor p {
-        font-size: 16px;
-    }
-
-    .proveedores__tarjeta {
-        flex: 1 1 100%;
-        max-width: 100%;
-        padding: 20px;
-        height: 200px;
-    }
-
-    .proveedores__tarjeta img {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .contenido-historia {
-        flex-direction: column;
-    }
-
-    .mision .contenedor {
-        flex-direction: column;
-    }
-
-    .vision .contenedor {
-        flex-direction: column;
+    .contenedor__nosotros--subtitulo {
+        font-size: 15px;
+        /* Tamaño de fuente del subtítulo más pequeño */
     }
 }
 
@@ -374,168 +99,4 @@
 
 .text-reset {
     text-decoration: none;
-}
-
-
-/* --------------------------------------------------------- */
-/* SECTION: WHATSAPP*/
-
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 70px;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    font-size: 10px;
-}
-
-.whatsapp__texto {
-    margin-right: 10px;
-    text-align: left;
-    color: #444;
-}
-
-.whatsapp__ayuda {
-    display: block;
-}
-
-.whatsapp__status {
-    font-weight: bold;
-    color: #1d1d1d;
-    font-size: 10px;
-    margin: 3px;
-}
-
-.whatsapp__boton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    border-radius: 50% 50%;
-    padding: 10px;
-    font-size: 30px;
-}
-
-/*media queries*/
-@media (max-width: 768px) {
-
-    /*NADVAR PARA DISPOSITIVOS MOVILES*/
-    .barra-navegacion {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .enlaces-navegacion {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 150px;
-        right: 0;
-        background-color: white;
-        width: 100%;
-        border-top: 2px solid #ccc;
-    }
-
-    .enlaces-navegacion.nav-activo {
-        display: flex;
-    }
-
-    .enlaces-navegacion li {
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .formulario-busqueda {
-        margin-top: 10px;
-        display: flex;
-        width: 90%;
-    }
-
-    .formulario-busqueda input {
-        width: 100%;
-        border-radius: 25px 0 0 25px;
-    }
-
-    .boton-busqueda {
-        border-radius: 0 25px 25px 0;
-    }
-
-    .hamburguesa {
-        display: block;
-    }
-
-    /*CODIGO CASTRO:*/
-
-    .imagen-nosotros {
-        width: 50rem;
-    }
-
-    .titulo-caratula {
-        text-wrap: wrap;
-        font-size: 30px;
-    }
-
-    .titulo--parrafo {
-        font-size: 20px;
-    }
-
-    .contenido-footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .linea-divisora {
-        display: none;
-    }
-
-    .seccion-footer {
-        padding: 20px 0;
-    }
-
-    .logos-redes {
-        padding-left: 0;
-    }
-
-    .caja {
-        font-size: 1rem;
-    }
-
-    .caja--contenido {
-        font-size: 1rem;
-    }
-
-    .proveedores h2 {
-        font-size: 1.5em;
-    }
-
-    .caja_contenedora {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .caja_contenido2 {
-        width: 28rem;
-        margin: 0px 0;
-    }
-
-    .caja_autor {
-        padding-left: 0;
-        width: 165%;
-        text-align: center;
-    }
-
-    .imagen {
-        width: 50%;
-        margin: 10px 0;
-    }
-
-    .caja_contenedora--new {
-        flex-direction: column;
-        margin-top: 20px;
-    }
 }

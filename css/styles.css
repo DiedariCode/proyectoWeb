@@ -740,3 +740,9 @@
         font-size: 15px;
     }
 }
+
+/* --------------------------------------------------------- */
+/* CSS FOOTER BOOTSTRAP */
+.text-reset {
+    text-decoration: none;
+}

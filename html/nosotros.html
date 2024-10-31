@@ -25,7 +25,7 @@
 
                 <!-- Formulario de búsqueda (centrado en pantallas pequeñas) -->
                 <div class="d-flex d-lg-none flex-grow-1">
-                    <form class="d-flex flex-grow-1" role="search" action="#">
+                    <form class="d-flex flex-grow-1" role="search" action="#" style="width: 50px;">
                         <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
                         <button class="btn btn-outline-danger" type="submit">
                             <i class="fas fa-search"></i>
@@ -83,116 +83,167 @@
             }
 
             .main-content {
-                margin-top: auto;
+                margin-top: 81px;
                 /* Adjust this value based on the height of your navbar */
+            }
+
+            .text-justify {
+                text-align: justify;
             }
         </style>
         </style>
     </header>
     <main class="main-content">
-        <section class="banner">
-            <div class="contenedor">
-                <h2 class="titulo-caratula">SOBRE NOSOTROS</h2>
-                <p class="titulo-caratula titulo--parrafo">Pasión por las motos, compromiso con calidad</p>
+        <!-- Sección: Nosotros -->
+        <section>
+            <div class="contenedor__nosotros">
+                <h2 class="contenedor__nosotros--titulo text-uppercase">Sobre Nosotros</h2>
+                <p class="contenedor__nosotros--subtitulo text-light text-center">
+                    Pasión por las motos, compromiso con la calidad
+                </p>
             </div>
         </section>
-        <section class="nuestra-historia">
-            <div class="contenedor">
-                <h2><span class="negro">NUESTRA </span><span class="rojo">HISTORIA</span></h2>
-                <P>"En Jimdur E.I.R.L. cada repuesto cuenta una historia y cada cliente es parte de la nuestra."</P>
-                <div class="contenido-historia">
-                    <div class="texto">
-                        <p>Fundada en la ciudad de Piura, Jimdur E.I.R.L. nace con el compromiso de ofrecer productos de
-                            calidad para los amantes de las motocicletas. Desde nuestros inicios, hemos centrado
-                            nuestros esfuerzos en satisfacer las necesidades de nuestros clientes, brindando una amplia
-                            gama de repuestos, piezas, y accesorios para todas las marcas y modelos del mercado. A lo
-                            largo de los años, nos hemos consolidado como una empresa líder en el sector, destacándonos
-                            por nuestra pasión por el servicio al cliente.</p>
-                        <p>Luis Jimenez</p>
-                        <p>Gerente General</p>
-                    </div>
-                    <div class="imagen">
-                        <img src="../img/retrato-elegante.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="mision">
-            <div class="contenedor">
-                <div class="contenido">
-                    <h2><span class="blanco">NUESTRA </span><span class="rojo">MISIÓN</span></h2>
-                    <p>Guiados por la pasión y el compromiso, trabajamos cada día para ser la primera opción de nuestros
-                        clientes
-                    <p>
-                    <p>"Nuestra misión es proporcionar a nuestros clientes productos de las mejores marcas, reconocidas
-                        por su calidad y durabilidad, asegurando que encuentren exactamente lo que necesitan para sus
-                        motocicletas. Nos esforzamos por brindar un servicio excepcional, personalizado y cercano, que
-                        haga que cada visita a nuestra tienda sea una experiencia satisfactoria, basada en la confianza
-                        y la excelencia."</p>
-                </div>
-                <div class="imagen">
-                </div>
-            </div>
-        </section>
-        <section class="vision">
-            <div class="contenedor">
-                <div class="imagen"></div>
-                <div class="contenido">
-                    <h2><span class="blanco">NUESTRA </span><span class="negro">VISIÓN</span></h2>
-                    <p>Miramos al futuro con la determinación de seguir creciendo y liderando el mercado
-                    <p>
-                    <p>"Nos proyectamos como una de las empresas más competitivas del sector motero en nuestra región,
-                        cumpliendo y superando las expectativas de nuestros clientes. Para el 2023, aspiramos a
-                        consolidarnos como uno de los principales distribuidores mayoristas en el mercado piurano, y
-                        para el 2028, convertirnos en importadores de productos con nuestra propia marca, expandiendo
-                        nuestra presencia en diversos mercados a nivel nacional."</p>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <!-- Sección de Proveedores -->
-        <div class="container-fluid bg-light py-5">
-            <h2 class="fw-bold text-uppercase text-center mb-4">Nuestros <span
-                    class="fw-bold text-danger">Proveedores</span></h2>
-            <p class="text-center">Trabajamos con proveedores líderes en la industria para asegurarte repuestos y
-                accesorios de la más alta calidad.</p>
-
-            <!-- Contenedor de los logos -->
+        <!-- Sección: Nuestra Historia -->
+        <section class="nuestra-historia py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <div class="proveedor-card bg-white">
-                            <img src="../img/marcas/BAJAJ.png" alt="BAJAJ" class="img-fluid">
-                        </div>
+                <div class="row text-center mb-4">
+                    <div class="col-12">
+                        <h2 class="text-uppercase fw-bold">Nuestra <span class="text-danger">Historia</span></h2>
+                        <p class="lead mt-3">"En Jimdur E.I.R.L cada repuesto cuenta una historia y cada cliente es
+                            parte de la nuestra."</p>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <div class="proveedor-card bg-white">
-                            <img src="../img/marcas/Hero.png" alt="Hero" class="img-fluid">
+                </div>
+                <div class="row justify-content-center">
+                    <!-- Card -->
+                    <div class="card shadow-lg d-flex flex-lg-row flex-column align-items-center p-4"
+                        style="max-width: 1300px;">
+                        <!-- Imagen -->
+                        <div class="card-img-left mb-lg-0 mb-3 text-center">
+                            <img src="../img/retrato-elegante.jpg" alt="Luis Jimenez"
+                                class="img-fluid rounded-circle d-none d-lg-block m-0 me-5"
+                                style="width: 700px; height: 200px; object-fit: cover;">
+                            <img src="../img/retrato-elegante.jpg" alt="Luis Jimenez"
+                                class="img-fluid rounded-circle d-lg-none"
+                                style="width: 150px; height: 150px; object-fit: cover;">
                         </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <div class="proveedor-card bg-white">
-                            <img src="../img/marcas/Honda.png" alt="Honda" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <div class="proveedor-card bg-white">
-                            <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <div class="proveedor-card bg-white">
-                            <img src="../img/marcas/ktm.png" alt="KTM" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <div class="proveedor-card bg-white">
-                            <img src="../img/marcas/yamaha.png" alt="Yamaha" class="img-fluid">
+                        <!-- Texto -->
+                        <div class="card-body">
+                            <p class="card-text text-justify pt-lg-5" style="font-size: 16px;">
+                                Fundada en Piura, Jimdur E.I.R.L. nació con un firme compromiso: ofrecer productos de
+                                calidad para los amantes de las motocicletas. A lo largo de nuestra trayectoria, hemos
+                                dedicado todos nuestros esfuerzos a satisfacer las necesidades de nuestros clientes,
+                                brindando una selección de repuestos y accesorios para las principales marcas y modelos
+                                del mercado. Hoy, somos una empresa líder en el sector, apasionados por el servicio al
+                                cliente y orgullosos de ser una parte fundamental en la experiencia de cada
+                                motociclista.
+                            </p>
+                            <p class="text-end fw-bold mb-1">Luis Jimenez</p>
+                            <p class="text-end text-muted">Gerente General</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Sección: Misión y Visión -->
+        <section class="mision-vision py-5 bg-light">
+            <div class="container">
+                <!-- Contenedor Misión -->
+                <div class="row align-items-center mb-5">
+                    <!-- Imagen Misión -->
+                    <div class="col-lg-4 col-12 mb-3 text-center">
+                        <img src="../img/mision.jpg" alt="Misión" class="img-fluid rounded shadow"
+                            style="max-width: 100%; height: auto;">
+                    </div>
+                    <!-- Texto Misión -->
+                    <div class="col-lg-8 col-12">
+                        <h3 class="text-center text-uppercase fw-bold mb-3">Nuestra <span
+                                class="text-danger">Mision</span></h3>
+                        <p class="fw-bold text-center" style="font-size: 20px;">Guiados por la pasión y el compromiso
+                            trabajamos cada día para ser la primera opcion de nuestros clientes</p>
+                        <p class="text-justify" style="font-size: 18px;">
+                            "Nuestra mision es proporcionar a nuestros clientes productos de las mejores marcas,
+                            reconocidas por su calidad y durabilidad, asegurando que encuentren exactamente lo que
+                            necesitan para sus motocicletas. Nos esforzamos por brindar un servicio excepcional,
+                            personalizado y caercano, que haga que cada visita a nuestra tienda sea una experiencia
+                            satisfactoria, basada en la confianza y la excelencia"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contenedor Visión -->
+                <div class="row align-items-center">
+                    <!-- Texto Visión-->
+                    <div class="col-lg-8 col-12">
+                        <h3 class="text-center text-uppercase fw-bold mb-3">Nuestra <span
+                                class="text-danger">Visión</span></h3>
+                        <p class="fw-bold text-center" style="font-size: 20px;">Miramos al futuro con la determinación
+                            de seguir creciendo y liderando el mercado</p>
+                        <p class="text-justify" style="font-size: 18px;">
+                            "Nos proyectamos como una de las empresas mas competitivas del sector motero en nuestra
+                            región, cumpliendo y superando las expectativas de nuestros clientes. Para el 2023,
+                            aspiramos a consolidarnos como uno de los principales distribuidores mayoristas en el
+                            mercado piurano y para el 2028, convertirnos en importadores de productos con nuestra propia
+                            marca, expandiendo nuestra presencia en diversos mercados a nivel nacional y posteriormente
+                            a internacional"
+                        </p>
+                    </div>
+                    <!-- Imagen Vision -->
+                    <div class="col-lg-4 col-12 mb-3 text-center">
+                        <img src="../img/vision.jpg" alt="Misión" class="img-fluid rounded shadow"
+                            style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Sección de Proveedores -->
+        <section>
+            <div class="container-fluid bg-light py-5 bg-white">
+                <h2 class="fw-bold text-uppercase text-center mb-4">Nuestros <span
+                        class="fw-bold text-danger">Proveedores</span></h2>
+                <p class="text-center">Trabajamos con proveedores líderes en la industria para asegurarte repuestos y
+                    accesorios de la más alta calidad.</p>
+
+                <!-- Contenedor de los logos -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-2 mb-4">
+                            <div class="proveedor-card bg-white">
+                                <img src="../img/marcas/BAJAJ.png" alt="BAJAJ" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-4">
+                            <div class="proveedor-card bg-white">
+                                <img src="../img/marcas/Hero.png" alt="Hero" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-4">
+                            <div class="proveedor-card bg-white">
+                                <img src="../img/marcas/Honda.png" alt="Honda" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-4">
+                            <div class="proveedor-card bg-white">
+                                <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-4">
+                            <div class="proveedor-card bg-white">
+                                <img src="../img/marcas/ktm.png" alt="KTM" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-4">
+                            <div class="proveedor-card bg-white">
+                                <img src="../img/marcas/yamaha.png" alt="Yamaha" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <!-- Footer -->
