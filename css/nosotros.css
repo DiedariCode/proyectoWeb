@@ -1,4 +1,21 @@
 /* CSS MAIN */
+.active {
+    border-bottom: 3px solid #dc3545;
+}
+
+.navbar {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    position: fixed;
+    background-color: white;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.main-content {
+    margin-top: 81px;
+    /* Adjust this value based on the height of your navbar */
+}
 
 /* Hero Section */
 .hero-section {
@@ -312,8 +329,10 @@
 
 .logo-img {
     width: 100px;
-    height: 100px; /* Ensure all images have the same height */
-    object-fit: contain; /* Ensure the aspect ratio is maintained */
+    height: 100px;
+    /* Ensure all images have the same height */
+    object-fit: contain;
+    /* Ensure the aspect ratio is maintained */
     filter: grayscale(100%);
     opacity: 0.7;
     transition: transform 0.3s ease, opacity 0.3s ease;
