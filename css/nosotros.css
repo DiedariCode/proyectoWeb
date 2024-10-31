@@ -1,26 +1,22 @@
 /* CSS MAIN */
 .active {
-    border-bottom: 3px solid #dc3545;
+    border-bottom: 3px solid #dc3545 !important;
 }
 
 .navbar {
-    box-shadow: 0 0 5px rgb(0, 0, 0);
-    position: fixed;
-    background-color: white;
-    top: 0%;
-    width: 100%;
-    z-index: 1000;
+    box-shadow: 0 0 5px rgb(0, 0, 0) !important;
+    position: fixed !important ;
+    background-color: white !important;
+    top: 0% !important;
+    width: 100% !important;
+    z-index: 1000 !important;
 }
 
-.main-content {
-    margin-top: 81px;
-    /* Adjust this value based on the height of your navbar */
-}
 
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: 60vh;
+    height: 80vh;
     background: url('../img/Nosotros.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
@@ -353,4 +349,11 @@
     100% {
         transform: translateX(-50%);
     }
+}
+
+/* FOOTER CSS */
+
+.text-reset {
+    /* Reset de color de texto */
+    text-decoration: none;
 }

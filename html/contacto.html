@@ -41,7 +41,7 @@
 
                 <!-- Enlaces de navegación (colapsable) -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav text-center">
+                    <ul class="navbar-nav text-center fw-semibold">
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
@@ -68,32 +68,25 @@
                 </div>
             </div>
         </nav>
-        <style>
-            .active {
-                border-bottom: 3px solid #dc3545;
-            }
-
-            .navbar {
-                box-shadow: 0 0 5px rgb(0, 0, 0);
-                position: fixed;
-                background-color: white;
-                top: 0%;
-                width: 100%;
-                z-index: 1000;
-            }
-            .main-content {
-                margin-top: 110px; /* Adjust this value based on the height of your navbar */
-            }
-        </style>
     </header>
 
     <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="display-4">JIMDUR Repuestos</h1>
+                    <p class="lead">Excelencia en repuestos de motocicletas desde 1995</p>
+                </div>
+            </div>
+        </section>
+        <!-- Formularios section -->
         <div class="container my-4 mb-2">
             <div class="row">
                 <!-- Sección de Contacto -->
                 <section class="col-lg-6 mb-4">
-                    <div
-                        class="text-center p-4 border-3 border-top border-bottom border-danger bg-white rounded shadow-sm">
+                    <div class="text-center p-4 border-3 border-top border-danger bg-light rounded shadow-sm">
                         <h2 class="fw-bold" style="color: #333333;">CONTÁCTANOS</h2>
                         <p class="text-muted">Tu consulta es importante para nosotros</p>
                         <div class="d-flex justify-content-around my-3">
@@ -111,22 +104,19 @@
                                 <p>info@jimdurr.com</p>
                             </div>
                         </div>
-                        <div class="text-center mt-4">
+                        <div class="text-center mt-4 map-container">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.6374988954863!2d-80.65618082542369!3d-5.161883952143082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1b88948eae13%3A0x1d2875411b61bb19!2sGrupo%20Jimdur%20%26%20Motorepuestos%20Jimenez!5e0!3m2!1ses!2spe!4v1730094624124!5m2!1ses!2spe"
-                                width="100%" height="344" style="border:0; border-radius: 15px;" allowfullscreen=""
-                                loading="lazy">
-                            </iframe>
+                                width="100%" height="344" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </section>
 
-                <!-- Formulario -->
+                <!-- Formulario de Cotización -->
                 <section class="col-lg-6 mb-4">
-
-                    <form
-                        class="p-4  bg-light rounded shadow-sm text-center p-4 border-3 border-top border-bottom border-danger bg-white rounded shadow-md">
-                        <h2 class="text-center mb-4 fw-bold" style="color: #333333;">SOLICITE SU COTIZACIÓN</h2>
+                    <form class="p-4 feedback-form">
+                        <h2 class="text-center mb-4 fw-bold" style="color: #333333;">SOLICITE SU <span
+                                class="text-danger">COTIZACIÓN</span></h2>
                         <div class="mb-3">
                             <input type="text" class="form-control" placeholder="Nombre" required>
                         </div>
@@ -157,56 +147,172 @@
                         </div>
                         <button type="submit" class="btn btn-danger w-100">Enviar mensaje</button>
                     </form>
-
                 </section>
             </div>
         </div>
 
-        <!-- Sección de Proveedores -->
-        <div class="container-fluid bg-light py-5">
-            <h2 class="fw-bold text-uppercase text-center mb-4">Nuestros <span
-                    class="fw-bold text-danger">Proveedores</span></h2>
-            <p class="text-center">Trabajamos con proveedores líderes en la industria para asegurarte repuestos y
-                accesorios de la más alta calidad.</p>
-
-            <!-- Contenedor de los logos -->
+        <!-- Sección de Feedback y Horarios de Atención -->
+        <div class="container-fluid bg-light py-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <div class="proveedor-card bg-white">
-                            <img src="../img/marcas/BAJAJ.png" alt="BAJAJ" class="img-fluid">
-                        </div>
+                    <h2 class="text-center mb-0 pb-0 mt-lg-4 fw-bold">INFORMACION <SPAn
+                            class="text-danger">ADICIONAL</SPAn></h2>
+                    <!-- Sección de Feedback -->
+                    <div class="col-lg-6 mt-3">
+                        <form class="feedback-form bg-white p-4 rounded shadow-sm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control bg-light" placeholder="Nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control bg-light" placeholder="Correo Electrónico"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control bg-light" rows="8" placeholder="Tu reseña"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100">Enviar Reseña</button>
+                        </form>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <div class="proveedor-card bg-white">
-                            <img src="../img/marcas/Hero.png" alt="Hero" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <div class="proveedor-card bg-white">
-                            <img src="../img/marcas/Honda.png" alt="Honda" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <div class="proveedor-card bg-white">
-                            <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <div class="proveedor-card bg-white">
-                            <img src="../img/marcas/ktm.png" alt="KTM" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <div class="proveedor-card bg-white">
-                            <img src="../img/marcas/yamaha.png" alt="Yamaha" class="img-fluid">
+
+                    <!-- Sección de Horarios de Atención -->
+                    <div class="col-lg-6 mt-0">
+                        <h3 class="text-center mb-3"></h3>
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <div class="p-4 border bg-white rounded shadow-sm">
+                                    <h4>Lunes a Viernes</h4>
+                                    <p>9:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="p-4 border bg-white rounded shadow-sm">
+                                    <h4>Sábados</h4>
+                                    <p>9:00 AM - 1:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="p-4 border bg-white rounded shadow-sm">
+                                    <h4>Domingos y Feriados</h4>
+                                    <p>Cerrado</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+        <!-- Sección de Preguntas Frecuentes (FAQ) -->
+        <div class="container my-4">
+            <h2 class="fw-bold text-uppercase text-center mb-4">Preguntas <span class="text-danger">Frecuentes</span>
+            </h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button faq-title" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Qué tipo de repuestos ofrecen?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Ofrecemos una amplia gama de repuestos y accesorios para motocicletas de diversas marcas y
+                            modelos.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button faq-title collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Realizan envíos a domicilio?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Sí, realizamos envíos a domicilio dentro de la ciudad y también a otras localidades bajo
+                            ciertas condiciones.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button faq-title collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Cómo puedo hacer un pedido?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Puedes realizar tu pedido a través de nuestro formulario de contacto o llamándonos
+                            directamente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Carrusel de Proveedores -->
+        <section class="carousel-proveedores py-2">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Logo de Proveedor 1 -->
+                    <div class="xd">
+                        <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 2 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 3 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 4 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 5 -->
+                    <div class="xd">
+                        <img src="../img/marcas/ktm.png" alt="ktm" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 5 -->
+                    <div class="xd">
+                        <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 1 -->
+                    <div class="xd">
+                        <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 2 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 3 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 4 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 5 -->
+                    <div class="xd">
+                        <img src="../img/marcas/ktm.png" alt="ktm" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 5 -->
+                    <div class="xd">
+                        <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 
 
