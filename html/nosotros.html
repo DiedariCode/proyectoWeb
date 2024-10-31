@@ -12,6 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Añade esto en el head de tu HTML para la biblioteca AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -86,164 +89,293 @@
                 margin-top: 81px;
                 /* Adjust this value based on the height of your navbar */
             }
-
-            .text-justify {
-                text-align: justify;
-            }
         </style>
         </style>
     </header>
+    <!-- Contenido del Main -->
     <main class="main-content">
-        <!-- Sección: Nosotros -->
-        <section>
-            <div class="contenedor__nosotros">
-                <h2 class="contenedor__nosotros--titulo text-uppercase">Sobre Nosotros</h2>
-                <p class="contenedor__nosotros--subtitulo text-light text-center">
-                    Pasión por las motos, compromiso con la calidad
-                </p>
-            </div>
-        </section>
-        <!-- Sección: Nuestra Historia -->
-        <section class="nuestra-historia py-5">
+        <!-- Hero Section -->
+        <section class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+            <div class="hero-overlay"></div>
             <div class="container">
-                <div class="row text-center mb-4">
-                    <div class="col-12">
-                        <h2 class="text-uppercase fw-bold">Nuestra <span class="text-danger">Historia</span></h2>
-                        <p class="lead mt-3">"En Jimdur E.I.R.L cada repuesto cuenta una historia y cada cliente es
-                            parte de la nuestra."</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <!-- Card -->
-                    <div class="card shadow-lg d-flex flex-lg-row flex-column align-items-center p-4"
-                        style="max-width: 1300px;">
-                        <!-- Imagen -->
-                        <div class="card-img-left mb-lg-0 mb-3 text-center">
-                            <img src="../img/retrato-elegante.jpg" alt="Luis Jimenez"
-                                class="img-fluid rounded-circle d-none d-lg-block m-0 me-5"
-                                style="width: 700px; height: 200px; object-fit: cover;">
-                            <img src="../img/retrato-elegante.jpg" alt="Luis Jimenez"
-                                class="img-fluid rounded-circle d-lg-none"
-                                style="width: 150px; height: 150px; object-fit: cover;">
-                        </div>
-                        <!-- Texto -->
-                        <div class="card-body">
-                            <p class="card-text text-justify pt-lg-5" style="font-size: 16px;">
-                                Fundada en Piura, Jimdur E.I.R.L. nació con un firme compromiso: ofrecer productos de
-                                calidad para los amantes de las motocicletas. A lo largo de nuestra trayectoria, hemos
-                                dedicado todos nuestros esfuerzos a satisfacer las necesidades de nuestros clientes,
-                                brindando una selección de repuestos y accesorios para las principales marcas y modelos
-                                del mercado. Hoy, somos una empresa líder en el sector, apasionados por el servicio al
-                                cliente y orgullosos de ser una parte fundamental en la experiencia de cada
-                                motociclista.
-                            </p>
-                            <p class="text-end fw-bold mb-1">Luis Jimenez</p>
-                            <p class="text-end text-muted">Gerente General</p>
-                        </div>
-                    </div>
+                <div class="hero-content">
+                    <h1 class="display-4">JIMDUR Repuestos</h1>
+                    <p class="lead">Excelencia en repuestos de motocicletas desde 1995</p>
                 </div>
             </div>
         </section>
 
-        <!-- Sección: Misión y Visión -->
-        <section class="mision-vision py-5 bg-light">
+        <!-- Historia Section -->
+        <section class="history-section py-5 bg-white">
             <div class="container">
-                <!-- Contenedor Misión -->
-                <div class="row align-items-center mb-5">
-                    <!-- Imagen Misión -->
-                    <div class="col-lg-4 col-12 mb-3 text-center">
-                        <img src="../img/mision.jpg" alt="Misión" class="img-fluid rounded shadow"
-                            style="max-width: 100%; height: auto;">
-                    </div>
-                    <!-- Texto Misión -->
-                    <div class="col-lg-8 col-12">
-                        <h3 class="text-center text-uppercase fw-bold mb-3">Nuestra <span
-                                class="text-danger">Mision</span></h3>
-                        <p class="fw-bold text-center" style="font-size: 20px;">Guiados por la pasión y el compromiso
-                            trabajamos cada día para ser la primera opcion de nuestros clientes</p>
-                        <p class="text-justify" style="font-size: 18px;">
-                            "Nuestra mision es proporcionar a nuestros clientes productos de las mejores marcas,
-                            reconocidas por su calidad y durabilidad, asegurando que encuentren exactamente lo que
-                            necesitan para sus motocicletas. Nos esforzamos por brindar un servicio excepcional,
-                            personalizado y caercano, que haga que cada visita a nuestra tienda sea una experiencia
-                            satisfactoria, basada en la confianza y la excelencia"
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Contenedor Visión -->
                 <div class="row align-items-center">
-                    <!-- Texto Visión-->
-                    <div class="col-lg-8 col-12">
-                        <h3 class="text-center text-uppercase fw-bold mb-3">Nuestra <span
-                                class="text-danger">Visión</span></h3>
-                        <p class="fw-bold text-center" style="font-size: 20px;">Miramos al futuro con la determinación
-                            de seguir creciendo y liderando el mercado</p>
-                        <p class="text-justify" style="font-size: 18px;">
-                            "Nos proyectamos como una de las empresas mas competitivas del sector motero en nuestra
-                            región, cumpliendo y superando las expectativas de nuestros clientes. Para el 2023,
-                            aspiramos a consolidarnos como uno de los principales distribuidores mayoristas en el
-                            mercado piurano y para el 2028, convertirnos en importadores de productos con nuestra propia
-                            marca, expandiendo nuestra presencia en diversos mercados a nivel nacional y posteriormente
-                            a internacional"
-                        </p>
+                    <div class="col-md-8 mb-0">
+                        <h2 class="text-center text-dark fw-bold text-uppercase">Nuestra <span
+                                class="text-danger">Historia</span></h2>
+                        <p class="fw-normal p-3" style="text-align: justify; font-size: 1rem;">
+                            "Fundada en Ia ciudad de Piura, Jimdur E.I.R.L. nace con el
+                            compromiso de ofrecer productos de calidad para los amantes
+                            de las motocicletas. Desde nuestros inicios, hemos centrado
+                            nuestros esfuerzos en satisfacer las necesidades de nuestros
+                            clientes, brindando una amplia gama de repuestos, piezas, y
+                            accesorios para todas las marcas y modelos del mercado. A lo
+                            largo de los años, nos hemos consolidado como una empresa
+                            líder en el sector, destacándonos por nuestra pasión por el
+                            servicio al cliente"</p>
+                        <div class="row">
+                            <div class="col stat-item text-center">
+                                <span class="stat-number display-4 text-danger">25</span>+
+                                <p class="stat-label">Años de experiencia</p>
+                            </div>
+                            <div class="col stat-item text-center">
+                                <span class="stat-number display-4 text-danger">10000</span>+
+                                <p class="stat-label">Clientes satisfechos</p>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Imagen Vision -->
-                    <div class="col-lg-4 col-12 mb-3 text-center">
-                        <img src="../img/vision.jpg" alt="Misión" class="img-fluid rounded shadow"
-                            style="max-width: 100%; height: auto;">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-         <!-- Sección de Proveedores -->
-        <section>
-            <div class="container-fluid bg-light py-5 bg-white">
-                <h2 class="fw-bold text-uppercase text-center mb-4">Nuestros <span
-                        class="fw-bold text-danger">Proveedores</span></h2>
-                <p class="text-center">Trabajamos con proveedores líderes en la industria para asegurarte repuestos y
-                    accesorios de la más alta calidad.</p>
-
-                <!-- Contenedor de los logos -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-md-4 col-lg-2 mb-4">
-                            <div class="proveedor-card bg-white">
-                                <img src="../img/marcas/BAJAJ.png" alt="BAJAJ" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 mb-4">
-                            <div class="proveedor-card bg-white">
-                                <img src="../img/marcas/Hero.png" alt="Hero" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 mb-4">
-                            <div class="proveedor-card bg-white">
-                                <img src="../img/marcas/Honda.png" alt="Honda" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 mb-4">
-                            <div class="proveedor-card bg-white">
-                                <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 mb-4">
-                            <div class="proveedor-card bg-white">
-                                <img src="../img/marcas/ktm.png" alt="KTM" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 mb-4">
-                            <div class="proveedor-card bg-white">
-                                <img src="../img/marcas/yamaha.png" alt="Yamaha" class="img-fluid">
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <img src="../img/retrato-elegante.jpg" alt="Historia JIMDUR"
+                            class="rounded img-fluid shadow --gerente">
+                        <p class="text-center pt-2 pb-0">Luis Jimenez <br> Gerente General</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Misión y Visión Section -->
+        <section class="mission-vision-section text-center py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-5 fw-bold text-uppercase">Nuestra <span class="text-danger">Misión y Visión</span></h2>
+                <div class="row">
+                    <!-- Misión -->
+                    <div class="col-md-6 mb-4">
+                        <div class="mission-card p-4 shadow-sm bg-white">
+                            <h3 class="mb-3">Misión</h3>
+                            <p>
+                                "Nuestra misión es proporcionar a nuestros
+                                clientes productos de las mejores marcas,
+                                reconocidas por su calidad y durabilidad,
+                                asegurando que encuentren exactamente lo que
+                                necesitan para sus motocicletas. Nos
+                                esforzamos por brindar un servicio excepcional,
+                                personalizado y cercano, que haga que cada
+                                visita a nuestra tienda sea una experiencia
+                                satisfactoria, basada en la confianza y la
+                                excelencia"
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Visión -->
+                    <div class="col-md-6 mb-4">
+                        <div class="vision-card p-4 shadow-sm bg-white">
+                            <h3 class="mb-3">Visión</h3>
+                            <p>
+                                "Nos proyectamos como una de las empresas
+                                más competitivas del sector motero en nuestra
+                                región,
+                                cumpliendo y superando las
+                                expectativas de nuestros clientes. Para el 2023,
+                                aspiramos a consolidarnos como uno de los
+                                principales distribuidores mayoristas en el
+                                mercado piurano, y para el 2028, convertirnos
+                                en importadores de productos con nuestra
+                                propia marca, expandiendo nuestra presencia
+                                en diversos mercados a nivel nacional."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+
+        <!-- Valores Section -->
+        <section class="values-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 text-uppercase fw-bold text-uppercase">Nuestros <span
+                        class="text-danger">valores</span></h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="value-card p-4 border rounded shadow-sm">
+                            <i class="fas fa-medal text-danger fs-1 mb-3"></i>
+                            <h3>Calidad</h3>
+                            <p>Compromiso con la excelencia en cada producto que ofrecemos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="value-card p-4 border rounded shadow-sm">
+                            <i class="fas fa-handshake text-danger fs-1 mb-3"></i>
+                            <h3>Confianza</h3>
+                            <p>Construimos relaciones duraderas basadas en la honestidad.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="value-card p-4 border rounded shadow-sm">
+                            <i class="fas fa-tools text-danger fs-1 mb-3"></i>
+                            <h3>Experiencia</h3>
+                            <p>Conocimiento técnico respaldado por años de experiencia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipo Section -->
+        <section class="team-section py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 text-uppercase fw-bold text-uppercase">Nuestro <span
+                        class="text-danger">Equipos</span></h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="team-card border rounded shadow-sm">
+                            <img src="../img/perfil01.jpg" alt="Juan Pérez" class="img-fluid rounded-top">
+                            <div class="team-info p-3">
+                                <h3>Juan Pérez</h3>
+                                <p>Director General</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="text-secondary mx-2"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-secondary mx-2"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repetir bloques para otros miembros del equipo -->
+                    <div class="col-md-4 mb-4">
+                        <div class="team-card border rounded shadow-sm">
+                            <img src="../img/perfil01.jpg" alt="Juan Pérez" class="img-fluid rounded-top">
+                            <div class="team-info p-3">
+                                <h3>Juan Pérez</h3>
+                                <p>Director General</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="text-secondary mx-2"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-secondary mx-2"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="team-card border rounded shadow-sm">
+                            <img src="../img/perfil01.jpg" alt="Juan Pérez" class="img-fluid rounded-top">
+                            <div class="team-info p-3">
+                                <h3>Juan Pérez</h3>
+                                <p>Director General</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="text-secondary mx-2"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-secondary mx-2"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios Section -->
+        <section class="testimonials-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 text-uppercase fw-bold">Lo que dicen <span class="text-danger">nuestros
+                        clientes</span></h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="testimonial-card border rounded shadow-sm p-4">
+                            <i class="fas fa-quote-left text-danger fs-2 mb-3"></i>
+                            <p>Excelente servicio y productos de primera calidad. Siempre encuentro lo que necesito.</p>
+                            <div class="testimonial-author d-flex align-items-center mt-3">
+                                <img src="../img/perfil01.jpg" alt="Cliente" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h4>Roberto Silva</h4>
+                                    <p class="mb-0">Cliente desde 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repetir bloques para otros testimonios -->
+                    <div class="col-md-4 mb-4">
+                        <div class="testimonial-card border rounded shadow-sm p-4">
+                            <i class="fas fa-quote-left text-danger fs-2 mb-3"></i>
+                            <p>Excelente servicio y productos de primera calidad. Siempre encuentro lo que necesito.</p>
+                            <div class="testimonial-author d-flex align-items-center mt-3">
+                                <img src="../img/perfil01.jpg" alt="Cliente" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h4>Roberto Silva</h4>
+                                    <p class="mb-0">Cliente desde 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="testimonial-card border rounded shadow-sm p-4">
+                            <i class="fas fa-quote-left text-danger fs-2 mb-3"></i>
+                            <p>Excelente servicio y productos de primera calidad. Siempre encuentro lo que necesito.</p>
+                            <div class="testimonial-author d-flex align-items-center mt-3">
+                                <img src="../img/perfil01.jpg" alt="Cliente" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h4>Roberto Silva</h4>
+                                    <p class="mb-0">Cliente desde 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrusel de Proveedores -->
+        <section class="carousel-proveedores py-2">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Logo de Proveedor 1 -->
+                    <div class="xd">
+                        <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 2 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 3 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 4 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 5 -->
+                    <div class="xd">
+                        <img src="../img/marcas/ktm.png" alt="ktm" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 5 -->
+                    <div class="xd">
+                        <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 1 -->
+                    <div class="xd">
+                        <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 2 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 3 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 4 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 5 -->
+                    <div class="xd">
+                        <img src="../img/marcas/ktm.png" alt="ktm" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 5 -->
+                    <div class="xd">
+                        <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->

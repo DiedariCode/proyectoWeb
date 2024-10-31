@@ -1,102 +1,337 @@
-/* CSS PARA NOSOTROS */
-/* Estilo general para la sección */
-.contenedor__nosotros {
-    background: url(../img/Nosotros.jpg) no-repeat center center/cover;
-    /* Fondo claro */
-    padding: 40px 20px;
-    /* Espaciado vertical y horizontal */
-    text-align: center;
-    /* Centrar el texto */
-    /* Margen alrededor de la sección */
-    width: 100%;
-    height: 80vh;
-}
+/* CSS MAIN */
 
-.contenedor__nosotros--titulo {
-    font-size: 38px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding-top: 140px;
-}
-
-.contenedor__nosotros--subtitulo {
-    font-size: 18px;
-    color: white;
-}
-
-
-/* Media queries para hacer la sección responsiva */
-@media (max-width: 768px) {
-    .contenedor__nosotros {
-        padding: 30px 15px;
-
-    }
-
-    .contenedor__nosotros--titulo {
-        font-size: 40px;
-
-    }
-
-    .contenedor__nosotros--subtitulo {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .contenedor__nosotros {
-        padding: 20px 10px;
-        /* Espaciado aún más reducido para móviles */
-    }
-
-    .contenedor__nosotros--titulo {
-        font-size: 40px;
-        /* Tamaño de fuente del título más pequeño */
-    }
-
-    .contenedor__nosotros--subtitulo {
-        font-size: 15px;
-        /* Tamaño de fuente del subtítulo más pequeño */
-    }
-}
-
-/* CSS PARA PROOVEDORES BOOTSTRAP*/
-/* STYLE PARA LOS PROOVEDORES */
-.proveedor-card {
+/* Hero Section */
+.hero-section {
     position: relative;
-    width: 100%;
-    padding-top: 100%;
-    margin-top: 10%;
+    height: 60vh;
+    background: url('../img/Nosotros.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* Historia Section */
+.history-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.--gerente {
+    width: 400px;
+}
+
+.history-section h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.stats-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #dc3545;
+    display: inline-block;
+}
+
+.stat-label {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Misión y Visión Section */
+.mission-vision-section {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+}
+
+.mission-vision-section h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.mission-card,
+.vision-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: white;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+    transform: translateY(-10px);
+}
+
+.mission-card h3,
+.vision-card h3 {
+    font-size: 1.5rem;
+    color: #dc3545;
+}
+
+.mission-card p,
+.vision-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Valores Section */
+
+.values-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.value-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: white;
+    height: 100%;
+    animation: flipInX 1s ease-in-out;
+}
+
+.value-icon {
+    font-size: 3rem;
+    color: #dc3545;
+    margin-bottom: 1.5rem;
+}
+
+/* Equipo Section */
+.team-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.team-card {
+    background: white;
+    border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.team-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.team-info h3 {
+    margin: 0;
+    color: #333;
+}
+
+.team-info p {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: #666;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #dc3545;
+}
+
+/* Testimonios Section */
+.testimonials-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.testimonial-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.testimonial-content {
+    position: relative;
+}
+
+.testimonial-content i {
+    font-size: 2rem;
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 3px solid #dc3545;
+}
+
+.testimonial-author h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.testimonial-author p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes flipInX {
+    from {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+/* Carrusel de Proveedores */
+.carousel-proveedores {
+    background-color: #f8f9fa;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.carousel-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
 }
 
-.proveedor-card img {
-    position: absolute;
-    max-width: 80%;
-    /* Asegura que la imagen se mantenga dentro de la tarjeta */
-    max-height: 80%;
-    /* Asegura que la imagen se mantenga dentro de la tarjeta */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 0.3s ease-in-out;
+.carousel-track {
+    display: flex;
+    animation: scroll 15s linear infinite;
 }
 
-.proveedor-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.xd {
+    flex: 0 0 auto;
+    padding: 0 15px;
+    min-width: 120px;
 }
 
-.proveedor-card:hover img {
-    transform: translate(-50%, -50%) scale(1.1);
+.logo-img {
+    width: 100px;
+    height: 100px; /* Ensure all images have the same height */
+    object-fit: contain; /* Ensure the aspect ratio is maintained */
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.text-reset {
-    text-decoration: none;
+.logo-img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Animación de desplazamiento */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
