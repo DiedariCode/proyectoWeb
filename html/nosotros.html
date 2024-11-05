@@ -5,194 +5,470 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/nosotros.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Nosotros - JIMDUR Repuestos</title>
+
+    <!-- Bootstrap CSS v5.2.1 y FontAwesome-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Añade esto en el head de tu HTML para la biblioteca AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="barra-navegacion">
-                <div class="logo">
-                    <a href="../index.html">
-                        <img class="logo_jimdur" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="">
-                    </a>
+    <header class="bg-white border-bottom shadow-sm text-uppercase">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <div class="container d-flex align-items-center">
+                <!-- Logo -->
+                <a class="navbar-brand me-3" href="../index.html">
+                    <img src="../img/Logo Jimdur/logo_sinfondo_negro.png" alt="Logo Jimdur" width="100">
+                </a>
+
+                <!-- Formulario de búsqueda (centrado en pantallas pequeñas) -->
+                <div class="d-flex d-lg-none flex-grow-1">
+                    <form class="d-flex flex-grow-1" role="search" action="#" style="width: 50px;">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                        <button class="btn btn-outline-danger" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
                 </div>
-                <ul class="enlaces-navegacion">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="nosotros.html" class="activo">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-                <form class="formulario-busqueda" action="#">
-                    <input type="text" placeholder="Buscar...">
-                    <button type="submit" class="boton-busqueda">
-                        <img class="imagen-boton" src="../img/iconos/buscar.png" alt="Buscar">
-                    </button>
-                </form>
-                <!-- Botón menú hamburguesa -->
-                <div class="hamburguesa" onclick="alternarMenu()">
-                    &#9776;
+
+                <!-- Botón de menú móvil -->
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Enlaces de navegación (colapsable) -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-center fw-semibold">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Formulario de búsqueda (visible solo en pantallas grandes) -->
+                <div class="d-none d-lg-flex ms-auto align-items-center">
+                    <form class="d-flex align-items-center" role="search" action="#">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                        <button class="btn btn-outline-danger" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <section class="banner">
-            <div class="contenedor">
-                <h2 class="titulo-caratula">SOBRE NOSOTROS</h2>
-                <p class="titulo-caratula titulo--parrafo">Pasión por las motos, compromiso con calidad</p>
-            </div>
-        </section>
-        <section class="nuestra-historia">
-            <div class="contenedor">
-                <h2><span class="negro">NUESTRA </span><span class="rojo">HISTORIA</span></h2>
-                <P>"En Jimdur E.I.R.L. cada repuesto cuenta una historia y cada cliente es parte de la nuestra."</P>
-                <div class="contenido-historia">
-                    <div class="texto">
-                        <p>Fundada en la ciudad de Piura, Jimdur E.I.R.L. nace con el compromiso de ofrecer productos de calidad para los amantes de las motocicletas. Desde nuestros inicios, hemos centrado nuestros esfuerzos en satisfacer las necesidades de nuestros clientes, brindando una amplia gama de repuestos, piezas, y accesorios para todas las marcas y modelos del mercado. A lo largo de los años, nos hemos consolidado como una empresa líder en el sector, destacándonos por nuestra pasión por el servicio al cliente.</p>
-                        <p>Luis Jimenez</p>
-                        <p>Gerente General</p>
-                    </div>
-                    <div class="imagen">
-                        <img src="../img/retrato-elegante.jpg" alt="">
-                    </div>
+    <!-- Contenido del Main -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="display-4">JIMDUR Repuestos</h1>
+                    <p class="lead">Excelencia en repuestos de motocicletas desde 1995</p>
                 </div>
             </div>
         </section>
-        <section class="mision">
-            <div class="contenedor">
-                <div class="contenido">
-                    <h2><span class="blanco">NUESTRA </span><span class="rojo">MISIÓN</span></h2>
-                    <p>Guiados por la pasión y el compromiso, trabajamos cada día para ser la primera opción de nuestros clientes<p>
-                    <p>"Nuestra misión es proporcionar a nuestros clientes productos de las mejores marcas, reconocidas por su calidad y durabilidad, asegurando que encuentren exactamente lo que necesitan para sus motocicletas. Nos esforzamos por brindar un servicio excepcional, personalizado y cercano, que haga que cada visita a nuestra tienda sea una experiencia satisfactoria, basada en la confianza y la excelencia."</p>
-                </div>
-                <div class="imagen">
+
+        <!-- Historia Section -->
+        <section class="history-section py-5 bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8 mb-0">
+                        <h2 class="text-center text-dark fw-bold text-uppercase">Nuestra <span
+                                class="text-danger">Historia</span></h2>
+                        <p class="fw-normal p-3" style="text-align: justify; font-size: 1rem;">
+                            "Fundada en Ia ciudad de Piura, Jimdur E.I.R.L. nace con el
+                            compromiso de ofrecer productos de calidad para los amantes
+                            de las motocicletas. Desde nuestros inicios, hemos centrado
+                            nuestros esfuerzos en satisfacer las necesidades de nuestros
+                            clientes, brindando una amplia gama de repuestos, piezas, y
+                            accesorios para todas las marcas y modelos del mercado. A lo
+                            largo de los años, nos hemos consolidado como una empresa
+                            líder en el sector, destacándonos por nuestra pasión por el
+                            servicio al cliente"</p>
+                        <div class="row">
+                            <div class="col stat-item text-center">
+                                <span class="stat-number display-4 text-danger">25</span>+
+                                <p class="stat-label">Años de experiencia</p>
+                            </div>
+                            <div class="col stat-item text-center">
+                                <span class="stat-number display-4 text-danger">10000</span>+
+                                <p class="stat-label">Clientes satisfechos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../img/retrato-elegante.jpg" alt="Historia JIMDUR"
+                            class="rounded img-fluid shadow --gerente">
+                        <p class="text-center pt-2 pb-0">Luis Jimenez <br> Gerente General</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="vision">
-            <div class="contenedor">
-                <div class="imagen"></div>
-                <div class="contenido">
-                    <h2><span class="blanco">NUESTRA </span><span class="negro">VISIÓN</span></h2>
-                    <p>Miramos al futuro con la determinación de seguir creciendo y liderando el mercado<p>
-                    <p>"Nos proyectamos como una de las empresas más competitivas del sector motero en nuestra región, cumpliendo y superando las expectativas de nuestros clientes. Para el 2023, aspiramos a consolidarnos como uno de los principales distribuidores mayoristas en el mercado piurano, y para el 2028, convertirnos en importadores de productos con nuestra propia marca, expandiendo nuestra presencia en diversos mercados a nivel nacional."</p>
-                </div>
+
+        <!-- Misión y Visión Section -->
+        <section class="mission-vision-section text-center py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-5 fw-bold text-uppercase">Nuestra <span class="text-danger">Misión y Visión</span></h2>
+                <div class="row">
+                    <!-- Misión -->
+                    <div class="col-md-6 mb-4">
+                        <div class="mission-card p-4 shadow-sm bg-white">
+                            <h3 class="mb-3">Misión</h3>
+                            <p>
+                                "Nuestra misión es proporcionar a nuestros
+                                clientes productos de las mejores marcas,
+                                reconocidas por su calidad y durabilidad,
+                                asegurando que encuentren exactamente lo que
+                                necesitan para sus motocicletas. Nos
+                                esforzamos por brindar un servicio excepcional,
+                                personalizado y cercano, que haga que cada
+                                visita a nuestra tienda sea una experiencia
+                                satisfactoria, basada en la confianza y la
+                                excelencia"
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Visión -->
+                    <div class="col-md-6 mb-4">
+                        <div class="vision-card p-4 shadow-sm bg-white">
+                            <h3 class="mb-3">Visión</h3>
+                            <p>
+                                "Nos proyectamos como una de las empresas
+                                más competitivas del sector motero en nuestra
+                                región,
+                                cumpliendo y superando las
+                                expectativas de nuestros clientes. Para el 2023,
+                                aspiramos a consolidarnos como uno de los
+                                principales distribuidores mayoristas en el
+                                mercado piurano, y para el 2028, convertirnos
+                                en importadores de productos con nuestra
+                                propia marca, expandiendo nuestra presencia
+                                en diversos mercados a nivel nacional."
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <div class="proveedores">
-            <section class="proveedores__section">
-                <div class="proveedores__contenedor">
-                    <h2 class="proveedores__titulo"> <span class="proveedores__titulo-negrita">Nuestros</span> proveedores</h2>
-                    <p class="proveedores__texto">Trabajamos con proveedores líderes en la industria para asegurarte repuestos y accesorios de la más alta calidad.</p>
+
+
+        <!-- Valores Section -->
+        <section class="values-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 text-uppercase fw-bold text-uppercase">Nuestros <span
+                        class="text-danger">valores</span></h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="value-card p-4 border rounded shadow-sm">
+                            <i class="fas fa-medal text-danger fs-1 mb-3"></i>
+                            <h3>Calidad</h3>
+                            <p>Compromiso con la excelencia en cada producto que ofrecemos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="value-card p-4 border rounded shadow-sm">
+                            <i class="fas fa-handshake text-danger fs-1 mb-3"></i>
+                            <h3>Confianza</h3>
+                            <p>Construimos relaciones duraderas basadas en la honestidad.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="value-card p-4 border rounded shadow-sm">
+                            <i class="fas fa-tools text-danger fs-1 mb-3"></i>
+                            <h3>Experiencia</h3>
+                            <p>Conocimiento técnico respaldado por años de experiencia.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="proveedores__logos">
-                    <div class="proveedores__tarjeta">
-                        <img loading="lazy" src="../img/marcas/BAJAJ.png" alt="BAJAJ">
+            </div>
+        </section>
+
+        <!-- Equipo Section -->
+        <section class="team-section py-5 pb-2 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 text-uppercase fw-bold text-uppercase">Nuestro <span
+                        class="text-danger">Equipos</span></h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="team-card border rounded shadow-sm">
+                            <img src="../img/perfil01.jpg" alt="Juan Pérez" class="img-fluid rounded-top">
+                            <div class="team-info p-3">
+                                <h3>Juan Pérez</h3>
+                                <p>Director General</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="text-secondary mx-2"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-secondary mx-2"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="proveedores__tarjeta">
-                        <img loading="lazy" src="../img/marcas/Hero.png" alt="Hero">
+                    <!-- Repetir bloques para otros miembros del equipo -->
+                    <div class="col-md-4 mb-4">
+                        <div class="team-card border rounded shadow-sm">
+                            <img src="../img/perfil01.jpg" alt="Juan Pérez" class="img-fluid rounded-top">
+                            <div class="team-info p-3">
+                                <h3>Juan Pérez</h3>
+                                <p>Director General</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="text-secondary mx-2"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-secondary mx-2"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="proveedores__tarjeta">
-                        <img loading="lazy" src="../img/marcas/Honda.png" alt="Honda">
-                    </div>
-                    <div class="proveedores__tarjeta">
-                        <img loading="lazy" src="../img/marcas/Kawasaki.png" alt="Kawasaki">
-                    </div>
-                    <div class="proveedores__tarjeta">
-                        <img loading="lazy" src="../img/marcas/ktm.png" alt="KTM">
-                    </div>
-                    <div class="proveedores__tarjeta">
-                        <img loading="lazy" src="../img/marcas/yamaha.png" alt="Yamaha">
+                    <div class="col-md-4 mb-4">
+                        <div class="team-card border rounded shadow-sm">
+                            <img src="../img/perfil01.jpg" alt="Juan Pérez" class="img-fluid rounded-top">
+                            <div class="team-info p-3">
+                                <h3>Juan Pérez</h3>
+                                <p>Director General</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="text-secondary mx-2"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-secondary mx-2"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <!-- Testimonios Section -->
+        <section class="testimonials-section py-5 pt-2 pt-lg-5 pt-md-5">
+            <div class="container">
+                <h2 class="text-center mb-5 text-uppercase fw-bold">Lo que dicen <span class="text-danger">nuestros
+                        clientes</span></h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="testimonial-card border rounded shadow-sm p-4">
+                            <i class="fas fa-quote-left text-danger fs-2 mb-3"></i>
+                            <p>Excelente servicio y productos de primera calidad. Siempre encuentro lo que necesito.</p>
+                            <div class="testimonial-author d-flex align-items-center mt-3">
+                                <img src="../img/perfil01.jpg" alt="Cliente" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h4>Roberto Silva</h4>
+                                    <p class="mb-0">Cliente desde 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repetir bloques para otros testimonios -->
+                    <div class="col-md-4 mb-4">
+                        <div class="testimonial-card border rounded shadow-sm p-4">
+                            <i class="fas fa-quote-left text-danger fs-2 mb-3"></i>
+                            <p>Excelente servicio y productos de primera calidad. Siempre encuentro lo que necesito.</p>
+                            <div class="testimonial-author d-flex align-items-center mt-3">
+                                <img src="../img/perfil01.jpg" alt="Cliente" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h4>Roberto Silva</h4>
+                                    <p class="mb-0">Cliente desde 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="testimonial-card border rounded shadow-sm p-4">
+                            <i class="fas fa-quote-left text-danger fs-2 mb-3"></i>
+                            <p>Excelente servicio y productos de primera calidad. Siempre encuentro lo que necesito.</p>
+                            <div class="testimonial-author d-flex align-items-center mt-3">
+                                <img src="../img/perfil01.jpg" alt="Cliente" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h4>Roberto Silva</h4>
+                                    <p class="mb-0">Cliente desde 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrusel de Proveedores -->
+        <section class="carousel-proveedores py-2">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Logo de Proveedor 1 -->
+                    <div class="xd">
+                        <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 2 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 3 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 4 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 5 -->
+                    <div class="xd">
+                        <img src="../img/marcas/ktm.png" alt="ktm" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 5 -->
+                    <div class="xd">
+                        <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 1 -->
+                    <div class="xd">
+                        <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 2 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 3 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 4 -->
+                    <div class="xd">
+                        <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 5 -->
+                    <div class="xd">
+                        <img src="../img/marcas/ktm.png" alt="ktm" class="logo-img">
+                    </div>
+                    <!-- Logo de Proveedor 5 -->
+                    <div class="xd">
+                        <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="pie-pagina">
-        <div class="pie-pagina__contenido">
-            <section class="pie-pagina__seccion">
-                <div class="pie-pagina__logo">
-                    <h2 class="pie-pagina__titulo-logo">SOBRE JIMDUR</h2>
-                    <img width="50px" src="../img/Logo Jimdur/logofooter-sinfondo.png" alt="JIMDUR Repuestos">
-                    <p class="pie-pagina__descripcion">Nos dedicamos a ofrecerte una selección de repuestos y accesorios
-                        de
-                        la
-                        más alta calidad para que disfrutes de un rendimiento superior en cada trayecto. Confiamos en
-                        nuestras marcas y en nuestra experiencia para brindarte el mejor servicio y la satisfacción que
-                        mereces. Tu moto está en buenas manos con nosotros.</p>
-                    <p style="font-size: 12px;">&copy; Jimdur 2024</p>
-                </div>
-            </section>
-            <div class="pie-pagina__linea-divisora"></div>
-            <section class="pie-pagina__seccion">
-                <div class="pie-pagina__enlaces">
-                    <h3 class="pie-pagina__titulo">ENLACES</h3>
-                    <ul class="pie-pagina__lista">
-                        <li class="pie-pagina__lista-item"><a href="../index.html" class="pie-pagina__enlace">Inicio</a>
-                        </li>
-                        <li class="pie-pagina__lista-item"><a href="productos.html"
-                                class="pie-pagina__enlace">Productos</a></li>
-                        <li class="pie-pagina__lista-item"><a href="nosotros.html"
-                                class="pie-pagina__enlace">Nosotros</a></li>
-                        <li class="pie-pagina__lista-item"><a href="Politicas.html#terminos-condiciones" class="pie-pagina__enlace" target="_blank">Términos &
-                                Condiciones</a></li>
-                        <li class="pie-pagina__lista-item"><a href="Politicas.html#politicas-privacidad" class="pie-pagina__enlace" target="_blank">Políticas de
-                                Privacidad</a></li>
-                    </ul>
-                </div>
-            </section>
-            <div class="pie-pagina__linea-divisora"></div>
-            <section class="pie-pagina__seccion">
-                <div class="pie-pagina__contactos">
-                    <h3 class="pie-pagina__titulo">CONTACTOS</h3>
-                    <ul class="pie-pagina__lista">
-                        <li class="pie-pagina__lista-item">
-                            <a href="tel:123456789" class="pie-pagina__enlace">
-                                <i class="fas fa-phone"></i> 123456 789
-                            </a>
-                        </li>
-                        <li class="pie-pagina__lista-item">
-                            <a href="tel:987654321" class="pie-pagina__enlace">
-                                <i class="fas fa-phone"></i> 987654 321
-                            </a>
-                        </li>
-                        <li class="pie-pagina__lista-item">
-                            <a href="mailto:jimdur@gmail.com" class="pie-pagina__enlace">
-                                <i class="fas fa-envelope"></i> jimdur@gmail.com
-                            </a>
-                        </li>
-                    </ul>
-                    <h3 class="pie-pagina__titulo" style="padding-top: 20px; padding-bottom: 10px;">SÍGUENOS</h3>
-                    <div class="pie-pagina__redes-sociales">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </footer>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-light" style="background-color: rgb(35, 35, 35);">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Conéctate con nosotros en las redes sociales:</span>
+            </div>
+            <!-- Left -->
 
-    <div class="whatsapp">
-        <div class="whatsapp__texto">
-            <span class="whatsapp__ayuda">¿Necesitas ayuda?</span>
-            <span class="whatsapp__status">Estamos en línea</span>
+            <!-- Right -->
+            <div>
+                <a href="https://www.facebook.com/" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/" class="me-4 text-reset">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/" class="me-4 text-reset">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">SOBRE JIMDUR</h6>
+                        <p>
+                            Ofrecemos repuestos y accesorios de alta calidad para un rendimiento superior. Confiamos en
+                            nuestras
+                            marcas y experiencia para brindarte el mejor servicio y satisfacción. Tu moto está en buenas
+                            manos con
+                            nosotros.
+                        </p>
+                        <p style="font-size: 12px;">&copy; Jimdur 2024</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">ENLACES</h6>
+                        <p>
+                            <a href="../index.html" class="text-reset">Inicio</a>
+                        </p>
+                        <p>
+                            <a href="productos.html" class="text-reset">Productos</a>
+                        </p>
+                        <p>
+                            <a href="nosotros.html" class="text-reset">Nosotros</a>
+                        </p>
+                        <p>
+                            <a href="contacto.html" class="text-reset">Contáctanos</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Contact -->
+                        <h6 class="text-uppercase fw-bold mb-4">CONTACTOS</h6>
+                        <p>
+                            <i class="fas fa-phone me-3"></i>
+                            <a href="tel:123456789" class="text-reset">123456 789</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone me-3"></i>
+                            <a href="tel:987654321" class="text-reset">987654 321</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            <a href="mailto:jimdur@gmail.com" class="text-reset">jimdur@gmail.com</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Derechos Reservados:
+            <a class="text-reset fw-bold" href="Politicas.html#terminos-condiciones" target="_blank">JIMDUR
+                Repuestos</a>
         </div>
-        <a href="https://wa.me/968108776" target="_blank" class="whatsapp__boton">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
-    <script>
-        function alternarMenu() {
-            const enlacesNavegacion = document.querySelector('.enlaces-navegacion');
-            enlacesNavegacion.classList.toggle('nav-activo');
-        }
-    </script>
+        <style>
+
+        </style>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,213 +1,26 @@
-/* ESTILO NADVAR*/
-/* Estilos globales */
-body,
-html {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-
-.barra-navegacion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 0px 30px;
-    border-bottom: 2px solid #ccc;
-    box-shadow: 0 0 40px #0000;
-    position: relative;
-    /* Añadido */
-    z-index: 1;
-    /* Añadido */
-}
-
-.enlaces-navegacion {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.enlaces-navegacion li {
-    margin: 0 10px;
-}
-
-.enlaces-navegacion a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Rajdhani', Helvetica, Arial, Lucida, sans-serif;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: black;
-    font-size: 18px;
-    padding: 5px 10px;
-}
-
-.enlaces-navegacion a.activo {
-    background-color: #cf2e2e;
-    color: white;
-    height: 70px;
-    width: 100px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.formulario-busqueda {
-    display: flex;
-}
-
-.formulario-busqueda input {
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-}
-
-.boton-busqueda {
-    padding: 5px 10px;
-    border: 1px solid #cf2e2e;
-    border-radius: 0 5px 5px 0;
-    background-color: #cf2e2e;
-    color: white;
-    cursor: pointer;
-}
-
-.imagen-boton {
-    width: 30px;
-}
-
-.logo_jimdur {
-    width: 120px;
-    height: 55px;
-}
-
-.hamburguesa {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 2;
-}
-
-/* CSS CONTENIDO PRINCIPAL */
-
-.contenedor-whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 70px;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    font-size: 10px;
-}
-
-.contenedor-whatsapp .text {
-    margin-right: 10px;
-    text-align: left;
-    color: #444;
-}
-
-.contenedor-whatsapp .text span {
-    display: block;
-}
-
-.contenedor-whatsapp .text .status {
-    font-weight: bold;
-    color: #1d1d1d;
-    font-size: 10px;
-    margin: 3px;
-
-}
-
-.boton-wsp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    border-radius: 50% 50%;
-    padding: 10px;
-    font-size: 30px;
-}
-
-.boton-wsp:hover {
-    background-color: #20b858;
-}
-
-/* Ocultar menú en dispositivos móviles y mostrar menú hamburguesa */
-@media (max-width: 760px) {
-    .barra-navegacion {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .enlaces-navegacion {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 150px;
-        right: 0;
-        background-color: white;
-        width: 100%;
-        border-top: 2px solid #ccc;
-    }
-
-    .enlaces-navegacion.nav-activo {
-        display: flex;
-    }
-
-    .enlaces-navegacion li {
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .formulario-busqueda {
-        margin-top: 10px;
-        display: flex;
-        width: 90%;
-    }
-
-    .formulario-busqueda input {
-        width: 100%;
-        border-radius: 25px 0 0 25px;
-    }
-
-    .boton-busqueda {
-        border-radius: 0 25px 25px 0;
-    }
-
-    .hamburguesa {
-        display: block;
-    }
-}
-
-@media (max-width:1000px){
-    .enlaces-navegacion a{
-        font-size: 16px;
-        padding: 5px 0px;
-
-    }
-    .formulario-busqueda{
-        justify-content: center;
-    }
-    .formulario-busqueda input{
-        width: 100%;
-    }
-}
-
-
 /* -------------------------------------------------- */
+/* CSS MAIN */
+.active {
+    border-bottom: 3px solid #dc3545 !important;
+}
+
+.navbar {
+    box-shadow: 0 0 5px rgb(0, 0, 0) !important;
+    position: fixed !important;
+    background-color: white !important;
+    top: 0% !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+}
+
+.main-content {
+    margin-top: 81px; /* Adjust this value based on the height of your navbar */
+}
 
 /* CSS PARA LA SECCIÓN MOTOCICLETA */
 .seccion-moto {
     overflow: auto;
-    background: url(../img/motobg.jpg) no-repeat center center;
+    background: url(../img/moto.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -217,6 +30,26 @@ html {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    position: relative;
+}
+
+.seccion-moto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity to make the image darker */
+    z-index: 1;
+}
+
+.seccion-moto__contenedor {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
 }
 
 .seccion-moto__contenedor {
@@ -291,7 +124,7 @@ html {
     background: #cf2e2e;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px; 
+    gap: 10px;
     padding: 8px;
     box-sizing: border-box;
     text-align: center;
@@ -317,9 +150,11 @@ html {
         padding: 0px;
         gap: 0px;
     }
+
     .sub-encabezado a {
         padding: 16px 0;
     }
+
     .sub-encabezado a:hover {
         border-radius: 0px;
     }
@@ -331,12 +166,14 @@ html {
         padding: 0px;
         gap: 0px;
     }
+
     .sub-encabezado a {
         background-color: transparent;
         width: 100%;
         padding: 12px 0;
         font-size: 1.1rem;
     }
+
     .sub-encabezado a:hover {
         border-radius: 0px;
     }
@@ -440,11 +277,11 @@ html {
             width: 170px;
             height: 170px;
         }
-    
+
         .ventaja__titulo {
             font-size: 1.2rem;
         }
-    
+
         .ventaja__texto {
             font-size: 0.9rem;
         }
@@ -707,8 +544,10 @@ html {
 }
 
 .proveedores__marca:hover {
-    transform: scale(1.04); /* Aumenta el tamaño un 5% */
-    box-shadow: 0 0 8px white; /* Añade una sombra suave */
+    transform: scale(1.04);
+    /* Aumenta el tamaño un 5% */
+    box-shadow: 0 0 8px white;
+    /* Añade una sombra suave */
 }
 
 .img-marcas {
@@ -721,7 +560,7 @@ html {
     .salto-linea {
         display: none;
     }
-    
+
     .proveedores__grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 150px);
@@ -834,11 +673,11 @@ html {
     text-decoration: none;
 }
 
-.pie-pagina__titulo-logo{
+.pie-pagina__titulo-logo {
     display: none;
 }
 
-.pie-pagina__redes-sociales a{
+.pie-pagina__redes-sociales a {
     background-color: white;
     border-radius: 50% 50%;
     margin: 0 3px;
@@ -904,7 +743,7 @@ html {
     .pie-pagina__enlaces a:hover,
     .pie-pagina__contactos a:hover {
         color: #ea4444;
-        text-decoration: underline; 
+        text-decoration: underline;
     }
 
     .pie-pagina__lista-item a {
@@ -913,8 +752,8 @@ html {
         margin: 0;
         font-size: 12px;
     }
-    
-    .pie-pagina__redes-sociales a{
+
+    .pie-pagina__redes-sociales a {
         background-color: white;
         border-radius: 50% 50%;
         margin: 0 3px;
@@ -923,4 +762,10 @@ html {
         text-decoration: none;
         font-size: 15px;
     }
+}
+
+/* --------------------------------------------------------- */
+/* CSS FOOTER BOOTSTRAP */
+.text-reset {
+    text-decoration: none;
 }

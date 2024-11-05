@@ -6,40 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="styles.css?v=1.0">
+    <link rel="stylesheet" href="../css/headeryfooter.css">
     <link rel="stylesheet" href="../css/producto.css">
+
+    <!-- Bootstrap CSS v5.2.1 y FontAwesome-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="barra-navegacion">
-                <div class="logo">
-                    <a href="../index.html">
-                        <img class="logo_jimdur" src="../img/Logo Jimdur/logo_Jimdur_pequeno.png" alt="">
-                    </a>
+    <header class="bg-white border-bottom shadow-sm text-uppercase">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <div class="container d-flex align-items-center">
+                <!-- Logo -->
+                <a class="navbar-brand me-3" href="../index.html">
+                    <img src="../img/Logo Jimdur/logo_sinfondo_negro.png" alt="Logo Jimdur" width="100">
+                </a>
+
+                <!-- Formulario de búsqueda (centrado en pantallas pequeñas) -->
+                <div class="d-flex d-lg-none flex-grow-1">
+                    <form class="d-flex flex-grow-1" role="search" action="#" style="width: 50px;">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                        <button class="btn btn-outline-danger" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
                 </div>
-                <ul class="enlaces-navegacion">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html" class="activo">Productos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-                <form class="formulario-busqueda" action="#">
-                    <input type="text" placeholder="Buscar...">
-                    <button type="submit" class="boton-busqueda">
-                        <img class="imagen-boton" src="../img/iconos/buscar.png" alt="Buscar">
-                    </button>
-                </form>
-                <!-- Botón menú hamburguesa -->
-                <div class="hamburguesa" onclick="alternarMenu()">
-                    &#9776;
+
+                <!-- Botón de menú móvil -->
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Enlaces de navegación (colapsable) -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-center fw-semibold">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Formulario de búsqueda (visible solo en pantallas grandes) -->
+                <div class="d-none d-lg-flex ms-auto align-items-center">
+                    <form class="d-flex align-items-center" role="search" action="#">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                        <button class="btn btn-outline-danger" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main-content">
         <section class="banner">
             <div class="contenedor">
                 <h2>NUESTROS PRODUCTOS</h2>
@@ -116,121 +147,168 @@
                         <h2>HONDA</h2>
                         <p>DCAJA 12 UNDS ACEITE LUBRIPOWER 4T 20W50 1000M</p>
                         <p class="precio">S/486</p>
+                    </div>
                 </div>
-            </div>
         </section>
         <section class="seccion-proveedores">
-            <div class="contenedor">
-                <div class="contenedor-proveedores">
-                    <br>
-                    <h2> <span class="Nuestros">Nuestros</span><span class="Proveedores"> proveedores</span></h2>
-                    <p>Trabajamos con proveedores líderes en la industria para asegurarte repuestos y accesorios de la
-                        más alta calidad.</p>
+
+            <!-- Sección de Proveedores -->
+            <div class="container-fluid bg-light py-5">
+                <h2 class="fw-bold text-uppercase text-center mb-4">Nuestros <span
+                        class="fw-bold text-danger">Proveedores</span></h2>
+                <p class="text-center">Trabajamos con proveedores líderes en la industria para asegurarte repuestos y
+                    accesorios de la más alta calidad.</p>
+
+                <!-- Contenedor de los logos -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-2 mb-4">
+                            <div class="proveedor-card bg-white">
+                                <img src="../img/marcas/BAJAJ.png" alt="BAJAJ" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-4">
+                            <div class="proveedor-card bg-white">
+                                <img src="../img/marcas/Hero.png" alt="Hero" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-4">
+                            <div class="proveedor-card bg-white">
+                                <img src="../img/marcas/Honda.png" alt="Honda" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-4">
+                            <div class="proveedor-card bg-white">
+                                <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-4">
+                            <div class="proveedor-card bg-white">
+                                <img src="../img/marcas/ktm.png" alt="KTM" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-4">
+                            <div class="proveedor-card bg-white">
+                                <img src="../img/marcas/yamaha.png" alt="Yamaha" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex-proveedores">
-                    <div class="tarjeta-proveedor">
-                        <img loading="lazy" src="../img/marcas/BAJAJ.png" alt="BAJAJ">
-                    </div>
-                    <div class="tarjeta-proveedor">
-                        <img loading="lazy" src="../img/marcas/Hero.png" alt="Hero">
-                    </div>
-                    <div class="tarjeta-proveedor">
-                        <img loading="lazy" src="../img/marcas/Honda.png" alt="Honda">
-                    </div>
-                    <div class="tarjeta-proveedor">
-                        <img loading="lazy" src="../img/marcas/Kawasaki.png" alt="Kawasaki">
-                    </div>
-                    <div class="tarjeta-proveedor">
-                        <img loading="lazy" src="../img/marcas/ktm.png" alt="KTM">
-                    </div>
-                    <div class="tarjeta-proveedor">
-                        <img loading="lazy" src="../img/marcas/yamaha.png" alt="Yamaha">
-                    </div>
-                </div>
-            </div>
         </section>
     </main>
 
-    <footer class="pie-pagina">
-        <div class="pie-pagina__contenido">
-            <section class="pie-pagina__seccion">
-                <div class="pie-pagina__logo">
-                    <h2 class="pie-pagina__titulo-logo">SOBRE JIMDUR</h2>
-                    <img width="50px" src="../img/Logo Jimdur/logofooter-sinfondo.png" alt="JIMDUR Repuestos">
-                    <p class="pie-pagina__descripcion">Nos dedicamos a ofrecerte una selección de repuestos y accesorios
-                        de
-                        la
-                        más alta calidad para que disfrutes de un rendimiento superior en cada trayecto. Confiamos en
-                        nuestras marcas y en nuestra experiencia para brindarte el mejor servicio y la satisfacción que
-                        mereces. Tu moto está en buenas manos con nosotros.</p>
-                    <p style="font-size: 12px;">&copy; Jimdur 2024</p>
-                </div>
-            </section>
-            <div class="pie-pagina__linea-divisora"></div>
-            <section class="pie-pagina__seccion">
-                <div class="pie-pagina__enlaces">
-                    <h3 class="pie-pagina__titulo">ENLACES</h3>
-                    <ul class="pie-pagina__lista">
-                        <li class="pie-pagina__lista-item"><a href="../index.html" class="pie-pagina__enlace">Inicio</a>
-                        </li>
-                        <li class="pie-pagina__lista-item"><a href="productos.html"
-                                class="pie-pagina__enlace">Productos</a></li>
-                        <li class="pie-pagina__lista-item"><a href="nosotros.html"
-                                class="pie-pagina__enlace">Nosotros</a></li>
-                        <li class="pie-pagina__lista-item"><a href="Politicas.html#terminos-condiciones" class="pie-pagina__enlace" target="_blank">Términos &
-                                Condiciones</a></li>
-                        <li class="pie-pagina__lista-item"><a href="Politicas.html#politicas-privacidad" class="pie-pagina__enlace" target="_blank">Políticas de
-                                Privacidad</a></li>
-                    </ul>
-                </div>
-            </section>
-            <div class="pie-pagina__linea-divisora"></div>
-            <section class="pie-pagina__seccion">
-                <div class="pie-pagina__contactos">
-                    <h3 class="pie-pagina__titulo">CONTACTOS</h3>
-                    <ul class="pie-pagina__lista">
-                        <li class="pie-pagina__lista-item">
-                            <a href="tel:123456789" class="pie-pagina__enlace">
-                                <i class="fas fa-phone"></i> 123456 789
-                            </a>
-                        </li>
-                        <li class="pie-pagina__lista-item">
-                            <a href="tel:987654321" class="pie-pagina__enlace">
-                                <i class="fas fa-phone"></i> 987654 321
-                            </a>
-                        </li>
-                        <li class="pie-pagina__lista-item">
-                            <a href="mailto:jimdur@gmail.com" class="pie-pagina__enlace">
-                                <i class="fas fa-envelope"></i> jimdur@gmail.com
-                            </a>
-                        </li>
-                    </ul>
-                    <h3 class="pie-pagina__titulo" style="padding-top: 20px; padding-bottom: 10px;">SÍGUENOS</h3>
-                    <div class="pie-pagina__redes-sociales">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-light" style="background-color: rgb(35, 35, 35);">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Conéctate con nosotros en las redes sociales:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="https://www.facebook.com/" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/" class="me-4 text-reset">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/" class="me-4 text-reset">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">SOBRE JIMDUR</h6>
+                        <p>
+                            Ofrecemos repuestos y accesorios de alta calidad para un rendimiento superior. Confiamos en
+                            nuestras
+                            marcas y experiencia para brindarte el mejor servicio y satisfacción. Tu moto está en buenas
+                            manos con
+                            nosotros.
+                        </p>
+                        <p style="font-size: 12px;">&copy; Jimdur 2024</p>
                     </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">ENLACES</h6>
+                        <p>
+                            <a href="../index.html" class="text-reset">Inicio</a>
+                        </p>
+                        <p>
+                            <a href="productos.html" class="text-reset">Productos</a>
+                        </p>
+                        <p>
+                            <a href="nosotros.html" class="text-reset">Nosotros</a>
+                        </p>
+                        <p>
+                            <a href="contacto.html" class="text-reset">Contáctanos</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Contact -->
+                        <h6 class="text-uppercase fw-bold mb-4">CONTACTOS</h6>
+                        <p>
+                            <i class="fas fa-phone me-3"></i>
+                            <a href="tel:123456789" class="text-reset">123456 789</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone me-3"></i>
+                            <a href="tel:987654321" class="text-reset">987654 321</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            <a href="mailto:jimdur@gmail.com" class="text-reset">jimdur@gmail.com</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
                 </div>
-            </section>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Derechos Reservados:
+            <a class="text-reset fw-bold" href="Politicas.html#terminos-condiciones" target="_blank">JIMDUR
+                Repuestos</a>
         </div>
+        <style>
+
+        </style>
+        <!-- Copyright -->
     </footer>
-    <div class="contenedor-whatsapp">
-        <div class="text">
-            <span>¿Necesitas ayuda?</span>
-            <span class="status">Estamos en línea</span>
-        </div>
-        <a href="https://wa.me/968108776" target="_blank" class="boton-wsp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
-    <script>
-        function alternarMenu() {
-            const enlacesNavegacion = document.querySelector('.enlaces-navegacion');
-            enlacesNavegacion.classList.toggle('nav-activo');
-        }
-    </script>
+    <!-- Footer -->
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
