@@ -12,6 +12,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -81,11 +85,12 @@
                 </div>
             </div>
         </section>
+
         <!-- Formularios section -->
         <div class="container my-4 mb-2">
             <div class="row">
                 <!-- Sección de Contacto -->
-                <section class="col-lg-6 mb-4">
+                <section class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
                     <div class="text-center p-4 border-3 border-top border-danger bg-light rounded shadow-sm">
                         <h2 class="fw-bold" style="color: #333333;">CONTÁCTANOS</h2>
                         <p class="text-muted">Tu consulta es importante para nosotros</p>
@@ -95,7 +100,7 @@
                                 <p>(+51) 968108775</p>
                             </div>
                             <div class="text-center">
-                                <img src="../img/iconos/ubicación.svg" alt="Ubicación" class="mb-2"
+                                <img src="../img/iconos/Ubicación.svg" alt="Ubicación" class="mb-2"
                                     style="width: 40px;">
                                 <p>Av. José Aguilar Santisteban, Piura - Perú</p>
                             </div>
@@ -113,25 +118,36 @@
                 </section>
 
                 <!-- Formulario de Cotización -->
-                <section class="col-lg-6 mb-4">
+                <section class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
                     <form class="p-4 feedback-form">
                         <h2 class="text-center mb-4 fw-bold" style="color: #333333;">SOLICITE SU <span
                                 class="text-danger">COTIZACIÓN</span></h2>
+
                         <div class="mb-3">
                             <input type="text" class="form-control" placeholder="Nombre" required>
+                            <small class="error-message text-danger"></small>
                         </div>
+
                         <div class="mb-3">
                             <input type="email" class="form-control" placeholder="Correo Electrónico" required>
+                            <small class="error-message text-danger"></small>
                         </div>
+
                         <div class="mb-3">
                             <input type="tel" class="form-control" placeholder="Teléfono" required>
+                            <small class="error-message text-danger"></small>
                         </div>
+
                         <div class="mb-3">
                             <input type="text" class="form-control" placeholder="DNI o RUC">
+                            <small class="error-message text-danger"></small>
                         </div>
+
                         <div class="mb-3">
                             <input type="text" class="form-control" placeholder="Placa vehicular o VIN">
+                            <small class="error-message text-danger"></small>
                         </div>
+
                         <div class="mb-3">
                             <select class="form-control" required>
                                 <option value="" disabled selected>Seleccione un asunto</option>
@@ -141,18 +157,23 @@
                                 <option value="reclamo">Reclamo</option>
                                 <option value="otros">Otros</option>
                             </select>
+                            <small class="error-message text-danger"></small>
                         </div>
+
                         <div class="mb-3">
                             <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+                            <small class="error-message text-danger"></small>
                         </div>
+
                         <button type="submit" class="btn btn-danger w-100">Enviar mensaje</button>
                     </form>
                 </section>
+
             </div>
         </div>
 
         <!-- Sección de Feedback y Horarios de Atención -->
-        <div class="container-fluid bg-light py-4">
+        <div class="container-fluid bg-light py-4" data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
                 <div class="row">
                     <h2 class="text-center mb-0 pb-0 mt-lg-4 fw-bold">INFORMACION <SPAn
@@ -178,20 +199,20 @@
                     <!-- Sección de Horarios de Atención -->
                     <div class="col-lg-6 mt-0">
                         <h3 class="text-center mb-3"></h3>
-                        <div class="row">
+                        <div class="row" data-aos="fade-up" data-aos-duration="1000">
                             <div class="col-12 mb-3">
                                 <div class="p-4 border bg-white rounded shadow-sm">
                                     <h4>Lunes a Viernes</h4>
                                     <p>9:00 AM - 6:00 PM</p>
                                 </div>
                             </div>
-                            <div class="col-12 mb-3">
+                            <div class="col-12 mb-3" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="p-4 border bg-white rounded shadow-sm">
                                     <h4>Sábados</h4>
                                     <p>9:00 AM - 1:00 PM</p>
                                 </div>
                             </div>
-                            <div class="col-12 mb-3">
+                            <div class="col-12 mb-3" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="p-4 border bg-white rounded shadow-sm">
                                     <h4>Domingos y Feriados</h4>
                                     <p>Cerrado</p>
@@ -203,7 +224,7 @@
             </div>
         </div>
         <!-- Sección de Preguntas Frecuentes (FAQ) -->
-        <div class="container my-4">
+        <div class="container my-4" data-aos="fade-up" data-aos-duration="1000">
             <h2 class="fw-bold text-uppercase text-center mb-4">Preguntas <span class="text-danger">Frecuentes</span>
             </h2>
             <div class="accordion" id="faqAccordion">
@@ -256,58 +277,64 @@
         </div>
 
         <!-- Carrusel de Proveedores -->
-        <section class="carousel-proveedores py-2">
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <!-- Logo de Proveedor 1 -->
-                    <div class="xd">
-                        <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 2 -->
-                    <div class="xd">
-                        <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 3 -->
-                    <div class="xd">
-                        <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 4 -->
-                    <div class="xd">
-                        <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 5 -->
-                    <div class="xd">
-                        <img src="../img/marcas/ktm.png" alt="ktm" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 5 -->
-                    <div class="xd">
-                        <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 1 -->
-                    <div class="xd">
-                        <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 2 -->
-                    <div class="xd">
-                        <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 3 -->
-                    <div class="xd">
-                        <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 4 -->
-                    <div class="xd">
-                        <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 5 -->
-                    <div class="xd">
-                        <img src="../img/marcas/ktm.png" alt="ktm" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 5 -->
-                    <div class="xd">
-                        <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
-                    </div>
-
+        <section class="slider py-2">
+            <div class="slide-track">
+                <!-- Logos de Proveedores -->
+                <div class="slide">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                </div>
+                <!-- Logos de Proveedores -->
+                <div class="slide">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                </div>
+                <!-- Logos de Proveedores -->
+                <div class="slide">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
                 </div>
             </div>
         </section>
@@ -428,6 +455,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="../js/contacto.js"></script>
 </body>
 
 </html>

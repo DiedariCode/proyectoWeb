@@ -1,10 +1,12 @@
+
+
 .active {
     border-bottom: 3px solid #dc3545 !important;
 }
 
 .navbar {
     box-shadow: 0 0 5px rgb(0, 0, 0) !important;
-    position: fixed !important ;
+    position: fixed !important;
     background-color: white !important;
     top: 0% !important;
     width: 100% !important;
@@ -18,13 +20,14 @@
 
 .hero-section {
     position: relative;
-    height: 80vh;
-    background: url('../img/contactoOpacity.jpg') no-repeat center center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../img/contacto.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
     color: white;
     text-align: center;
+    background-attachment: fixed;
 }
 
 .hero-overlay {
@@ -33,13 +36,15 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(3, 3, 3, 0.034);
+    filter: blur(1px);
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
     animation: fadeInUp 1s ease-in-out;
+    padding: 2rem;
 }
 
 .hero-content h1 {
@@ -47,6 +52,19 @@
     font-weight: 700;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+    animation: fadeInUp 1.5s ease-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content .btn {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 0.8rem 2rem;
 }
 
 /* CONTACTANOS Y FORM DE COTIZACION */
@@ -116,47 +134,46 @@
 }
 
 /* CARRUSEL DE PROOVEDORES */
-.carousel-proveedores {
-    background-color: #f8f9fa;
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
     overflow: hidden;
-    position: relative;
-    padding: 20px 0;
 }
 
-.carousel-container {
+.slider .slide-track {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    gap: 20px;
+    animation: scroll 40s linear infinite;
+    width: calc(120px * 18);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
     width: 100%;
-}
-
-.carousel-track {
-    display: flex;
-    animation: scroll 15s linear infinite;
-}
-
-.xd {
-    flex: 0 0 auto;
-    padding: 0 15px;
-    min-width: 120px;
-}
-
-.logo-img {
-    width: 100px;
     height: 100px;
-    /* Ensure all images have the same height */
     object-fit: contain;
-    /* Ensure the aspect ratio is maintained */
     filter: grayscale(100%);
     opacity: 0.7;
-    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.logo-img:hover {
+.slide img:hover {
     filter: grayscale(0%);
     opacity: 1;
     transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100px * 12));
+    }
 }
 
 /* FOOTER CSS */
@@ -200,16 +217,5 @@
     to {
         opacity: 1;
         transform: rotateX(0);
-    }
-}
-
-/* Animación de desplazamiento */
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
     }
 }
