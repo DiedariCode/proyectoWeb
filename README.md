@@ -1,34 +1,38 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <h1>Proyecto Web</h1>
-    <p>Proyecto final del curso de taller web de la universidad</p>
-    <p><strong>Nota:</strong> Asegúrense de trabajar con ramas y tener el repositorio actualizado.</p>
-    <h2>Comandos basicos antes de trabajar :D</h2>
-    <pre>
-        <code>
-            //Actualizar repositorio con los ultimos cambios
-            git pull
-            // CREAR RAMA
-            git switch -c nombre-de-tu-rama
-            // ESA RAMA LA TRABAJAS COMO SI FUERA EL MAIN UNA VEZ Q TERMINAS TU RAMA LA FUSIONAS AL MAIN
-            git switch main
-            git merge nombre-de-tu-rama
-            git push
-            // Eliminar rama despues de fusionar
-            git brach -d nombre-de-tu-rama
-        </code>
-    </pre>
-    <h2>Avance 2 - Semana 10:</h2>
-    <ul>
-        <li>Página de inicio: Vacía, pero contiene el footer del Figma. El resto de páginas tiene un footer minimalista, bien se queda ese o el del Figma :D.</li>
-        <li>Página de Productos: Vacía.</li>
-        <li>Página de contacto: Falta mejorar el modo para dispositivos.</li>
-        <li>Página de Nosotros: Falta implementar el modo para dispositivos.</li>
-    </ul>
-</body>
-</html>
+# Proyecto Web - Final del Curso de Taller Web
+
+Este repositorio corresponde al proyecto final del curso de **Taller Web** de la universidad. El proyecto tiene como objetivo desarrollar una página web funcional para la empresa **JIMDUR Repuestos**.
+
+### Página Web: [www.diedari.me](http://www.diedari.me)
+
+## Notas Importantes
+> :warning: **Asegúrate de trabajar con ramas y mantener el repositorio actualizado.**  
+> Se recomienda seguir el flujo de trabajo de Git para evitar conflictos y mantener el código organizado.
+
+## Comandos Básicos de Git
+
+A continuación, algunos comandos esenciales para colaborar en el proyecto:
+
+### Actualizar el repositorio con los últimos cambios:
+```bash
+git pull
+```
+### Crear tu propia rama:
+```bash
+git switch -c nombre-de-tu-rama
+```
+### Hacer PR o fusionar la rama:
+```bash
+git swtich main
+git merge --squash nombre-de-tu-rama
+```
+### Eliminar rama:
+```bash
+git branch -d nombre-de-tu-rama
+```
+## Avance 3 - Semana 11, 12, 13, 14 y 15
+
+### . Introducción a JavaScript: conceptos, variables, constantes, implementación con HTML (onclick, onchange, etc.) y ejecución en Consola con herramientas de soporte y diagnóstico en el navegador.
+### . Estructuras de control, arreglos y operadores. Métodos de entrada y salida en JavaScript: prompt, confirm y alert. Manipulación del HTML con JS: introducción a DOM, manipulación del DOM con JS (document).
+### . Creación de un menú responsivo y ventanas flotantes con HTML, CSS y JS
+
+
