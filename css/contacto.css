@@ -37,6 +37,22 @@ body.dark {
     color: rgba(217, 217, 217, 0.729);
 }
 
+/* Cambiar color de las líneas del botón hamburguesa a blanco */
+.dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.dark .navbar-toggler{
+    border: 1px solid #444;
+}
+
+
+/* Quitar contorno del botón al hacer clic */
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+
 /* Hero Section */
 .dark .hero-section {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/contacto.jpg') no-repeat center center;
