@@ -77,7 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 });
 
-const toggleButton = document.getElementById('toggle-button');
+//MODO OSCURO
+
+const toggleButtonSM = document.getElementById('toggle-buttonsm');
+const toggleButtonLG = document.getElementById('toggle-buttonlg');
+
 const body = document.body;
 const logo = document.getElementById('logoJimdur');
 
@@ -85,26 +89,41 @@ const logo = document.getElementById('logoJimdur');
 const logoClaro = '../img/Logo Jimdur/logo_sinfondo_negro.png';
 const logoOscuro = '../img/Logo Jimdur/logofooter-sinfondo.png';
 
-// Verifica el tema guardado en localStorage
-if (localStorage.getItem('theme') === 'dark') {
-    body.classList.add('dark');
-    logo.src = logoOscuro;
-    toggleButton.innerHTML = '<i class="fas fa-moon"></i>'; // Ícono de luna
-} else {
-    toggleButton.innerHTML = '<i class="fas fa-sun"></i>'; // Ícono de sol
+// Función para actualizar el tema
+function updateTema() {
+    if (body.classList.contains('dark')) {
+        localStorage.setItem('Tema', 'dark');
+        logo.src = logoOscuro;
+        toggleButtonSM.innerHTML = '<i class="fas fa-moon"></i>';
+        toggleButtonLG.innerHTML = '<i class="fas fa-moon"></i>';
+    } else {
+        localStorage.setItem('Tema', 'light');
+        logo.src = logoClaro;
+        toggleButtonSM.innerHTML = '<i class="fas fa-sun"></i>';
+        toggleButtonLG.innerHTML = '<i class="fas fa-sun"></i>';
+    }
 }
 
-// Cambiar el tema y guardar la preferencia
-toggleButton.addEventListener('click', () => {
+// Verifica el tema guardado en localStorage
+if (localStorage.getItem('Tema') === 'dark') {
+    body.classList.add('dark');
+    logo.src = logoOscuro;
+    toggleButtonSM.innerHTML = '<i class="fas fa-moon"></i>';
+    toggleButtonLG.innerHTML = '<i class="fas fa-moon"></i>';
+} else {
+    logo.src = logoClaro;
+    toggleButtonSM.innerHTML = '<i class="fas fa-sun"></i>';
+    toggleButtonLG.innerHTML = '<i class="fas fa-sun"></i>';
+}
+
+// Event listeners para ambos botones
+toggleButtonSM.addEventListener('click', () => {
     body.classList.toggle('dark');
-    if (body.classList.contains('dark')) {
-        localStorage.setItem('theme', 'dark');
-        logo.src = logoOscuro;
-        toggleButton.innerHTML = '<i class="fas fa-moon"></i>'; // Ícono de luna
-    } else {
-        localStorage.setItem('theme', 'light');
-        logo.src = logoClaro;
-        toggleButton.innerHTML = '<i class="fas fa-sun"></i>'; // Ícono de sol
-    }
+    updateTema();
+});
+
+toggleButtonLG.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    updateTema();
 });
 
