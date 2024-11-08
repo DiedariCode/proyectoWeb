@@ -77,3 +77,34 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 });
 
+const toggleButton = document.getElementById('toggle-button');
+const body = document.body;
+const logo = document.getElementById('logoJimdur');
+
+// Rutas de los logos para modo claro y oscuro
+const logoClaro = '../img/Logo Jimdur/logo_sinfondo_negro.png';
+const logoOscuro = '../img/Logo Jimdur/logofooter-sinfondo.png';
+
+// Verifica el tema guardado en localStorage
+if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark');
+    logo.src = logoOscuro;
+    toggleButton.innerHTML = '<i class="fas fa-moon"></i>'; // Ícono de luna
+} else {
+    toggleButton.innerHTML = '<i class="fas fa-sun"></i>'; // Ícono de sol
+}
+
+// Cambiar el tema y guardar la preferencia
+toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    if (body.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        logo.src = logoOscuro;
+        toggleButton.innerHTML = '<i class="fas fa-moon"></i>'; // Ícono de luna
+    } else {
+        localStorage.setItem('theme', 'light');
+        logo.src = logoClaro;
+        toggleButton.innerHTML = '<i class="fas fa-sun"></i>'; // Ícono de sol
+    }
+});
+

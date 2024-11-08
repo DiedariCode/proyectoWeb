@@ -19,12 +19,12 @@
 </head>
 
 <body>
-    <header class="bg-white border-bottom shadow-sm text-uppercase">
-        <nav class="navbar navbar-expand-lg navbar-light py-3">
+    <header class="border-bottom shadow-sm text-uppercase">
+        <nav class="navbar navbar-expand-lg  py-3">
             <div class="container d-flex align-items-center">
                 <!-- Logo -->
                 <a class="navbar-brand me-3" href="../index.html">
-                    <img src="../img/Logo Jimdur/logo_sinfondo_negro.png" alt="Logo Jimdur" width="100">
+                    <img src="../img/Logo Jimdur/logo_sinfondo_negro.png" alt="Logo Jimdur" width="100" id="logoJimdur">
                 </a>
 
                 <!-- Formulario de búsqueda (centrado en pantallas pequeñas) -->
@@ -65,8 +65,11 @@
                 <div class="d-none d-lg-flex ms-auto align-items-center">
                     <form class="d-flex align-items-center" role="search" action="#">
                         <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
-                        <button class="btn btn-outline-danger" type="submit">
+                        <button class="btn btn-danger" type="submit">
                             <i class="fas fa-search"></i>
+                        </button>
+                        <button id="toggle-button" class="btn btn-danger ms-2">
+                            <i class="fas fa-sun"></i> <!-- Ícono de sol para modo claro -->
                         </button>
                     </form>
                 </div>
@@ -91,8 +94,8 @@
             <div class="row">
                 <!-- Sección de Contacto -->
                 <section class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="text-center p-4 border-3 border-top border-danger bg-light rounded shadow-sm">
-                        <h2 class="fw-bold" style="color: #333333;">CONTÁCTANOS</h2>
+                    <div class="text-center p-4 border-3 bg-light rounded shadow-sm div-contacto">
+                        <h2 class="fw-bold" style="color: #333333;">CONTÁC<span class="text-danger">TANOS</span></h2>
                         <p class="text-muted">Tu consulta es importante para nosotros</p>
                         <div class="d-flex justify-content-around my-3">
                             <div class="text-center">
@@ -173,13 +176,12 @@
         </div>
 
         <!-- Sección de Feedback y Horarios de Atención -->
-        <div class="container-fluid bg-light py-4" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container-fluid bg-light py-4 div-info-adicional" data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
                 <div class="row">
-                    <h2 class="text-center mb-0 pb-0 mt-lg-4 fw-bold">INFORMACION <SPAn
-                            class="text-danger">ADICIONAL</SPAn></h2>
                     <!-- Sección de Feedback -->
                     <div class="col-lg-6 mt-3">
+                        <h2 class="fw-bold text-center text-uppercase">Deja tu <span class="text-danger">reseña</span></h2>
                         <form class="feedback-form bg-white p-4 rounded shadow-sm">
                             <div class="mb-3">
                                 <input type="text" class="form-control bg-light" placeholder="Nombre" required>
@@ -198,22 +200,22 @@
 
                     <!-- Sección de Horarios de Atención -->
                     <div class="col-lg-6 mt-0">
-                        <h3 class="text-center mb-3"></h3>
+                        <h2 class="text-center fw-bold pt-3 text-uppercase">Horarios <span class="text-danger">de Atencion</span></h2>
                         <div class="row" data-aos="fade-up" data-aos-duration="1000">
                             <div class="col-12 mb-3">
-                                <div class="p-4 border bg-white rounded shadow-sm">
+                                <div class="p-4 border bg-white rounded shadow-sm div-horario">
                                     <h4>Lunes a Viernes</h4>
                                     <p>9:00 AM - 6:00 PM</p>
                                 </div>
                             </div>
                             <div class="col-12 mb-3" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="p-4 border bg-white rounded shadow-sm">
+                                <div class="p-4 border bg-white rounded shadow-sm div-horario">
                                     <h4>Sábados</h4>
                                     <p>9:00 AM - 1:00 PM</p>
                                 </div>
                             </div>
                             <div class="col-12 mb-3" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="p-4 border bg-white rounded shadow-sm">
+                                <div class="p-4 border bg-white rounded shadow-sm div-horario">
                                     <h4>Domingos y Feriados</h4>
                                     <p>Cerrado</p>
                                 </div>

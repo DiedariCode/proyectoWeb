@@ -1,21 +1,198 @@
 
+/* MODO OSCURO */
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+/* Header y Nadvar */
+.dark .navbar {
+    color: white;
+    background-color: rgb(35, 35, 35);
+}
+
+.--oculto{
+    display: none;
+}
+
+.dark .navbar .nav-link {
+    color: white;
+}
+
+.dark .navbar .nav-link:hover {
+    color: #ffcccb; /* Un color diferente para el hover en modo oscuro */
+}
+
+.dark .navbar .nav-link.active {
+    color: rgb(251, 66, 66); /* Un color diferente para el active en modo oscuro */
+}
+
+.dark .navbar .form-control{
+    background-color: #333;
+    outline: none;
+    border: 1px solid #444;
+}
+
+.dark .navbar .form-control::placeholder {
+    color: rgba(217, 217, 217, 0.729);
+}
+
+/* Hero Section */
+.dark .hero-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/contacto.jpg') no-repeat center center;
+}
+
+/* Main-content */
+/* dark mode contacto y form de cotizacion*/
+.dark .feedback-form {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.dark .div-contacto{
+    background-color: #2a2a2a !important;
+    color: white;
+}
+
+.dark h2{
+    color: white !important;
+}
+
+
+.dark .feedback-form .form-control {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+    
+}
+
+.dark .feedback-form .form-control::placeholder {
+    color: rgba(217, 217, 217, 0.729);
+}
+
+.dark select {
+    color: rgba(217, 217, 217, 0.729) !important;
+}
+
+.dark select option {
+    color: white; 
+    background-color: #444; 
+}
+
+/* INFORMACION ADICIONAL CSS DARK*/
+
+.dark .div-info-adicional{
+    background-color: #2a2a2a !important;
+    color: white;
+}
+
+.dark .feedback-form {
+    background-color: #333 !important;
+    color: white;
+}
+
+.dark .feedback-form input::placeholder {
+    color: white;
+}
+
+.dark .feedback-form textarea::placeholder {
+    color: white;
+}
+
+
+.dark .feedback-form input,
+.dark .feedback-form textarea {
+    background-color: #333 !important;
+    border: 1px solid whitesmoke;
+}
+
+.dark .div-horario {
+    background-color: #333 !important;
+    color: whitesmoke;
+    border: 1px solid #444 !important;
+}
+
+.dark .form-control:focus {
+    border-color: #dc3545;
+}
+
+/* PREGUNTAS FRECUENTES */
+
+/* Estilos en modo oscuro para el contenedor de FAQ */
+.dark .accordion-item {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto claro */
+    border: 1px solid #444; /* Borde más suave */
+}
+
+/* Estilos para el encabezado del acordeón en modo oscuro */
+.dark .accordion-header {
+    background-color: #444; /* Fondo más oscuro para el encabezado */
+}
+
+/* Botón del acordeón cuando está colapsado */
+.dark .accordion-button.collapsed {
+    background-color: #333; /* Fondo del botón */
+    color: white; /* Color del texto */
+    border-color: #555; /* Color de borde */
+}
+
+/* Botón del acordeón cuando está desplegado */
+.dark .accordion-button:not(.collapsed) {
+    background-color: #555; /* Fondo diferente cuando está abierto */
+    color: #cfa708; /* Color más llamativo para el texto */
+    box-shadow: inset 0 -1px 5px rgba(0,0,0,0.2); /* Sombra interna */
+}
+
+/* Cuerpo del acordeón cuando está desplegado */
+.dark .accordion-body {
+    background-color: #444; /* Fondo del contenido desplegado */
+    color: #e0e0e0; /* Texto claro */
+    border-top: 1px solid #555; /* Borde en la parte superior */
+}
+
+/* CARRUSEL DARK */
+
+.dark .slider .slide img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    filter: none;
+    opacity: 0.7;
+}
+
+.dark .slide img:hover {
+    filter: grayscale(50%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* QUITAR EL CONTORNO AZUL DE BOOTSTRAP A LOS IMPUT */
+
+.form-control:focus, 
+.form-select:focus, 
+textarea.form-control:focus {
+    box-shadow: none !important; 
+    border-color: transparen !important; 
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important; 
+    border-color: rgb(192, 47, 47) !important; 
+}
 
 .active {
     border-bottom: 3px solid #dc3545 !important;
 }
 
 .navbar {
-    box-shadow: 0 0 5px rgb(0, 0, 0) !important;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
     position: fixed !important;
-    background-color: white !important;
-    top: 0% !important;
-    width: 100% !important;
-    z-index: 1000 !important;
-}
-
-.main-content {
-    margin-top: 0px;
-    padding: 0;
+    background-color: white;
+    top: 0%;
+    width: 100%;
+    z-index: 1000; 
 }
 
 .hero-section {
