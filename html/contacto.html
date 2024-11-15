@@ -137,29 +137,35 @@
 
                     <!-- Formulario de Cotización -->
                     <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                        <form class="p-4 rounded shadow-sm card-form">
+                        <form class="p-4 rounded shadow-sm card-form" id="cotizacion-form">
                             <h2 class="text-center mb-4 fw-bold" style="color: #333333;">
                                 SOLICITE SU <span class="text-danger">COTIZACIÓN</span>
                             </h2>
 
                             <!-- Campos del formulario -->
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Nombre" required>
+                                <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+                                <small class="error-message text-danger"></small>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Correo Electrónico" required>
+                                <input type="email" id="correo" class="form-control" placeholder="Correo Electrónico"
+                                    required>
+                                <small class="error-message text-danger"></small>
                             </div>
                             <div class="mb-3">
-                                <input type="tel" class="form-control" placeholder="Teléfono" required>
+                                <input type="tel" id="telefono" class="form-control" placeholder="Teléfono" required>
+                                <small class="error-message text-danger"></small>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="DNI o RUC">
+                                <input type="text" id="dni" class="form-control" placeholder="DNI o RUC">
+                                <small class="error-message text-danger"></small>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Placa vehicular o VIN">
+                                <input type="text" id="placa" class="form-control" placeholder="Placa vehicular o VIN">
+                                <small class="error-message text-danger"></small>
                             </div>
                             <div class="mb-3">
-                                <select class="form-control" required>
+                                <select id="asunto" class="form-control" required>
                                     <option value="" disabled selected>Seleccione un asunto</option>
                                     <option value="queja">Queja</option>
                                     <option value="sugerencia">Sugerencia</option>
@@ -167,13 +173,16 @@
                                     <option value="reclamo">Reclamo</option>
                                     <option value="otros">Otros</option>
                                 </select>
+                                <small class="error-message text-danger"></small>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+                                <textarea id="mensaje" class="form-control" rows="4" placeholder="Mensaje"
+                                    required></textarea>
+                                <small class="error-message text-danger"></small>
                             </div>
 
                             <!-- Botón de enviar -->
-                            <button type="submit" class="btn btn-danger w-100">Enviar mensaje</button>
+                            <button type="submit" class="btn btn-danger w-100" id="submit-btn">Enviar mensaje</button>
                         </form>
                     </div>
                 </div>

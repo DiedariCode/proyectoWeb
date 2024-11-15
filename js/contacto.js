@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('.feedback-form');
+    const form = document.querySelector('.card-form');
     const fields = form.querySelectorAll('.form-control');
-    
+
     fields.forEach(field => {
         const errorMessage = field.nextElementSibling; // Seleccionar el <small> para el mensaje de error
 
@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
 
             case 'Correo Electrónico':
-                const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
                 if (!emailPattern.test(value)) {
-                    errorMessage.textContent = 'Ingrese un correo electrónico válido';
+                    errorMessage.textContent = 'Ingrese un correo electrónico válido de tipo @gmail.com';
                 } else {
                     errorMessage.textContent = '';
                 }
@@ -76,3 +76,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 });
+
+

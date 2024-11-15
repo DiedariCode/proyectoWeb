@@ -114,12 +114,15 @@ body.dark {
 .dark .card-form textarea {
     background-color: #2a2a2a !important;
     border: none;
-    border-bottom: 3px solid #444;  ;
+    border-bottom: 3px solid #444;
 }
 
 .dark input:focus,
 .dark textarea:focus {
     color: rgb(172, 172, 172);
+    border-top: none!important;
+    border-left: none!important;
+    border-right: none!important;
 }
 
 .dark .card-form select{
