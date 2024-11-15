@@ -1,28 +1,216 @@
+/* CSS MODO DARK */
+/* -----------------------------------------------------------------------------*/
+/* ============== CSS NADVAR ===================== */
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+/* Header y Nadvar */
+.dark .navbar {
+    color: white;
+    background-color: rgb(35, 35, 35);
+}
+
+.--oculto {
+    display: none;
+}
+
+.dark .navbar .nav-link {
+    color: white;
+}
+
+.dark .navbar .nav-link:hover {
+    color: #ffcccb;
+    /* Un color diferente para el hover en modo oscuro */
+}
+
+.dark .navbar .nav-link.active {
+    color: rgb(251, 66, 66);
+    /* Un color diferente para el active en modo oscuro */
+}
+
+.dark .navbar .form-control {
+    background-color: #333;
+    outline: none;
+    border: 1px solid #444;
+}
+
+.dark .navbar .form-control::placeholder {
+    color: rgba(217, 217, 217, 0.729);
+}
+
+/* Cambiar color de las líneas del botón hamburguesa a blanco */
+.dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.dark .navbar-toggler {
+    border: 1px solid #444;
+}
+
+/* Quitar contorno del botón al hacer clic */
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* ============== CSS HERO SECTION ===================== */
+
+.dark .hero-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+        url('../img/Nosotros.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+/* ============== CSS HISTORIA SECTION ===================== */
+
+.dark .history-section {
+    background-color: #2a2a2a !important;
+}
+
+.dark h2 {
+    color: white !important;
+}
+
+.dark p {
+    color: white !important;
+}
+
+/* ============== CSS MISION Y VISION ===================== */
+
+.dark .mission-vision-section {
+    background-color: #333 !important;
+}
+
+.dark .mission-card,
+.dark .vision-card {
+    background: #2a2a2a !important;
+}
+
+/* ============== CSS VALORES SECTION ===================== */
+
+.dark .values-section {
+    background-color: #2a2a2a !important;
+}
+
+.dark .value-card {
+    background: #333 !important;
+}
+
+/* ============== CSS EQUIPO SECTION ===================== */
+
+.dark .team-section {
+    background-color: #333 !important;
+}
+
+.dark .team-card {
+    background: #2a2a2a !important;
+}
+
+.dark .team-info h3 {
+    color: white;
+}
+
+.dark .team-info p {
+    color: white;
+}
+
+.dark .social-icons a {
+    color: white;
+}
+
+.dark .social-icons a:hover {
+    color: #ffcccb;
+}
+
+/* ============== CSS TESTIMONIOS SECTION ===================== */
+
+.dark .testimonials-section {
+    background-color: #2a2a2a !important;
+}
+
+.dark .testimonial-card {
+    background: #333 !important;
+}
+
+.dark .testimonial-author h4 {
+    color: white;
+}
+
+.dark .testimonial-author p {
+    color: white;
+}
+
+.dark .testimonial-content i {
+    color: #ffcccb;
+}
+
+.dark .testimonial-author img {
+    border: 3px solid #ffcccb;
+}
+
+.dark .testimonial-author img:hover {
+    border: 3px solid #ffcccb;
+}
+
+/* ============== CSS CARRUSEL ===================== */
+
+.dark .proveedores-section {
+    background-color: #2a2a2a !important;
+}
+
+.dark .slider .slide img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* QUITAR EL CONTORNO AZUL DE BOOTSTRAP A LOS IMPUT */
+
+.form-control:focus,
+.form-select:focus,
+textarea.form-control:focus {
+    box-shadow: none !important;
+    border-color: transparen !important;
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: rgb(192, 47, 47) !important;
+}
+
+/* FIN MODO DARK */
+/* -----------------------------------------------------------------------------*/
 /* CSS MAIN */
 .active {
     border-bottom: 3px solid #dc3545 !important;
 }
 
 .navbar {
-    box-shadow: 0 0 5px rgb(0, 0, 0) !important;
-    position: fixed !important ;
-    background-color: white !important;
-    top: 0% !important;
-    width: 100% !important;
-    z-index: 1000 !important;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    position: fixed !important;
+    background-color: white;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
 }
 
 
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: 80vh;
+    height: 100vh;
     background: url('../img/Nosotros.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
     color: white;
     text-align: center;
+    background-attachment: fixed;
 }
 
 .hero-overlay {
@@ -296,58 +484,46 @@
     }
 }
 
-/* Carrusel de Proveedores */
-.carousel-proveedores {
-    background-color: #f8f9fa;
+/* CARRUSEL DE PROOVEDORES */
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
     overflow: hidden;
-    position: relative;
-    padding: 20px 0;
 }
 
-.carousel-container {
+.slider .slide-track {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    gap: 20px;
+    animation: scroll 40s linear infinite;
+    width: calc(120px * 18);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
     width: 100%;
-}
-
-.carousel-track {
-    display: flex;
-    animation: scroll 15s linear infinite;
-}
-
-.xd {
-    flex: 0 0 auto;
-    padding: 0 15px;
-    min-width: 120px;
-}
-
-.logo-img {
-    width: 100px;
     height: 100px;
-    /* Ensure all images have the same height */
     object-fit: contain;
-    /* Ensure the aspect ratio is maintained */
     filter: grayscale(100%);
     opacity: 0.7;
-    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.logo-img:hover {
+.slide img:hover {
     filter: grayscale(0%);
     opacity: 1;
     transform: scale(1.1);
 }
 
-/* Animación de desplazamiento */
 @keyframes scroll {
     0% {
         transform: translateX(0);
     }
 
     100% {
-        transform: translateX(-50%);
+        transform: translateX(calc(-100px * 12));
     }
 }
 

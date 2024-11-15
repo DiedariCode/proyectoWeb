@@ -11,18 +11,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Añade esto en el head de tu HTML para la biblioteca AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="bg-white border-bottom shadow-sm text-uppercase">
-        <nav class="navbar navbar-expand-lg navbar-light py-3">
+    <header class="border-bottom shadow-sm text-uppercase">
+        <nav class="navbar navbar-expand-lg  py-3">
             <div class="container d-flex align-items-center">
                 <!-- Logo -->
                 <a class="navbar-brand me-3" href="../index.html">
-                    <img src="../img/Logo Jimdur/logo_sinfondo_negro.png" alt="Logo Jimdur" width="100">
+                    <img src="../img/Logo Jimdur/logo_sinfondo_negro.png" alt="Logo Jimdur" width="100" id="logoJimdur">
                 </a>
 
                 <!-- Formulario de búsqueda (centrado en pantallas pequeñas) -->
@@ -56,18 +56,24 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
+                        <button id="toggle-buttonsm" class="btn btn-danger ms-2 mt-3 d-block d-lg-none" type="button">
+                            <i class="fas fa-sun "></i> <!-- Ícono de sol para modo claro -->
+                        </button>
                     </ul>
                 </div>
-
                 <!-- Formulario de búsqueda (visible solo en pantallas grandes) -->
                 <div class="d-none d-lg-flex ms-auto align-items-center">
                     <form class="d-flex align-items-center" role="search" action="#">
                         <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
-                        <button class="btn btn-outline-danger" type="submit">
+                        <button class="btn btn-danger" type="submit">
                             <i class="fas fa-search"></i>
                         </button>
                     </form>
+                    <button id="toggle-buttonlg" class="btn btn-danger ms-2" type="button">
+                        <i class="fas fa-sun"></i> <!-- Ícono de sol para modo claro -->
+                    </button>
                 </div>
+
             </div>
         </nav>
     </header>
@@ -88,7 +94,7 @@
         <section class="history-section py-5 bg-white">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-8 mb-0">
+                    <div class="col-md-8 mb-0" data-aos="fade-up" data-aos-duration="1000">
                         <h2 class="text-center text-dark fw-bold text-uppercase">Nuestra <span
                                 class="text-danger">Historia</span></h2>
                         <p class="fw-normal p-3" style="text-align: justify; font-size: 1rem;">
@@ -103,16 +109,17 @@
                             servicio al cliente"</p>
                         <div class="row">
                             <div class="col stat-item text-center">
-                                <span class="stat-number display-4 text-danger">25</span>+
+                                <span id="counter" class="stat-number display-4 text-danger">0</span>+
                                 <p class="stat-label">Años de experiencia</p>
                             </div>
+
                             <div class="col stat-item text-center">
-                                <span class="stat-number display-4 text-danger">10000</span>+
+                                <span id="counter-clients" class="stat-number display-4 text-danger">0</span>+
                                 <p class="stat-label">Clientes satisfechos</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
                         <img src="../img/retrato-elegante.jpg" alt="Historia JIMDUR"
                             class="rounded img-fluid shadow --gerente">
                         <p class="text-center pt-2 pb-0">Luis Jimenez <br> Gerente General</p>
@@ -128,7 +135,7 @@
                 <div class="row">
                     <!-- Misión -->
                     <div class="col-md-6 mb-4">
-                        <div class="mission-card p-4 shadow-sm bg-white">
+                        <div class="mission-card p-4 shadow-sm bg-white" data-aos="fade-up" data-aos-duration="1000">
                             <h3 class="mb-3">Misión</h3>
                             <p>
                                 "Nuestra misión es proporcionar a nuestros
@@ -146,7 +153,7 @@
                     </div>
                     <!-- Visión -->
                     <div class="col-md-6 mb-4">
-                        <div class="vision-card p-4 shadow-sm bg-white">
+                        <div class="vision-card p-4 shadow-sm bg-white" data-aos="fade-down" data-aos-duration="1000">
                             <h3 class="mb-3">Visión</h3>
                             <p>
                                 "Nos proyectamos como una de las empresas
@@ -174,22 +181,22 @@
                 <h2 class="text-center mb-5 text-uppercase fw-bold text-uppercase">Nuestros <span
                         class="text-danger">valores</span></h2>
                 <div class="row text-center">
-                    <div class="col-md-4 mb-4">
-                        <div class="value-card p-4 border rounded shadow-sm">
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="value-card p-4 rounded shadow-sm">
                             <i class="fas fa-medal text-danger fs-1 mb-3"></i>
                             <h3>Calidad</h3>
                             <p>Compromiso con la excelencia en cada producto que ofrecemos.</p>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="value-card p-4 border rounded shadow-sm">
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="value-card p-4 rounded shadow-sm">
                             <i class="fas fa-handshake text-danger fs-1 mb-3"></i>
                             <h3>Confianza</h3>
                             <p>Construimos relaciones duraderas basadas en la honestidad.</p>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="value-card p-4 border rounded shadow-sm">
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="value-card p-4 rounded shadow-sm">
                             <i class="fas fa-tools text-danger fs-1 mb-3"></i>
                             <h3>Experiencia</h3>
                             <p>Conocimiento técnico respaldado por años de experiencia.</p>
@@ -206,7 +213,7 @@
                         class="text-danger">Equipos</span></h2>
                 <div class="row text-center">
                     <div class="col-md-4 mb-4">
-                        <div class="team-card border rounded shadow-sm">
+                        <div class="team-card border rounded shadow-sm" data-aos="fade-up" data-aos-duration="1000">
                             <img src="../img/perfil01.jpg" alt="Juan Pérez" class="img-fluid rounded-top">
                             <div class="team-info p-3">
                                 <h3>Juan Pérez</h3>
@@ -220,7 +227,7 @@
                     </div>
                     <!-- Repetir bloques para otros miembros del equipo -->
                     <div class="col-md-4 mb-4">
-                        <div class="team-card border rounded shadow-sm">
+                        <div class="team-card border rounded shadow-sm" data-aos="fade-up" data-aos-duration="1000">
                             <img src="../img/perfil01.jpg" alt="Juan Pérez" class="img-fluid rounded-top">
                             <div class="team-info p-3">
                                 <h3>Juan Pérez</h3>
@@ -233,7 +240,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="team-card border rounded shadow-sm">
+                        <div class="team-card border rounded shadow-sm" data-aos="fade-up" data-aos-duration="1500">
                             <img src="../img/perfil01.jpg" alt="Juan Pérez" class="img-fluid rounded-top">
                             <div class="team-info p-3">
                                 <h3>Juan Pérez</h3>
@@ -256,7 +263,7 @@
                         clientes</span></h2>
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <div class="testimonial-card border rounded shadow-sm p-4">
+                        <div class="testimonial-card rounded shadow-sm p-4" data-aos="fade-up" data-aos-duration="1000">
                             <i class="fas fa-quote-left text-danger fs-2 mb-3"></i>
                             <p>Excelente servicio y productos de primera calidad. Siempre encuentro lo que necesito.</p>
                             <div class="testimonial-author d-flex align-items-center mt-3">
@@ -270,7 +277,7 @@
                     </div>
                     <!-- Repetir bloques para otros testimonios -->
                     <div class="col-md-4 mb-4">
-                        <div class="testimonial-card border rounded shadow-sm p-4">
+                        <div class="testimonial-card rounded shadow-sm p-4" data-aos="fade-up" data-aos-duration="1000">
                             <i class="fas fa-quote-left text-danger fs-2 mb-3"></i>
                             <p>Excelente servicio y productos de primera calidad. Siempre encuentro lo que necesito.</p>
                             <div class="testimonial-author d-flex align-items-center mt-3">
@@ -283,7 +290,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="testimonial-card border rounded shadow-sm p-4">
+                        <div class="testimonial-card rounded shadow-sm p-4" data-aos="fade-up" data-aos-duration="1000">
                             <i class="fas fa-quote-left text-danger fs-2 mb-3"></i>
                             <p>Excelente servicio y productos de primera calidad. Siempre encuentro lo que necesito.</p>
                             <div class="testimonial-author d-flex align-items-center mt-3">
@@ -300,59 +307,67 @@
         </section>
 
         <!-- Carrusel de Proveedores -->
-        <section class="carousel-proveedores py-2">
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <!-- Logo de Proveedor 1 -->
-                    <div class="xd">
-                        <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 2 -->
-                    <div class="xd">
-                        <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 3 -->
-                    <div class="xd">
-                        <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 4 -->
-                    <div class="xd">
-                        <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 5 -->
-                    <div class="xd">
-                        <img src="../img/marcas/ktm.png" alt="ktm" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 5 -->
-                    <div class="xd">
-                        <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 1 -->
-                    <div class="xd">
-                        <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 2 -->
-                    <div class="xd">
-                        <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 3 -->
-                    <div class="xd">
-                        <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 4 -->
-                    <div class="xd">
-                        <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 5 -->
-                    <div class="xd">
-                        <img src="../img/marcas/ktm.png" alt="ktm" class="logo-img">
-                    </div>
-                    <!-- Logo de Proveedor 5 -->
-                    <div class="xd">
-                        <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
-                    </div>
-
+        <section class="container-fluid proveedores-section">
+            <div class="slider py-2"">
+            <div class=" slide-track">
+                <!-- Logos de Proveedores -->
+                <div class="slide">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
                 </div>
+                <div class="slide">
+                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                </div>
+                <!-- Logos de Proveedores -->
+                <div class="slide">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                </div>
+                <!-- Logos de Proveedores -->
+                <div class="slide">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                </div>
+            </div>
             </div>
         </section>
     </main>
@@ -469,6 +484,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="../js/nosotros.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

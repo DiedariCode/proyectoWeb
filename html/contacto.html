@@ -35,9 +35,6 @@
                             <i class="fas fa-search"></i>
                         </button>
                     </form>
-                    <button id="toggle-buttonsm" class="btn btn-danger ms-2" type="button">
-                        <i class="fas fa-sun"></i> <!-- Ícono de sol para modo claro -->
-                    </button>
                 </div>
 
                 <!-- Botón de menú móvil -->
@@ -61,6 +58,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="contacto.html">Contacto</a>
                         </li>
+                        <button id="toggle-buttonsm" class="btn btn-danger ms-2 mt-3 d-block d-lg-none" type="button">
+                            <i class="fas fa-sun "></i> <!-- Ícono de sol para modo claro -->
+                        </button>
                     </ul>
                 </div>
                 <!-- Formulario de búsqueda (visible solo en pantallas grandes) -->
@@ -92,99 +92,103 @@
             </div>
         </section>
 
-        <!-- Formularios section -->
-        <div class="container my-4 mb-2">
-            <div class="row">
-                <!-- Sección de Contacto -->
-                <section class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="text-center p-4 border-3 bg-light rounded shadow-sm div-contacto">
-                        <h2 class="fw-bold" style="color: #333333;">CONTÁC<span class="text-danger">TANOS</span></h2>
-                        <p class="text-muted">Tu consulta es importante para nosotros</p>
-                        <div class="d-flex justify-content-around my-3">
-                            <div class="text-center">
-                                <img src="../img/iconos/telefono.svg" alt="Teléfono" class="mb-2" style="width: 40px;">
-                                <p>(+51) 968108775</p>
-                            </div>
-                            <div class="text-center">
-                                <img src="../img/iconos/Ubicación.svg" alt="Ubicación" class="mb-2"
-                                    style="width: 40px;">
-                                <p>Av. José Aguilar Santisteban, Piura - Perú</p>
-                            </div>
-                            <div class="text-center">
-                                <img src="../img/iconos/correo.svg" alt="Correo" class="mb-2" style="width: 40px;">
-                                <p>info@jimdurr.com</p>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4 map-container">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.6374988954863!2d-80.65618082542369!3d-5.161883952143082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1b88948eae13%3A0x1d2875411b61bb19!2sGrupo%20Jimdur%20%26%20Motorepuestos%20Jimenez!5e0!3m2!1ses!2spe!4v1730094624124!5m2!1ses!2spe"
-                                width="100%" height="344" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Formulario de Cotización -->
-                <section class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
-                    <form class="p-4 feedback-form">
-                        <h2 class="text-center mb-4 fw-bold" style="color: #333333;">SOLICITE SU <span
-                                class="text-danger">COTIZACIÓN</span></h2>
-
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Nombre" required>
-                            <small class="error-message text-danger"></small>
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Correo Electrónico" required>
-                            <small class="error-message text-danger"></small>
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="tel" class="form-control" placeholder="Teléfono" required>
-                            <small class="error-message text-danger"></small>
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="DNI o RUC">
-                            <small class="error-message text-danger"></small>
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Placa vehicular o VIN">
-                            <small class="error-message text-danger"></small>
-                        </div>
-
-                        <div class="mb-3">
-                            <select class="form-control" required>
-                                <option value="" disabled selected>Seleccione un asunto</option>
-                                <option value="queja">Queja</option>
-                                <option value="sugerencia">Sugerencia</option>
-                                <option value="consulta">Consulta</option>
-                                <option value="reclamo">Reclamo</option>
-                                <option value="otros">Otros</option>
-                            </select>
-                            <small class="error-message text-danger"></small>
-                        </div>
-
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
-                            <small class="error-message text-danger"></small>
-                        </div>
-
-                        <button type="submit" class="btn btn-danger w-100">Enviar mensaje</button>
-                    </form>
-                </section>
-
-            </div>
-        </div>
-
-        <!-- Sección de Feedback y Horarios de Atención -->
-        <div class="container-fluid bg-light py-4 div-info-adicional" data-aos="fade-up" data-aos-duration="1000">
+        <!-- Sección de Formularios -->
+        <section class="formularios-section py-5 pb-3">
             <div class="container">
                 <div class="row">
+                    <!-- Sección de Contacto -->
+                    <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="p-4 rounded shadow-sm card-contacto">
+                            <h2 class="fw-bold text-center mb-3" style="color: #333333;">
+                                CONTÁC<span class="text-danger">TANOS</span>
+                            </h2>
+                            <p class="text-muted text-center">Tu consulta es importante para nosotros</p>
+
+                            <!-- Información de contacto -->
+                            <div class="d-flex justify-content-between my-4">
+                                <!-- Teléfono -->
+                                <div class="text-center">
+                                    <img src="../img/iconos/telefono.svg" alt="Teléfono" class="mb-2"
+                                        style="width: 40px;">
+                                    <p class="mb-0">(+51) 968108775</p>
+                                </div>
+                                <!-- Ubicación -->
+                                <div class="text-center">
+                                    <img src="../img/iconos/Ubicación.svg" alt="Ubicación" class="mb-2"
+                                        style="width: 40px;">
+                                    <p class="mb-0">Av. José Aguilar Santisteban, Piura - Perú</p>
+                                </div>
+                                <!-- Correo -->
+                                <div class="text-center">
+                                    <img src="../img/iconos/correo.svg" alt="Correo" class="mb-2" style="width: 40px;">
+                                    <p class="mb-0">info@jimdurr.com</p>
+                                </div>
+                            </div>
+
+                            <!-- Mapa -->
+                            <div class="mt-4">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.6374988954863!2d-80.65618082542369!3d-5.161883952143082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1b88948eae13%3A0x1d2875411b61bb19!2sGrupo%20Jimdur%20%26%20Motorepuestos%20Jimenez!5e0!3m2!1ses!2spe!4v1730094624124!5m2!1ses!2spe"
+                                    width="100%" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de Cotización -->
+                    <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        <form class="p-4 rounded shadow-sm card-form">
+                            <h2 class="text-center mb-4 fw-bold" style="color: #333333;">
+                                SOLICITE SU <span class="text-danger">COTIZACIÓN</span>
+                            </h2>
+
+                            <!-- Campos del formulario -->
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Correo Electrónico" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Teléfono" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="DNI o RUC">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Placa vehicular o VIN">
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-control" required>
+                                    <option value="" disabled selected>Seleccione un asunto</option>
+                                    <option value="queja">Queja</option>
+                                    <option value="sugerencia">Sugerencia</option>
+                                    <option value="consulta">Consulta</option>
+                                    <option value="reclamo">Reclamo</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+                            </div>
+
+                            <!-- Botón de enviar -->
+                            <button type="submit" class="btn btn-danger w-100">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Sección de Feedback y Horarios de Atención -->
+        <div class="container-fluid bg-light py-4 div-info-adicional">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                <div class="row">
                     <!-- Sección de Feedback -->
-                    <div class="col-lg-6 mt-3">
-                        <h2 class="fw-bold text-center text-uppercase">Deja tu <span class="text-danger">reseña</span></h2>
+                    <div class="col-lg-6 mt-3 card-formFed">
+                        <h2 class="fw-bold text-center text-uppercase">Deja tu <span class="text-danger">reseña</span>
+                        </h2>
                         <form class="feedback-form bg-white p-4 rounded shadow-sm">
                             <div class="mb-3">
                                 <input type="text" class="form-control bg-light" placeholder="Nombre" required>
@@ -203,7 +207,8 @@
 
                     <!-- Sección de Horarios de Atención -->
                     <div class="col-lg-6 mt-0">
-                        <h2 class="text-center fw-bold pt-3 text-uppercase">Horarios <span class="text-danger">de Atencion</span></h2>
+                        <h2 class="text-center fw-bold pt-3 text-uppercase">Horarios <span class="text-danger">de
+                                Atencion</span></h2>
                         <div class="row" data-aos="fade-up" data-aos-duration="1000">
                             <div class="col-12 mb-3">
                                 <div class="p-4 border bg-white rounded shadow-sm div-horario">
@@ -229,121 +234,143 @@
             </div>
         </div>
         <!-- Sección de Preguntas Frecuentes (FAQ) -->
-        <div class="container my-4" data-aos="fade-up" data-aos-duration="1000">
-            <h2 class="fw-bold text-uppercase text-center mb-4">Preguntas <span class="text-danger">Frecuentes</span>
-            </h2>
-            <div class="accordion" id="faqAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button faq-title" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            ¿Qué tipo de repuestos ofrecen?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Ofrecemos una amplia gama de repuestos y accesorios para motocicletas de diversas marcas y
-                            modelos.
-                        </div>
+        <section class="faq-section py-5">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                <!-- Título -->
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="fw-bold text-uppercase">
+                            Preguntas <span class="text-danger">Frecuentes</span>
+                        </h2>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button faq-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            ¿Realizan envíos a domicilio?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Sí, realizamos envíos a domicilio dentro de la ciudad y también a otras localidades bajo
-                            ciertas condiciones.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button faq-title collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            ¿Cómo puedo hacer un pedido?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Puedes realizar tu pedido a través de nuestro formulario de contacto o llamándonos
-                            directamente.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Carrusel de Proveedores -->
-        <section class="slider py-2">
-            <div class="slide-track">
-                <!-- Logos de Proveedores -->
-                <div class="slide">
-                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
-                </div>
-                <!-- Logos de Proveedores -->
-                <div class="slide">
-                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
-                </div>
-                <!-- Logos de Proveedores -->
-                <div class="slide">
-                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
-                </div>
-                <div class="slide">
-                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                <!-- Acordeón de Preguntas Frecuentes -->
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="accordion" id="faqAccordion">
+                            <!-- Pregunta 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        ¿Qué tipo de repuestos ofrecen?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Ofrecemos una amplia gama de repuestos y accesorios para motocicletas de
+                                        diversas marcas y modelos.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pregunta 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        ¿Realizan envíos a domicilio?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Sí, realizamos envíos a domicilio dentro de la ciudad y también a otras
+                                        localidades bajo ciertas condiciones.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pregunta 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        ¿Cómo puedo hacer un pedido?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Puedes realizar tu pedido a través de nuestro formulario de contacto o
+                                        llamándonos directamente.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+
+        <!-- Carrusel de Proveedores -->
+        <section class="container-fluid proveedores-section">
+            <div class="slider py-2"">
+            <div class=" slide-track">
+                <!-- Logos de Proveedores -->
+                <div class="slide">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                </div>
+                <!-- Logos de Proveedores -->
+                <div class="slide">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                </div>
+                <!-- Logos de Proveedores -->
+                <div class="slide">
+                    <img src="../img/marcas/BAJAJ.png" alt="Bajaj" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Hero.png" alt="Hero" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Honda-Logo.wine.svg" alt="Honda" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/Kawasaki.png" alt="Kawasaki" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/ktm.png" alt="Ktm" class="logo-img">
+                </div>
+                <div class="slide">
+                    <img src="../img/marcas/yamaha.png" alt="Yamaha" class="logo-img">
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
 
 
@@ -469,6 +496,7 @@
 
 
     <script src="../js/contacto.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

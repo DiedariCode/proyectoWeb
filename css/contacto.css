@@ -1,11 +1,20 @@
 
 /* MODO OSCURO */
 body.dark {
-    background-color: #121212;
     color: white;
+    background-color: #121212;
 }
 
-/* Header y Nadvar */
+.dark h2{
+    color: white !important;
+}
+
+.dark p{
+    color: white !important;
+}
+
+/* ============== CSS HEADER ===================== */
+
 .dark .navbar {
     color: white;
     background-color: rgb(35, 35, 35);
@@ -30,7 +39,14 @@ body.dark {
 .dark .navbar .form-control{
     background-color: #333;
     outline: none;
-    border: 1px solid #444;
+    border: none !important;
+}
+
+.dark .navbar .form-control:focus{
+    background-color: #333;
+    outline: none;
+    border: none !important;
+    border-bottom: 3px solid #dc3545 !important;
 }
 
 .dark .navbar .form-control::placeholder {
@@ -46,157 +62,184 @@ body.dark {
     border: 1px solid #444;
 }
 
-
 /* Quitar contorno del botón al hacer clic */
 .navbar-toggler:focus {
     box-shadow: none !important;
 }
 
+/* ============== CSS HERO SECTION ===================== */
 
-/* Hero Section */
 .dark .hero-section {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/contacto.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
 }
 
-/* Main-content */
-/* dark mode contacto y form de cotizacion*/
-.dark .feedback-form {
-    background-color: #2a2a2a;
-    color: white;
-}
+/* ============== CSS CONTACTO SECTION ===================== */
 
-.dark .div-contacto{
+.dark .formularios-section {
     background-color: #2a2a2a !important;
     color: white;
 }
 
-.dark h2{
-    color: white !important;
-}
-
-
-.dark .feedback-form .form-control {
+.dark .card-contacto {
     background-color: #333;
     color: white;
-    border: 1px solid #444;
-    
 }
 
-.dark .feedback-form .form-control::placeholder {
-    color: rgba(217, 217, 217, 0.729);
+/* ============== CSS COTIZACION SECTION ===================== */
+
+.dark .card-form{
+    background-color: #333 !important;
+    color: white;
 }
 
-.dark select {
-    color: rgba(217, 217, 217, 0.729) !important;
+.dark .card-form input::placeholder {
+    color: white;
 }
 
-.dark select option {
-    color: white; 
-    background-color: #444; 
+.dark .card-form textarea::placeholder {
+    color: white;
 }
 
-/* INFORMACION ADICIONAL CSS DARK*/
+.dark .card-form input,
+.dark .card-form textarea,
+.dark .card-form select {
+    color: white;
+}
+
+.dark .card-form input,
+.dark .card-form textarea {
+    background-color: #2a2a2a !important;
+    border: none;
+    border-bottom: 3px solid #444;  ;
+}
+
+.dark input:focus,
+.dark textarea:focus {
+    color: rgb(172, 172, 172);
+}
+
+.dark .card-form select{
+    background-color: #2a2a2a !important;
+    border: none;
+}
+
+.dark .card-form option {
+    background-color: #2a2a2a; /* Fondo blanco de las opciones */
+    color: whitesmoke; /* Color de texto */
+    padding: 8px; /* Relleno interior de las opciones */
+}
+
+.dark .card-form select:focus{
+    background-color: #2a2a2a !important;
+    border: none;
+    border-bottom: 3px solid #444;  ;
+}
+
+/* ============== CSS FEEDBACK Y HORARIOS SECTION ===================== */
 
 .dark .div-info-adicional{
-    background-color: #2a2a2a !important;
-    color: white;
-}
-
-.dark .feedback-form {
     background-color: #333 !important;
     color: white;
-}
-
-.dark .feedback-form input::placeholder {
-    color: white;
-}
-
-.dark .feedback-form textarea::placeholder {
-    color: white;
-}
-
-
-.dark .feedback-form input,
-.dark .feedback-form textarea {
-    background-color: #333 !important;
-    border: 1px solid whitesmoke;
 }
 
 .dark .div-horario {
-    background-color: #333 !important;
+    background-color: #2a2a2a !important;
     color: whitesmoke;
     border: 1px solid #444 !important;
 }
 
-.dark .form-control:focus {
-    border-color: #dc3545;
+.dark .feedback-form{
+    background-color: #2a2a2a !important;
+    color: white;
 }
 
-/* PREGUNTAS FRECUENTES */
-
-/* Estilos en modo oscuro para el contenedor de FAQ */
-.dark .accordion-item {
-    background-color: #333; /* Fondo oscuro */
-    color: white; /* Texto claro */
-    border: 1px solid #444; /* Borde más suave */
+.dark .card-formFed input::placeholder {
+    color: white;
 }
 
-/* Estilos para el encabezado del acordeón en modo oscuro */
-.dark .accordion-header {
-    background-color: #444; /* Fondo más oscuro para el encabezado */
+.dark .card-formFed textarea::placeholder {
+    color: white;
+}
+
+.dark .card-formFed input,
+.dark .card-formFed textarea,
+.dark .card-formFed select {
+    color: white;
+}
+
+.dark .div-info-adicional input,
+.dark .div-info-adicional textarea {
+    background-color: #333 !important;
+    border: none;
+    border-bottom: 3px solid #444;  ;
+}
+
+
+/* ============== CSS PREGUNTAS FRECUENTES ===================== */
+
+.dark .faq-section {
+    background-color: #2a2a2a;
+    color: white;
 }
 
 /* Botón del acordeón cuando está colapsado */
 .dark .accordion-button.collapsed {
     background-color: #333; /* Fondo del botón */
     color: white; /* Color del texto */
-    border-color: #555; /* Color de borde */
 }
 
 /* Botón del acordeón cuando está desplegado */
 .dark .accordion-button:not(.collapsed) {
-    background-color: #555; /* Fondo diferente cuando está abierto */
-    color: #cfa708; /* Color más llamativo para el texto */
-    box-shadow: inset 0 -1px 5px rgba(0,0,0,0.2); /* Sombra interna */
+    background-color: #333;
+    color: rgb(255, 195, 195);
 }
 
 /* Cuerpo del acordeón cuando está desplegado */
 .dark .accordion-body {
-    background-color: #444; /* Fondo del contenido desplegado */
+    background-color: #2a2a2a; /* Fondo del contenido desplegado */
     color: #e0e0e0; /* Texto claro */
     border-top: 1px solid #555; /* Borde en la parte superior */
+    
 }
 
-/* CARRUSEL DARK */
+.accordion-item:focus {
+    box-shadow: none !important; 
+    border-color: transparen !important;
+}
+
+/* ============== CSS CARRUSEL ===================== */
+
+.dark .proveedores-section {
+    background-color: #2a2a2a !important;
+}
 
 .dark .slider .slide img {
-    width: 100%;
-    height: 100px;
-    object-fit: contain;
-    filter: none;
-    opacity: 0.7;
-}
-
-.dark .slide img:hover {
-    filter: grayscale(50%);
+    filter: grayscale(0%);
     opacity: 1;
-    transform: scale(1.1);
 }
 
-/* QUITAR EL CONTORNO AZUL DE BOOTSTRAP A LOS IMPUT */
+/* ============== FIN MODO DARK ===================== */
 
-.form-control:focus, 
-.form-select:focus, 
-textarea.form-control:focus {
-    box-shadow: none !important; 
-    border-color: transparen !important; 
-}
+
+/* ============== CSS MODO CLARO ===================== */
+/* QUITAR EL CONTORNO AZUL DE BOOTSTRAP  */
 
 .form-control:focus {
     outline: none !important;
-    box-shadow: none !important; 
-    border-color: rgb(192, 47, 47) !important; 
+    box-shadow: none !important; /*Esto es lo que jode de boostrap*/
+    border: 1px solid #ced4da !important;
+    border-bottom: 3px solid #dc3545  !important; 
 }
+
+button:focus {
+    box-shadow: none !important;
+}
+
+/* ============== HEADER ===================== */
 
 .active {
     border-bottom: 3px solid #dc3545 !important;
@@ -260,24 +303,27 @@ textarea.form-control:focus {
     padding: 0.8rem 2rem;
 }
 
-/* CONTACTANOS Y FORM DE COTIZACION */
+/* ============== CSS CONTACTO Y FORM SECTION ===================== */
+
 .map-container {
     border-radius: 15px;
     overflow: hidden;
 }
 
-.border-3 {
-    /* Estilos de horarios de atención */
-    transition: box-shadow 0.3s, transform 0.3s;
+.card-contacto{
+    height: 100%;
 }
 
-.border-3:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    transform: scale(1.02);
-    /* Agrandar ligeramente al pasar el ratón */
+.card-contacto,
+.card-form {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-/* RESEÑAS Y HORARIO */
+/* ============== CSS FEEDBACK Y HORARIO ===================== */
+
 .feedback-form {
     /* formulario de reseña */
     background-color: #f8f9fa;
@@ -303,7 +349,6 @@ textarea.form-control:focus {
     box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
 }
 
-
 .border {
     /* Estilos de horarios de atención */
     transition: box-shadow 0.3s, transform 0.3s;
@@ -315,7 +360,7 @@ textarea.form-control:focus {
     /* Agrandar ligeramente al pasar el ratón */
 }
 
-/* PREGUNTAS FRECUENTES */
+/* ============== CSS FAQ ===================== */
 
 .faq-title {
     cursor: pointer;
@@ -326,7 +371,7 @@ textarea.form-control:focus {
     color: #050505;
 }
 
-/* CARRUSEL DE PROOVEDORES */
+/* ============== CSS CARRUSEL ===================== */
 .slider {
     width: 75vw;
     height: auto;
