@@ -1,3 +1,113 @@
+/* MODO OSCURO */
+body.dark {
+    color: white;
+    background-color: #121212;
+}
+
+.dark h2,
+.dark h3 {
+    color: white !important;
+}
+
+.dark p {
+    color: white !important;
+}
+
+/* ============== CSS HEADER ===================== */
+
+.dark .navbar {
+    color: white;
+    background-color: rgb(35, 35, 35) !important;
+}
+
+.--oculto {
+    display: none;
+}
+
+.dark .navbar .nav-link {
+    color: white;
+}
+
+.dark .navbar .nav-link:hover {
+    color: #ffcccb;
+    /* Un color diferente para el hover en modo oscuro */
+}
+
+.dark .navbar .nav-link.active {
+    color: rgb(251, 66, 66);
+    /* Un color diferente para el active en modo oscuro */
+}
+
+.dark .navbar .form-control {
+    background-color: #333;
+    outline: none;
+    border: none !important;
+}
+
+.dark .navbar .form-control:focus {
+    background-color: #333;
+    outline: none;
+    border: none !important;
+    border-bottom: 3px solid #dc3545 !important;
+}
+
+.dark .navbar .form-control::placeholder {
+    color: rgba(217, 217, 217, 0.729);
+}
+
+/* Cambiar color de las líneas del botón hamburguesa a blanco */
+.dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.dark .navbar-toggler {
+    border: 1px solid #444;
+}
+
+/* Quitar contorno del botón al hacer clic */
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* ============== CSS HERO SECTION ===================== */
+
+.dark .banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/banner_productos.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/* ============== CSS PRODUCTOS SECTION ===================== */
+
+.dark .productos {
+    background-color: #2a2a2a;
+}
+
+.dark .producto{
+    background-color: #333;
+    border: none;
+    box-shadow: 0 0 1px white;
+}
+
+.dark .negro{
+    color: white !important;
+}
+
+/* ============== CSS PROVEEDORES ===================== */
+
+.dark .seccion-proveedores {
+    background-color: #333;
+}
+
+.dark .proveedor-card {
+    background-color: #2a2a2a !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ============== FIN  CSS DARK ===================== */
+
 /* Estilos globales */
 body,
 html {

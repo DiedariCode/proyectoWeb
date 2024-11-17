@@ -8,9 +8,12 @@ const toggleButtonLG = document.getElementById('toggle-buttonlg');
 const body = document.body;
 const logo = document.getElementById('logoJimdur');
 
-// Rutas de los logos para modo claro y oscuro
-const logoClaro = '../img/Logo Jimdur/logo_sinfondo_negro.png';
-const logoOscuro = '../img/Logo Jimdur/logofooter-sinfondo.png';
+// Detecta si estamos en la página de inicio (index.html)
+const isIndexPage = window.location.pathname === '/' || window.location.pathname.includes('index.html');
+
+// Rutas de los logos para modo claro y oscuro, ajustadas según la página
+const logoClaro = isIndexPage ? 'img/Logo Jimdur/logo_sinfondo_negro.png' : '../img/Logo Jimdur/logo_sinfondo_negro.png';
+const logoOscuro = isIndexPage ? 'img/Logo Jimdur/logofooter-sinfondo.png' : '../img/Logo Jimdur/logofooter-sinfondo.png';
 
 // Función para actualizar el tema
 function updateTema() {

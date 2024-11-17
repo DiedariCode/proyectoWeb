@@ -17,7 +17,7 @@ body.dark {
 
 .dark .navbar {
     color: white;
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(35, 35, 35) !important;
 }
 
 .--oculto{
