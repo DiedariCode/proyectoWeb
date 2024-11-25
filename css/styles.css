@@ -13,6 +13,10 @@ body.dark {
     color: white !important;
 }
 
+.dark .descrip-serv{
+    color: dark !important;
+}
+
 /* ============== CSS HEADER ===================== */
 
 .dark .navbar {
