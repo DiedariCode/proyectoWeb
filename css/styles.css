@@ -10,11 +10,11 @@ body.dark {
 }
 
 .dark p {
-    color: white !important;
+    color: white;
 }
 
 .dark .descrip-serv{
-    color: dark !important;
+    color: black !important;
 }
 
 /* ============== CSS HEADER ===================== */
