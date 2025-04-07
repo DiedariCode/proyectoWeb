@@ -1,6 +1,6 @@
 # Proyecto Web - Final del Curso de Taller Web
 
-Este repositorio corresponde al proyecto final del curso de **Taller Web** de la universidad. El proyecto tiene como objetivo desarrollar una página web funcional para la empresa **JIMDUR Repuestos**.
+Este repositorio corresponde al proyecto final del curso de **Taller Web** de la universidad. El proyecto tiene como objetivo desarrollar una página web estatica para la empresa **JIMDUR Repuestos**.
 
 ### Página Web: [www.diedari.me](http://www.diedari.me)
 
